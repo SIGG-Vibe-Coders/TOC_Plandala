@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOC Business Process</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    --bg-primary: #f8f6f1;
+    --bg-secondary: #f0ece4;
+    --bg-hero: #2c3e2d;
+    --bg-card: rgba(255,255,255,0.7);
+    --text-primary: #1a1a1a;
+    --text-secondary: #5a5a52;
+    --text-muted: #8a8a80;
+    --accent: #4a7c59;
+    --accent-light: #e8f0e8;
+    --accent-hover: #3d6b4a;
+    --border: rgba(0,0,0,0.06);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.04);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+    --radius: 16px;
+    --radius-sm: 10px;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-primary);
+}
+
+/* Hero — compact header */
+.hero {
+    text-align: center;
+    padding: 28px 24px;
+    background: var(--bg-hero);
+    color: #fff;
+    position: relative;
+}
+.hero-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 16px;
+}
+.hero-logo {
+    position: absolute;
+    left: 20px;
+    bottom: 28px;
+    height: calc(100% - 46px);
+    width: auto;
+}
+.hero-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+.hero-text .tagline {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.6);
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+/* Jump nav pills */
+.jump-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.jump-btn {
+    display: inline-block;
+    padding: 7px 18px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(255,255,255,0.12);
+    transition: background 0.25s, color 0.25s, border-color 0.25s;
+}
+.jump-btn:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+
+/* How-to — collapsible */
+.how-to {
+    background: var(--bg-secondary);
+    padding: 0 24px;
+}
+.how-to-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.how-to-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 18px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+}
+.how-to-toggle:hover {
+    color: var(--accent);
+}
+.how-to-toggle .chevron {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+.how-to-toggle.open .chevron {
+    transform: rotate(90deg);
+}
+
+.how-to-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding-bottom 0.4s ease;
+    padding-bottom: 0;
+}
+.how-to-grid.expanded {
+    max-height: 500px;
+    padding-bottom: 24px;
+}
+
+.how-to-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+}
+.how-to-item svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--accent);
+}
+.how-to-item .tip-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+.how-to-item .tip-text strong {
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 2px;
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+/* Main content */
+.content {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+    flex: 1;
+}
+
+/* Section headers */
+.section-header {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+}
+section { margin-bottom: 48px; }
+
+/* Card grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+/* Overlay cards — glass morphism */
+.card-link {
+    display: block;
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    text-decoration: none;
+    background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.5);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-link:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: var(--shadow-lg);
+}
+.card-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+.card-link:hover img {
+    transform: scale(1.03);
+}
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 28px 16px 16px;
+    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+    transition: background 0.3s ease;
+}
+.card-link:hover .card-overlay {
+    background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.card-overlay h3 {
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Coming soon cards — elegant placeholders */
+.card-grid-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+.card-coming-soon {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    aspect-ratio: 16 / 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    opacity: 0.65;
+    padding: 16px;
+    text-align: center;
+    max-width: 260px;
+    transition: opacity 0.3s ease;
+}
+.card-coming-soon:hover {
+    opacity: 0.85;
+}
+.card-coming-soon svg {
+    width: 28px;
+    height: 28px;
+    color: var(--accent);
+    opacity: 0.6;
+}
+.card-coming-soon .coming-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+.card-coming-soon .coming-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    max-width: 200px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+    background: var(--bg-primary);
+}
+
+/* Scroll fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger children */
+.fade-in:nth-child(2) { transition-delay: 0.1s; }
+.fade-in:nth-child(3) { transition-delay: 0.2s; }
+.fade-in:nth-child(4) { transition-delay: 0.3s; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    .card-link, .card-link img, .how-to-toggle .chevron {
+        transition: none;
+    }
+    .how-to-grid {
+        transition: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero { padding: 20px 16px; }
+    .hero-top { gap: 12px; }
+    .hero-logo { height: calc(100% - 16px); left: 12px; }
+    .hero-text h1 { font-size: 1.5rem; }
+    .hero-text .tagline { font-size: 0.85rem; }
+    .jump-nav { gap: 8px; }
+    .jump-btn { padding: 6px 14px; font-size: 0.8rem; }
+    .how-to { padding: 0 16px; }
+    .how-to-grid { grid-template-columns: 1fr; }
+    .content { padding: 28px 16px 40px; }
+    .card-grid { grid-template-columns: 1fr; }
+    .card-grid-small { grid-template-columns: 1fr; }
+    .card-coming-soon { max-width: 100%; }
+    .section-header { font-size: 1.2rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-top">
+        <img class="hero-logo" src="https://mr-robotto-66.github.io/Plandala_assets/transparent_logos/black_logo_tag_transparent.png" alt="TOC Logo" width="48" height="48">
+        <div class="hero-text">
+            <h1>TOC Business Process</h1>
+            <p class="tagline">Interactive Process Visualizations</p>
+        </div>
+    </div>
+    <nav class="jump-nav">
+        <a class="jump-btn" href="#tsl-management">TSL Management</a>
+        <a class="jump-btn" href="#engineering">Engineering</a>
+        <a class="jump-btn" href="#planning-development">Planning &amp; Development</a>
+        <a class="jump-btn" href="#silviculture">Silviculture</a>
+    </nav>
+</header>
+
+<div class="how-to">
+    <div class="how-to-inner">
+        <button class="how-to-toggle" aria-expanded="false">
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            How to Use
+        </button>
+        <div class="how-to-grid">
+            <div class="how-to-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                <div class="tip-text"><strong>Hover Nodes</strong>Hover over any node to see its description</div>
+            </div>
+            <div class="how-to-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 15l-2 5L9 9l11 4-5 2z"/><path d="M2 2l7.586 7.586"/></svg>
+                <div class="tip-text"><strong>Click Nodes</strong>Click a node for more details, links to documents and resources</div>
+            </div>
+            <div class="how-to-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                <div class="tip-text"><strong>Filter by Legend</strong>Click legend items to highlight only those categories</div>
+            </div>
+            <div class="how-to-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                <div class="tip-text"><strong>Light / Dark Mode</strong>Toggle between light and dark themes from the top-right buttons</div>
+            </div>
+            <div class="how-to-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                <div class="tip-text"><strong>Search</strong>Type in the search bar to highlight nodes whose title, description, or additional resources match your query</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="content">
+
+    <section id="tsl-management" class="fade-in">
+        <h2 class="section-header">TSL Management</h2>
+        <div class="card-grid">
+            <a class="card-link" href="TSL/TOC-Business-Process-TSL-Award-viewer.html">
+                <img src="Site%20Assets/TSL_Award.png" alt="TOC Award Process preview">
+                <div class="card-overlay"><h3>TOC Award Process</h3></div>
+            </a>
+            <a class="card-link" href="TSL/TOC-Business-Process-Post-Award-viewer.html">
+                <img src="Site%20Assets/TSL_Post_Award.png" alt="TOC Post Award preview">
+                <div class="card-overlay"><h3>TOC Post Award</h3></div>
+            </a>
+            <a class="card-link" href="TSL/TOC-Business-Process-Post-Award-Outstanding-Obligations-Process-viewer.html">
+                <img src="Site%20Assets/TSL_obligations.png" alt="Post Award Outstanding Obligations preview">
+                <div class="card-overlay"><h3>Post Award Outstanding Obligations</h3></div>
+            </a>
+        </div>
+    </section>
+
+    <section id="engineering" class="fade-in">
+        <h2 class="section-header">Engineering</h2>
+        <div class="card-grid-small">
+            <div class="card-coming-soon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3L5 11h3l-2 5h4l-2 5h8l-2-5h4l-2-5h3L12 3z"/>
+                </svg>
+                <span class="coming-label">Coming Soon</span>
+                <span class="coming-desc">Engineering workflows under development</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="planning-development" class="fade-in">
+        <h2 class="section-header">Planning &amp; Development</h2>
+        <div class="card-grid-small">
+            <div class="card-coming-soon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3L5 11h3l-2 5h4l-2 5h8l-2-5h4l-2-5h3L12 3z"/>
+                </svg>
+                <span class="coming-label">Coming Soon</span>
+                <span class="coming-desc">Planning &amp; Development workflows under development</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="silviculture" class="fade-in">
+        <h2 class="section-header">Silviculture</h2>
+        <div class="card-grid-small">
+            <div class="card-coming-soon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3L5 11h3l-2 5h4l-2 5h8l-2-5h4l-2-5h3L12 3z"/>
+                </svg>
+                <span class="coming-label">Coming Soon</span>
+                <span class="coming-desc">Silviculture workflows under development</span>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>TOC &mdash; Interactive Process Visualizations &copy; 2026</footer>
+
+<script>
+// IntersectionObserver for scroll fade-in
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+    });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Collapsible tutorial
+document.querySelector('.how-to-toggle').addEventListener('click', function() {
+    const grid = document.querySelector('.how-to-grid');
+    const expanded = grid.classList.toggle('expanded');
+    this.classList.toggle('open', expanded);
+    this.setAttribute('aria-expanded', expanded);
+});
+</script>
+
+</body>
+</html>
