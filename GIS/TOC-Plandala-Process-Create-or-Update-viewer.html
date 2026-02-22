@@ -50,953 +50,288 @@
 const defaultNodes = [
     {
         "id": 1,
-        "name": "START       Post Award Process",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "process",
-        "x": -50.48802185058594,
-        "y": 73.76710510253906,
-        "desc": "Starting point",
-        "resources": [],
-        "width": 120,
-        "height": 40
-    },
-    {
-        "id": 2,
-        "name": "0.  TSL (& RP) Issued",
-        "role": "BA / Admin",
-        "processType": "process",
-        "x": 108,
-        "y": 74,
-        "desc": "Signed TSL Documents sent to Licensee & HARV CONFM TECH",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 3,
-        "name": "1. Request \nfor Pre-Work \nLicensee\n",
-        "role": "Communication Point",
-        "processType": "queue",
-        "x": 263.9984130859375,
-        "y": 59.051788330078125,
-        "desc": "",
-        "resources": [],
-        "width": 120,
-        "height": 70
-    },
-    {
-        "id": 13,
-        "name": "2. HARV CONFRM TECH",
-        "role": "Post Award",
-        "processType": "document",
-        "x": 420.4826965332031,
-        "y": 73.53783416748047,
-        "desc": "Document Results of Risk Assessment on Pre-work Form CHK-01R",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 15,
-        "name": "3. TSL (& RP) Pre-Work",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 587.3886108398438,
-        "y": 72.83027648925781,
-        "desc": "CHK-003 Include ET in PW if significant road",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 20,
-        "name": "4. RUP in Place?",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 743.5457763671875,
-        "y": 72.9834213256836,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": 40
-    },
-    {
-        "id": 46,
-        "name": "Waste & Residue",
-        "role": "Post Award",
-        "processType": "outside-process",
-        "x": 585.4140925872557,
-        "y": -47.829617035080716,
-        "desc": "Contract Process",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 47,
-        "name": "3a. HARV CONFM TECH",
-        "role": "Communication Point",
-        "processType": "process",
-        "x": 588.0143667415848,
-        "y": 156.5581507829406,
-        "desc": "If Cruise-Based, Review Billing Process with Licensee (Must be Reported to HBS by the 7th of each Month)",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 48,
-        "name": "No",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 743.2526613768396,
-        "y": 143.4146592982786,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 49,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 847.5974850312858,
-        "y": 78.21397825218058,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 50,
-        "name": "4a. RUP Required",
-        "role": "Post Award",
-        "processType": "process",
-        "x": 744.1614291499297,
-        "y": 216.86504267205862,
-        "desc": "Confirm in place with Licensee prior to start",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 51,
-        "name": "5. >90 Days Since Pre-work?",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 955.054627166618,
-        "y": 62.95928122527144,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": 60
-    },
-    {
-        "id": 52,
-        "name": "NO",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1067.544794203444,
-        "y": 77.9805436202031,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 53,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 955.1200748738767,
-        "y": 146.55395550148216,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 54,
-        "name": "5a. HARV CONFM TECH",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1067.5447704598946,
-        "y": 140.76377346143465,
-        "desc": "Reviews; New Pre-work Req’d Then Proceed",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 55,
-        "name": "External Communication Process with Licensee",
-        "role": "Communication Point",
-        "processType": "outside-process",
-        "x": 883.9271333158975,
-        "y": -48.190341950473126,
-        "desc": "",
-        "resources": [],
-        "width": 60,
-        "height": 60
-    },
-    {
-        "id": 56,
-        "name": "6. Harvest Start and Road Construction Start",
-        "role": "Post Award",
-        "processType": "process",
-        "x": 1215.421638816729,
-        "y": 72.73875703126745,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 57,
-        "name": "6b. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 1214.476430676693,
-        "y": -71.56752375567453,
-        "desc": "LRM Update Block Activity Logging Started (LS) Block Details/State = ADV to HB (Logging Started)",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 58,
-        "name": "6a. HARV CONFM TECH",
-        "role": "Communication Point",
-        "processType": "process",
-        "x": 1214.833938231526,
-        "y": -0.19157440655350655,
-        "desc": "Notify Silviculture Tech, Eng Tech PLF & C&E",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 59,
-        "name": "6c. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 1216.2324537303377,
-        "y": 142.4309173272657,
-        "desc": "Road Permit & Schedule C: Construct Start Date",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 60,
-        "name": "6d. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "process",
-        "x": 1216.232393187165,
-        "y": 209.54737681343374,
-        "desc": "EMS-LRM Pre-work (Toggle Certification Tab: Licence Level);",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 61,
-        "name": "7. Inspections",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1381.74236043248,
-        "y": 71.7084357054765,
-        "desc": "-Initial-within 10 days\n- Progress based on Risk Rating, minimum 1/month",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 62,
-        "name": "7a. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "process",
-        "x": 1381.742266197169,
-        "y": -1.7857444741722652,
-        "desc": "Updates LRM with Inspection Dates",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 63,
-        "name": "8a. Change of Plan Requested",
-        "role": "Communication Point",
-        "processType": "decision",
-        "x": 1542.8041475526081,
-        "y": 51.38027873455155,
-        "desc": "",
-        "resources": [],
-        "width": 130,
-        "height": 80
-    },
-    {
-        "id": 64,
-        "name": "YES",
-        "role": "Communication Point",
-        "processType": "decision",
-        "x": 1542.8039918198263,
-        "y": -5.634256306194288,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 65,
-        "name": "NO",
-        "role": "Communication Point",
-        "processType": "decision",
-        "x": 1644.4448024889082,
-        "y": 76.39955259354963,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 66,
-        "name": "8a. Change of Plan",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1542.8401371423167,
-        "y": -73.03003521518713,
-        "desc": "Proposal meets legal requirements",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 67,
-        "name": "8b. Change of Plan Accepted",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1543.3605227303055,
-        "y": -150.6520751954951,
-        "desc": "TSL Proceeds accordingly",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 68,
-        "name": "8c. Plan Rejected ",
-        "role": "Post Award",
-        "processType": "process",
-        "x": 1706.3123563981326,
-        "y": -73.02287477555132,
-        "desc": "Plan Returned to Licensee for Changes & Re-submission",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 69,
-        "name": "9b. CSO Document issue in EMS",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "outside-process",
-        "x": 1644.081033845509,
-        "y": 211.7541665042993,
-        "desc": "",
-        "resources": [],
-        "width": 40,
-        "height": 40
-    },
-    {
-        "id": 70,
-        "name": "9. In Conformance / Compliance?",
-        "role": "Post Award",
-        "processType": "process-tbd",
-        "x": 1770.0856911011576,
-        "y": 211.09501489721558,
-        "desc": "",
-        "resources": [],
-        "width": 40,
-        "height": 40
-    },
-    {
-        "id": 71,
-        "name": "9a. Conformance / Compliance Process",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1769.1076214973589,
-        "y": 71.50486266348165,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 73,
-        "name": "NO",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1769.1075217626096,
-        "y": 140.81639040610747,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 74,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1866.055415489026,
-        "y": 76.25718089284622,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 75,
-        "name": "10a. Licensee",
-        "role": "Communication Point",
-        "processType": "outside-process",
-        "x": 1997.7222810055102,
-        "y": -62.285482132781254,
-        "desc": "Notification re: Shutdown & Start-up",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 76,
-        "name": "10a. Operations / Shutdown - Interruption > 90 Days?",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1998.2904118185204,
-        "y": 49.78523243542581,
-        "desc": "",
-        "resources": [],
-        "width": 190,
-        "height": 80
-    },
-    {
-        "id": 77,
-        "name": "Go to Step 5",
-        "role": "Post Award",
-        "processType": "process",
-        "x": 2228.095082602009,
-        "y": 69.63053794733696,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 78,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 2128.376890695512,
-        "y": 74.71819066402324,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 79,
-        "name": "NO",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1998.132873923661,
-        "y": 155.10328003880431,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 80,
-        "name": "12. HARV CONFM TECH",
-        "role": "Communication Point",
-        "processType": "document",
-        "x": 1997.2099852128918,
-        "y": 305.1887817348019,
-        "desc": "Receives notification from Licensee;\nLogging Complete (LC) on all blocks",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 81,
-        "name": "13. Licensee Submits Completion Form",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1996.4268314057765,
-        "y": 389.24185559197684,
-        "desc": "- Licensee submits “TSL Harvest Completion & Deposit Release Form” with Harvest Complete.\n- HARV CONFM TECH completes Final\nInspection & confirms LC and outstanding obligations.",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 82,
-        "name": "11. HARV CONFM TECH",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1998.1194828192706,
-        "y": 227.59542800637755,
-        "desc": "Continues with inspections until LC",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 83,
-        "name": "14. Primary Logging Complete",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1835.452370538944,
-        "y": 379.37317479605196,
-        "desc": "",
-        "resources": [],
-        "width": 120,
-        "height": 60
-    },
-    {
-        "id": 84,
-        "name": "NO",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1847.9210292819728,
-        "y": 232.53700729862248,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 85,
-        "name": "15. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "process",
-        "x": 1583.2627646904864,
-        "y": 389.1101624811349,
-        "desc": "- LRM Logging Complete Entry\n\n- LC- Block Activity Tab (All wood felled & skid to roadside or landing)\n\n- SC-Substantial completion LRM\ntoggle at License Activity level (only if all blocks are LC)",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 86,
-        "name": "15a. HARV CONFM TECH",
-        "role": "Post Award",
-        "processType": "process",
-        "x": 1583.7897488447097,
-        "y": 468.94098490738145,
-        "desc": "Updates FTA from LS to LC to ensure Licensee 3 TSL Limit status is presented as appropriate",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 87,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1712.269928986621,
-        "y": 394.5024277346663,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 88,
-        "name": "16. HARV CONFM TECH",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1404.8978620593748,
-        "y": 388.75765194337225,
-        "desc": "Outstanding Obligations Letter to Licensee",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 89,
-        "name": "17. Has there been a Change of Plan resulting in a Change of Circumstance or Amendment that required documentation? Blocks or Roads?",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1134.2913809236231,
-        "y": 348.4368099117,
-        "desc": "",
-        "resources": [],
-        "width": 330,
-        "height": 120
-    },
-    {
-        "id": 90,
-        "name": "Change of Circumstance Process & Calculator",
-        "role": "Post Award",
-        "processType": "outside-process",
-        "x": 1063.9244316210822,
-        "y": 611.7021451025907,
-        "desc": "",
-        "resources": [],
-        "width": 60,
-        "height": 60
-    },
-    {
-        "id": 91,
-        "name": "Site Plan Amendment Process",
-        "role": "Post Award",
-        "processType": "outside-process",
-        "x": 1205.5346174732979,
-        "y": 613.2114923788093,
-        "desc": "",
-        "resources": [],
-        "width": 60,
-        "height": 60
-    },
-    {
-        "id": 92,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1204.3200290970271,
-        "y": 503.89936783306314,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 93,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1063.4288174589506,
-        "y": 505.11390117399276,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 94,
-        "name": "17a. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 1063.42890204069,
-        "y": 750.4588761576705,
-        "desc": "LRM\nToggle Change of Circumstance\nYES",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 95,
-        "name": "NO",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 897.031584009472,
-        "y": 394.58733414496885,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 96,
-        "name": "18. HARV CONFM TECH LRM",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 774.8466194927987,
-        "y": 389.2131102506429,
-        "desc": "LRM Change of Circumstance – NO = toggle N/A",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 97,
-        "name": "19. HARV CONFM TECH",
-        "role": "Communication Point",
-        "processType": "process",
-        "x": 595.5883278952081,
-        "y": 389.21311929913054,
-        "desc": "Notify Silviculture - Harvest Complete",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 98,
-        "name": "19a. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 595.588301557246,
-        "y": 283.8988766379881,
-        "desc": "Completes Harvest Depletion and submits to RESULTS by not later than May 31 annually.",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 99,
-        "name": "POST AWARD OUTSTANDING OBLIGATIONS PROCESS",
-        "role": "Post Award",
-        "processType": "outside-process",
-        "x": 389.4412399702933,
-        "y": 369.04654562515566,
-        "desc": "",
-        "resources": [],
-        "width": 80,
-        "height": 80
-    },
-    {
-        "id": 100,
-        "name": "20b. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 181.2314521098391,
-        "y": 195.44131733283075,
-        "desc": "Timber Mark Activity: Balance Cruise Based Harvest Vol.in HBS",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 101,
-        "name": "20a. HARV CONFM TECH LRM",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 181.40937913546168,
-        "y": 288.8835001338924,
-        "desc": "LRM - Enter “Change of Circumstance Record Post-award” record",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 102,
-        "name": "20. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 180.12091656678348,
-        "y": 389.52940657042166,
-        "desc": "Update Activities (Roads and Blocks) Update Deactivation Dates for Road Permit & Schedule C Roads",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 103,
-        "name": "21b. BA Processes 45D",
-        "role": "BA / Admin",
-        "processType": "records-management",
-        "x": -13.763145629105338,
-        "y": 192.92208513427647,
-        "desc": "Close File Process, Retire RP",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 104,
-        "name": "21a. BA LRM Update",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": -13.763129266195364,
-        "y": 291.43510896807805,
-        "desc": "BA LRM Update Activities License Activity: License Closed = Done License State = HC",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 105,
-        "name": "21. Final Deposit Release",
-        "role": "Post Award",
-        "processType": "process",
-        "x": -12.003928793948518,
-        "y": 389.94812069214277,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 106,
-        "name": "Silviculture Process",
-        "role": "Silviculture",
-        "processType": "outside-process",
-        "x": -191.71507432203754,
-        "y": 381.05366171308253,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 107,
-        "name": "13a. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "process",
-        "x": 1995.4480549225088,
-        "y": 522.6351586504235,
-        "desc": "Inputs Final Harvest Inspection into LRM Certification Tab",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 108,
-        "name": "13b. HARV CONFM TECH",
-        "role": "Communication Point",
-        "processType": "records-management",
-        "x": 1994.2191218339321,
-        "y": 648.0038811462539,
-        "desc": "Advises ET Logging/Road Construction Complete Provides Tenure Disposal Form",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 109,
-        "name": "13c. ET completes inspection",
-        "role": "Engineering",
-        "processType": "process",
-        "x": 1994.218961631314,
-        "y": 765.9978232828803,
-        "desc": "Notifies HARV CONFM TECH if any quality or conformance issues observed",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 110,
-        "name": "13d. ET completes Tenure Disposal Form",
-        "role": "Engineering",
-        "processType": "records-management",
-        "x": 1993.9940084108134,
-        "y": 893.270034240935,
+        "name": "Start a new Plandala from Scratch",
+        "role": "Plandala Site",
+        "processType": "default-1",
+        "x": 865.232264575308,
+        "y": 57.95977839528936,
         "desc": "New node description",
         "resources": [],
         "width": null,
         "height": null
     },
     {
-        "id": 111,
-        "name": "Tenure DELETION Process",
-        "role": "Engineering",
-        "processType": "outside-process",
-        "x": 1815.7478030050045,
-        "y": 700.6042771147603,
+        "id": 2,
+        "name": "Update and existing Plandala",
+        "role": "Plandala Site",
+        "processType": "default-1",
+        "x": 869.8144419034746,
+        "y": 238.4671424386607,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 3,
+        "name": "Open Plandala.io and open the editor",
+        "role": "Plandala Site",
+        "processType": "default-1",
+        "x": 648.5238606006817,
+        "y": 136.59514257279403,
+        "desc": "If it's you first time logging in Contact Daniel to get credentials",
+        "resources": [
+            {
+                "text": "Plandala.io",
+                "url": "Plandala.io"
+            }
+        ],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 4,
+        "name": "Load in the JSON from the existing Plandala",
+        "role": "Plandala Site",
+        "processType": "default-1",
+        "x": 1044.6348454029278,
+        "y": 238.71991178360946,
+        "desc": "If it's the Business processes or Org charts, the current location is:\nF:\\toc_root\\GIS_Workspace\\Projects\\Plandala",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 5,
+        "name": "Clear saved data and refresh Browser",
+        "role": "Plandala Site",
+        "processType": "default-1",
+        "x": 1035.318713811131,
+        "y": 59.004331797037224,
         "desc": "",
         "resources": [],
         "width": null,
         "height": null
     },
     {
-        "id": 112,
-        "name": "13e. Is Tenure Retired?",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1815.9986308293646,
-        "y": 876.6173352066443,
-        "desc": "Follow DELETION Process",
+        "id": 6,
+        "name": "Start edit mode and make/edit your Plandala",
+        "role": "Plandala Site",
+        "processType": "default-1",
+        "x": 1208.1766850025372,
+        "y": 149.95735380021105,
+        "desc": "Guides to come",
         "resources": [],
-        "width": 110,
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 7,
+        "name": "Once you're done Publish Viewer and export JSON",
+        "role": "Plandala Site",
+        "processType": "default-1",
+        "x": 1388.871806767674,
+        "y": 150.86764737931261,
+        "desc": "Files will go to download folder",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 8,
+        "name": "move files from downloads folder and either replace existing files or put in a new folder",
+        "role": "File Explorer",
+        "processType": "default-1",
+        "x": 1592.329700139256,
+        "y": 152.10397741166122,
+        "desc": "",
+        "resources": [],
+        "width": 180,
+        "height": null
+    },
+    {
+        "id": 9,
+        "name": "Are you \nupdating the TOC \nBusiness process \nGithub?",
+        "role": "Other",
+        "processType": "default-3",
+        "x": 1790.6115757496073,
+        "y": 132.05284902421,
+        "desc": "New node description",
+        "resources": [],
+        "width": 120,
         "height": 80
     },
     {
-        "id": 113,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1815.998847824461,
-        "y": 818.7441859462091,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 114,
+        "id": 10,
         "name": "NO",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1699.1063783504592,
-        "y": 901.7096420623204,
+        "role": "Other",
+        "processType": "default-3",
+        "x": 1789.3558349609375,
+        "y": 66.12034842624432,
         "desc": "",
         "resources": [],
         "width": 30,
         "height": 30
     },
     {
-        "id": 115,
-        "name": "13f. Is Tenure to be TRANSFERRED?",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1559.39680652086,
-        "y": 876.514054693746,
-        "desc": "Follow Transfer Process",
+        "id": 11,
+        "name": "YES",
+        "role": "Other",
+        "processType": "default-3",
+        "x": 1789.8080228615252,
+        "y": 287.9320022661076,
+        "desc": "",
         "resources": [],
-        "width": 140,
+        "width": 30,
+        "height": 30
+    },
+    {
+        "id": 12,
+        "name": "Are you \nupdating an existing \nfile",
+        "role": "Other",
+        "processType": "default-3",
+        "x": 1788.8331419590888,
+        "y": 373.70597645230094,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
         "height": 80
     },
     {
-        "id": 116,
+        "id": 13,
         "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1424.3507547640977,
-        "y": 902.455144999928,
+        "role": "Other",
+        "processType": "default-3",
+        "x": 1788.957208346104,
+        "y": 488.7922588573625,
         "desc": "",
         "resources": [],
         "width": 30,
         "height": 30
     },
     {
-        "id": 117,
-        "name": "Tenure TRANSFER Process",
-        "role": "Engineering",
-        "processType": "outside-process",
-        "x": 1306.8528902181436,
-        "y": 897.8772357775089,
-        "desc": "",
+        "id": 14,
+        "name": "NO",
+        "role": "Other",
+        "processType": "default-3",
+        "x": 1666.4649332140932,
+        "y": 398.46668224577564,
+        "desc": "New node description",
+        "resources": [],
+        "width": 30,
+        "height": 30
+    },
+    {
+        "id": 15,
+        "name": "Create a new folder",
+        "role": "File Explorer",
+        "processType": "default-1",
+        "x": 1553.4993343206752,
+        "y": 393.7428894042969,
+        "desc": "F:\\toc_root\\GIS_Workspace\\Projects\\Plandala",
         "resources": [],
         "width": null,
         "height": null
     },
     {
-        "id": 118,
-        "name": "Engineering Inspection- Maintenance- Deactivation Process",
-        "role": "Engineering",
-        "processType": "outside-process",
-        "x": 1123.4067035210471,
-        "y": 892.3978865096556,
-        "desc": "",
+        "id": 16,
+        "name": "Replace the file in the Repo folder",
+        "role": "File Explorer",
+        "processType": "default-1",
+        "x": 1560.2041173225123,
+        "y": 484.21441891401605,
+        "desc": "F:\\toc_root\\GIS_Workspace\\Projects\\Plandala\\Repo\n",
         "resources": [],
-        "width": 70,
-        "height": 70
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 17,
+        "name": "Create a new folder in the repo or place into an existing one",
+        "role": "File Explorer",
+        "processType": "default-1",
+        "x": 1394.1443721629514,
+        "y": 393.7428894042969,
+        "desc": "F:\\toc_root\\GIS_Workspace\\Projects\\Plandala\\Repo",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 18,
+        "name": "Take screenshot of the Plandala",
+        "role": "Other",
+        "processType": "default-1",
+        "x": 1221.7435573117696,
+        "y": 393.90850103004504,
+        "desc": "This is to use on the site. after screenshot reduce size of image to width 250 pixel, this will keep the file size small.",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 19,
+        "name": "Use AI to help you rebuild the index.html with the new Plandala",
+        "role": "VS Code/ Github",
+        "processType": "default-1",
+        "x": 1065.6850717003751,
+        "y": 393.3011093231353,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 20,
+        "name": "Push and Commit to Github",
+        "role": "VS Code/ Github",
+        "processType": "default-1",
+        "x": 1239.5518324766822,
+        "y": 571.6389770507812,
+        "desc": "",
+        "resources": [
+            {
+                "text": "TOC Plandala Github",
+                "url": "https://github.com/SIGG-Vibe-Coders/TOC_Plandala"
+            }
+        ],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 21,
+        "name": "Check the Site",
+        "role": "Other",
+        "processType": "default-1",
+        "x": 1240.6130618416853,
+        "y": 673.6643676757812,
+        "desc": "Make sure everything looks good and test links",
+        "resources": [
+            {
+                "text": "TOC Plandala live site",
+                "url": "https://sigg-vibe-coders.github.io/TOC_Plandala/"
+            }
+        ],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 22,
+        "name": "Store the files somewhere you won't forget and use as you want",
+        "role": "Other",
+        "processType": "default-1",
+        "x": 1789.4532470703125,
+        "y": -5.31840181350708,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
     }
 ];
 const defaultLinks = [
     {
-        "source": 1,
-        "target": 2,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 2,
-        "target": 3,
+        "source": 3,
+        "target": 1,
         "arrowMode": "forward",
         "waypoints": [],
         "sourceAnchor": null,
@@ -1004,6 +339,102 @@ const defaultLinks = [
     },
     {
         "source": 3,
+        "target": 2,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 1,
+        "target": 5,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 2,
+        "target": 4,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 4,
+        "target": 6,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 5,
+        "target": 6,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 6,
+        "target": 7,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 7,
+        "target": 8,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 8,
+        "target": 9,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 9,
+        "target": 10,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 10,
+        "target": 22,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 9,
+        "target": 11,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 11,
+        "target": 12,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 12,
         "target": 13,
         "arrowMode": "forward",
         "waypoints": [],
@@ -1012,6 +443,22 @@ const defaultLinks = [
     },
     {
         "source": 13,
+        "target": 16,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 12,
+        "target": 14,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 14,
         "target": 15,
         "arrowMode": "forward",
         "waypoints": [],
@@ -1020,6 +467,38 @@ const defaultLinks = [
     },
     {
         "source": 15,
+        "target": 17,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 17,
+        "target": 18,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 18,
+        "target": 19,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 19,
+        "target": 20,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": "bottom",
+        "targetAnchor": null
+    },
+    {
+        "source": 16,
         "target": 20,
         "arrowMode": "forward",
         "waypoints": [],
@@ -1027,584 +506,8 @@ const defaultLinks = [
         "targetAnchor": null
     },
     {
-        "source": 47,
-        "target": 15,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 54,
-        "target": 52,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 53,
-        "target": 54,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 51,
-        "target": 53,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 51,
-        "target": 52,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
         "source": 20,
-        "target": 49,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 49,
-        "target": 51,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 20,
-        "target": 48,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 48,
-        "target": 50,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 60,
-        "target": 59,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 59,
-        "target": 56,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 56,
-        "target": 58,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 58,
-        "target": 57,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 52,
-        "target": 56,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 56,
-        "target": 61,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 61,
-        "target": 62,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 61,
-        "target": 63,
-        "arrowMode": "none",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 63,
-        "target": 64,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 63,
-        "target": 65,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 69,
-        "target": 65,
-        "arrowMode": "none",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 69,
-        "target": 70,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 70,
-        "target": 73,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 73,
-        "target": 71,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 65,
-        "target": 71,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 71,
-        "target": 74,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 66,
-        "target": 64,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 66,
-        "target": 67,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 66,
-        "target": 68,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 74,
-        "target": 76,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 76,
-        "target": 75,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 76,
-        "target": 78,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 78,
-        "target": 77,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 76,
-        "target": 79,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 79,
-        "target": 82,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 82,
-        "target": 80,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 80,
-        "target": 81,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 81,
-        "target": 83,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 83,
-        "target": 84,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 84,
-        "target": 82,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 85,
-        "target": 86,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 85,
-        "target": 88,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 83,
-        "target": 87,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 87,
-        "target": 85,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 88,
-        "target": 89,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 89,
-        "target": 93,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 89,
-        "target": 92,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 92,
-        "target": 91,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 93,
-        "target": 90,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 90,
-        "target": 94,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 89,
-        "target": 95,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 95,
-        "target": 96,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 96,
-        "target": 97,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 97,
-        "target": 98,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 97,
-        "target": 99,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 99,
-        "target": 102,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 102,
-        "target": 101,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 101,
-        "target": 100,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 102,
-        "target": 105,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 105,
-        "target": 104,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 104,
-        "target": 103,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 105,
-        "target": 106,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 81,
-        "target": 107,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 107,
-        "target": 108,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 108,
-        "target": 109,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 109,
-        "target": 110,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 110,
-        "target": 112,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 112,
-        "target": 113,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 113,
-        "target": 111,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 112,
-        "target": 114,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 114,
-        "target": 115,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 115,
-        "target": 116,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 116,
-        "target": 117,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 117,
-        "target": 118,
+        "target": 21,
         "arrowMode": "forward",
         "waypoints": [],
         "sourceAnchor": null,
@@ -1612,205 +515,29 @@ const defaultLinks = [
     }
 ];
 const defaultNavLinks = [];
-const defaultAnnotations = [
-    {
-        "id": 1,
-        "type": "text",
-        "x": 145.1289836025245,
-        "y": -333.2668879745877,
-        "text": "SP - Site Plan",
-        "fontSize": 14,
-        "stroke": "#94a3b8",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    },
-    {
-        "id": 2,
-        "type": "text",
-        "x": 127.2491234446079,
-        "y": -305.17007058309434,
-        "text": "W&R - Waste and Residue",
-        "fontSize": 14,
-        "stroke": "#94a3b8",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    },
-    {
-        "id": 3,
-        "type": "text",
-        "x": 136.61473991600974,
-        "y": -279.627486818166,
-        "text": "RUP- Road Use Permit",
-        "fontSize": 14,
-        "stroke": "#94a3b8",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    },
-    {
-        "id": 4,
-        "type": "text",
-        "x": 142.57467764220098,
-        "y": -258.34200993775397,
-        "text": "RP - Road Permit",
-        "fontSize": 14,
-        "stroke": "#94a3b8",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    },
-    {
-        "id": 5,
-        "type": "text",
-        "x": 133.20910748431658,
-        "y": -236.20510397243368,
-        "text": "CSO - Certification Standards Officer",
-        "fontSize": 14,
-        "stroke": "#94a3b8",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    },
-    {
-        "id": 6,
-        "type": "text",
-        "x": 145.98037631565654,
-        "y": -213.21679666301975,
-        "text": "LC - Logging Complete",
-        "fontSize": 14,
-        "stroke": "#94a3b8",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    },
-    {
-        "id": 7,
-        "type": "text",
-        "x": 141.72331211320835,
-        "y": -191.07986716465717,
-        "text": "SC - Substantial Completion",
-        "fontSize": 14,
-        "stroke": "#94a3b8",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    },
-    {
-        "id": 8,
-        "type": "text",
-        "x": 135.76333461041037,
-        "y": -165.53729799579992,
-        "text": "FTA - Forest Tenures Administration",
-        "fontSize": 14,
-        "stroke": "#94a3b8",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    },
-    {
-        "id": 9,
-        "type": "text",
-        "x": 46.36431669590496,
-        "y": -138.29189166519973,
-        "text": "HARV CONF TECH - Harvest Conformance Technician",
-        "fontSize": 14,
-        "stroke": "#94a3b8",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    },
-    {
-        "id": 10,
-        "stroke": "#5f5d5d",
-        "strokeWidth": 2,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1,
-        "type": "rect",
-        "x": 6.251779971086692,
-        "y": -369.9397243909289,
-        "width": 418.12525038350043,
-        "height": 261.9735856592797
-    },
-    {
-        "id": 11,
-        "type": "text",
-        "x": 154.66041762223892,
-        "y": -388.00686334492013,
-        "text": "Acronyms",
-        "fontSize": 26,
-        "stroke": "#41403e",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    }
-];
+const defaultAnnotations = [];
 
 let roleColors = {
-    "Engineering": "#c7c2c2",
-    "Silviculture": "#eb0acd",
-    "Post Award": "#2a8dcb",
-    "LRM or Other Corp. Systems": "#18c00c",
-    "Communication Point": "#917221",
-    "BA / Admin": "#f5ed00"
+    "Other": "#ffffff",
+    "Plandala Site": "#b800eb",
+    "File Explorer": "#f97316",
+    "VS Code/ Github": "#55f757"
 };
 
 let processTypes = {
-    "process": {
+    "default-1": {
         "label": "Process",
         "shape": "rect",
         "dashed": false
     },
-    "document": {
-        "label": "Document",
-        "shape": "rect",
-        "dashed": true
-    },
-    "outside-process": {
-        "label": "Outside Process",
-        "shape": "circle",
-        "dashed": false
-    },
-    "process-tbd": {
-        "label": "Process to be developed",
-        "shape": "circle",
-        "dashed": true
-    },
-    "queue": {
-        "label": "Queue or Wait Period",
-        "shape": "triangle",
-        "dashed": false
-    },
-    "corporate-accounting": {
-        "label": "Process: Corporate Accounting Mandatory",
-        "shape": "hexagon",
-        "dashed": false
-    },
-    "records-management": {
-        "label": "Process: Records Management Protocol",
-        "shape": "hexagon",
-        "dashed": true
-    },
-    "decision": {
-        "label": "Decision",
+    "default-3": {
+        "label": "Decsion",
         "shape": "diamond",
         "dashed": false
     }
 };
 
-let roleCategoryLabel = 'Responsibility or Process Description';
+let roleCategoryLabel = 'Workspace';
 let processTypeCategoryLabel = 'Process Types';
 let linkColor = '#6b7280';
 let nodeWidth = 130;
@@ -1818,9 +545,9 @@ let nodeHeight = 40;
 let linkOpacity = 0.4;
 let linkWidth = 2;
 let arrowSize = 12;
-let defaultZoomLevel = 0.6062866266041593;
-let defaultPanX = 156.73335411188862;
-let defaultPanY = 93.78270167464694;
+let defaultZoomLevel = 1.055606328618317;
+let defaultPanX = -503.46485509900094;
+let defaultPanY = -64.02317038256092;
 
 // ====== State object for non-export-critical state ======
 
@@ -4882,8 +3609,8 @@ body.dark-mode #version-label {
              alt="Plandala" class="header-logo" id="header-logo">
         </a>
         <div style="display: flex; align-items: baseline;">
-            <h1 id="main-title" contenteditable="false">TOC Business Process</h1>
-            <span class="subtitle" id="main-subtitle" contenteditable="false">Post Award</span>
+            <h1 id="main-title" contenteditable="false">TOC Plandala Process</h1>
+            <span class="subtitle" id="main-subtitle" contenteditable="false">Create or Update</span>
         </div>
         <div class="controls">
             <label class="theme-toggle">

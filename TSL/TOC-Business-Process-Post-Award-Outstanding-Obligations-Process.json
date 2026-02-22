@@ -1,0 +1,1343 @@
+{
+  "appName": "Plandala",
+  "dataVersion": 2,
+  "headerTitle": "TOC Business Process",
+  "headerSubtitle": "Post Award Outstanding Obligations Process",
+  "roleCategoryLabel": "Responsibility or Process Description",
+  "processTypeCategoryLabel": "Process Types",
+  "settings": {
+    "nodeWidth": 130,
+    "nodeHeight": 40,
+    "linkOpacity": 0.4,
+    "linkWidth": 2,
+    "linkColor": "#6b7280",
+    "arrowSize": 12,
+    "isLightMode": true,
+    "defaultZoomLevel": 0.429237863641031,
+    "defaultPanX": 320.2734785406708,
+    "defaultPanY": 70.29702555545299
+  },
+  "roleColors": {
+    "Post Award": "#2a8dcb",
+    "LRM or Other Corp. Systems": "#18c00c",
+    "Communication Point": "#917221",
+    "BA / Admin": "#f5ed00",
+    "END": "#f12704"
+  },
+  "processTypes": {
+    "process": {
+      "label": "Process",
+      "shape": "rect",
+      "dashed": false
+    },
+    "document": {
+      "label": "Document",
+      "shape": "rect",
+      "dashed": true
+    },
+    "outside-process": {
+      "label": "Outside Process",
+      "shape": "circle",
+      "dashed": false
+    },
+    "process-tbd": {
+      "label": "Process to be developed",
+      "shape": "circle",
+      "dashed": true
+    },
+    "queue": {
+      "label": "Queue or Wait Period",
+      "shape": "triangle",
+      "dashed": false
+    },
+    "corporate-accounting": {
+      "label": "Process: Corporate Accounting Mandatory",
+      "shape": "hexagon",
+      "dashed": false
+    },
+    "records-management": {
+      "label": "Process: Records Management Protocol",
+      "shape": "hexagon",
+      "dashed": true
+    },
+    "decision": {
+      "label": "Decision",
+      "shape": "diamond",
+      "dashed": false
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "START",
+      "role": "LRM or Other Corp. Systems",
+      "processType": "process",
+      "x": -177.8269214630127,
+      "y": 329.7208557128906,
+      "desc": "Starting point of the Outstanding Obligations Process",
+      "resources": [],
+      "width": 100,
+      "height": 40
+    },
+    {
+      "id": 2,
+      "name": "1. TSL Harvest Completion & Deposit Release Form form Licensee",
+      "role": "Communication Point",
+      "processType": "records-management",
+      "x": 16.917266845703125,
+      "y": 315.0062561035156,
+      "desc": "",
+      "resources": [],
+      "width": 200,
+      "height": 70
+    },
+    {
+      "id": 3,
+      "name": "2. Final Harvest Inspection",
+      "role": "Post Award",
+      "processType": "records-management",
+      "x": 247.87413024902344,
+      "y": 329.63604736328125,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 4,
+      "name": "3. Harvesting is Substantially Complete?",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 423.917724609375,
+      "y": 309.4293212890625,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": 80
+    },
+    {
+      "id": 40,
+      "name": "YES",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 557.1876220703125,
+      "y": 334.3341979980469,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 41,
+      "name": "No",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 244.61831665039062,
+      "y": 242.49069213867188,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 50,
+      "name": "Post Award Process Steps 14,15,16,17, 17a,18,19,19a",
+      "role": "Post Award",
+      "processType": "outside-process",
+      "x": 676.5398559570312,
+      "y": 319.1619873046875,
+      "desc": "",
+      "resources": [],
+      "width": 60,
+      "height": 60
+    },
+    {
+      "id": 5,
+      "name": "4. Partial Deposit Release",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 835.7788696289062,
+      "y": 298.3650436401367,
+      "desc": "Refer to 'How to 45-D SOP' & Deposit Release Calculator",
+      "resources": [],
+      "width": 100,
+      "height": 100
+    },
+    {
+      "id": 6,
+      "name": "5. Is Licence Expiry Imminent?",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 1061.1774291992188,
+      "y": 309.2391052246094,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 80
+    },
+    {
+      "id": 42,
+      "name": "NO",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 1061.1774291992188,
+      "y": 247.22366333007812,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 43,
+      "name": "YES",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 1061.1774291992188,
+      "y": 425.7789306640625,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 7,
+      "name": "5a. Complete: Section A - Deposit Release Calculator",
+      "role": "Post Award",
+      "processType": "document",
+      "x": 1200.7342529296875,
+      "y": 230.7379913330078,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": 60
+    },
+    {
+      "id": 8,
+      "name": "5b. Complete: 5a & Outstanding Obligations Letter",
+      "role": "Post Award",
+      "processType": "document",
+      "x": 1198.223388671875,
+      "y": 409.5462341308594,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": 60
+    },
+    {
+      "id": 9,
+      "name": "6. Complete: FS45D BCTS Deposit Release Form (Partial Release)",
+      "role": "Post Award",
+      "processType": "document",
+      "x": 1386.1448974609375,
+      "y": 308.84999084472656,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 70
+    },
+    {
+      "id": 10,
+      "name": "6a. 'Normal' or 'Substantial' Outstanding Obligations?",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 1579.6842041015625,
+      "y": 284.3055725097656,
+      "desc": "",
+      "resources": [],
+      "width": 180,
+      "height": 120
+    },
+    {
+      "id": 44,
+      "name": "Normal(25% Deposit Retention)",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 1674.2578125,
+      "y": 179.66903686523438,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 80
+    },
+    {
+      "id": 45,
+      "name": "Substantial(50% Deposit Retention)",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 1679.85400390625,
+      "y": 426.0994873046875,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 80
+    },
+    {
+      "id": 11,
+      "name": "6b. FS45D (Section D) Calculation",
+      "role": "Post Award",
+      "processType": "process",
+      "x": 1769.830810546875,
+      "y": 323.42205810546875,
+      "desc": "Retain Indicated % of Deposit Plus:\n> Unbilled Stumpage\n> Cost of Outstanding Obligations",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 12,
+      "name": "6c. BA Processes Signed FS45D. Partial Deposit Release",
+      "role": "BA / Admin",
+      "processType": "outside-process",
+      "x": 1940.3775634765625,
+      "y": 315.2162170410156,
+      "desc": "",
+      "resources": [],
+      "width": 60,
+      "height": 60
+    },
+    {
+      "id": 13,
+      "name": "7. Licensee Notification:\n\nLicensee to submit Deposit \nRelease Form indicating \nObligations Complete",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 2128.7266845703125,
+      "y": 304.3284606933594,
+      "desc": "Documents:\n> Fire Hazard Assessment\n> Signed FPOC Certificate\n> RP Conformance Doc\n> Value Added Report\nCat 4",
+      "resources": [],
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": 14,
+      "name": "8. Conformance Inspection",
+      "role": "Post Award",
+      "processType": "records-management",
+      "x": 2315.4691162109375,
+      "y": 325.0646667480469,
+      "desc": "Update Tracking system",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 16,
+      "name": "9. Obligations Complete?",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 2468.8173828125,
+      "y": 313.7635192871094,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 60
+    },
+    {
+      "id": 46,
+      "name": "YES",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 2468.817626953125,
+      "y": 243.57327270507812,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 47,
+      "name": "NO",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 2470.4521484375,
+      "y": 417.2236633300781,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 51,
+      "name": "Post Award Process: Ensure W&R is in FTA and = Billing Issued",
+      "role": "Post Award",
+      "processType": "outside-process",
+      "x": 2468.94091796875,
+      "y": 25.73776149749756,
+      "desc": "",
+      "resources": [],
+      "width": 70,
+      "height": 70
+    },
+    {
+      "id": 17,
+      "name": "10. Ensure all final obligations are complete",
+      "role": "Post Award",
+      "processType": "document",
+      "x": 2468.796630859375,
+      "y": 168.09770965576172,
+      "desc": "Refer to Deposit Release Calculator & Outstanding Obligations Letter",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 18,
+      "name": "10. Complete: FS45D BCTS Deposit Release Form (Final Release)",
+      "role": "Post Award",
+      "processType": "document",
+      "x": 2271.7159423828125,
+      "y": 33.87925720214844,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 50
+    },
+    {
+      "id": 19,
+      "name": "11. BA Processes FS45D. Final Deposit Release",
+      "role": "BA / Admin",
+      "processType": "outside-process",
+      "x": 2077.8095703125,
+      "y": 33.87925720214844,
+      "desc": "Final Deposit Release & Outstanding Obligations Letter Process",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 20,
+      "name": "11a. BA toggles 'Harvest Complete' In LRM",
+      "role": "LRM or Other Corp. Systems",
+      "processType": "process",
+      "x": 2077.68603515625,
+      "y": -75.86819219589233,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 21,
+      "name": "END",
+      "role": "END",
+      "processType": "process",
+      "x": 1912.366943359375,
+      "y": 39.56704330444336,
+      "desc": "End of process (normal completion)",
+      "resources": [],
+      "width": 100,
+      "height": 40
+    },
+    {
+      "id": 22,
+      "name": "12. Licence Expired or will Expire w/ Obligations Outside Lic. Term?",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 2470.452392578125,
+      "y": 482.4052734375,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 110
+    },
+    {
+      "id": 48,
+      "name": "NO",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 2224.677490234375,
+      "y": 503.1690673828125,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 49,
+      "name": "YES",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 2470.452392578125,
+      "y": 641.7674560546875,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 23,
+      "name": "14a. BA Outstanding Obligations Letter Process",
+      "role": "BA / Admin",
+      "processType": "outside-process",
+      "x": 2136.4990234375,
+      "y": 515.3984375,
+      "desc": "",
+      "resources": [],
+      "width": 55,
+      "height": 55
+    },
+    {
+      "id": 24,
+      "name": "13. Complete: \n\nSection A - \nDeposit Release Calculator\n \nSection B - \nOutstanding Obligations Letter",
+      "role": "Post Award",
+      "processType": "document",
+      "x": 2471.0908203125,
+      "y": 744.6670532226562,
+      "desc": "",
+      "resources": [],
+      "width": 200,
+      "height": 100
+    },
+    {
+      "id": 25,
+      "name": "14. Extra Time to Complete Obligations?",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 2136.666015625,
+      "y": 750.2274780273438,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": 90
+    },
+    {
+      "id": 52,
+      "name": "YES:TSM Authorizes(Up to 2 Years)",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 2136.456298828125,
+      "y": 634.0794067382812,
+      "desc": "",
+      "resources": [],
+      "width": 90,
+      "height": 90
+    },
+    {
+      "id": 53,
+      "name": "NO:TSM Does NotAuthorize orTime Runs Out",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 1971.926025390625,
+      "y": 740.072998046875,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 110
+    },
+    {
+      "id": 26,
+      "name": "15. Conformance Inspection",
+      "role": "Post Award",
+      "processType": "records-management",
+      "x": 1812.478271484375,
+      "y": 775.169677734375,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 27,
+      "name": "Update Tracking System",
+      "role": "LRM or Other Corp. Systems",
+      "processType": "process",
+      "x": 1812.478271484375,
+      "y": 859.9130859375,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 28,
+      "name": "16. EMS Incident/ NonConformance Process",
+      "role": "Post Award",
+      "processType": "outside-process",
+      "x": 1638.674072265625,
+      "y": 764.6566162109375,
+      "desc": "",
+      "resources": [],
+      "width": 60,
+      "height": 60
+    },
+    {
+      "id": 29,
+      "name": "17. Complete: FS45D BCTS Deposit Release Form (Final Release)",
+      "role": "Post Award",
+      "processType": "document",
+      "x": 1456.5260009765625,
+      "y": 770.6572265625,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 50
+    },
+    {
+      "id": 30,
+      "name": "17a. 'Normal' or 'Substantial' Outstanding Obligations?",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 1255.00537109375,
+      "y": 726.2694091796875,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 140
+    },
+    {
+      "id": 54,
+      "name": "Normal(Realize 25%of Deposit)",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 1131.2251586914062,
+      "y": 642.3818969726562,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 80
+    },
+    {
+      "id": 55,
+      "name": "Substantial(Realize 50%of Deposit)",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 1145.242431640625,
+      "y": 869.1399536132812,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 80
+    },
+    {
+      "id": 31,
+      "name": "17b. FS45D (Section D) Calculation",
+      "role": "Post Award",
+      "processType": "process",
+      "x": 1021.128662109375,
+      "y": 774.356201171875,
+      "desc": "Realize Indicated % of Deposit Plus:\n> Unbilled Stumpage\n> Costs of Delinquent Outstanding Obligations\n(Using Deposit Release Calculator)",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 32,
+      "name": "18. BA Processes FS45D. Return Deposit Balance",
+      "role": "BA / Admin",
+      "processType": "outside-process",
+      "x": 848.0318603515625,
+      "y": 768.8273315429688,
+      "desc": "Return Deposit Balance (if any)",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 33,
+      "name": "18a. BA toggles 'Harvest Complete' In LRM",
+      "role": "LRM or Other Corp. Systems",
+      "processType": "process",
+      "x": 847.9929809570312,
+      "y": 661.8576049804688,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 34,
+      "name": "19. All Obligations now completed?",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 673.494384765625,
+      "y": 762.8265991210938,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 60
+    },
+    {
+      "id": 56,
+      "name": "YES",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 555.4375305175781,
+      "y": 702.9889526367188,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 57,
+      "name": "NO",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 556.4566040039062,
+      "y": 777.8984985351562,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 35,
+      "name": "20. Direct Hire / Corrective Action Process",
+      "role": "Post Award",
+      "processType": "outside-process",
+      "x": 443.8686218261719,
+      "y": 763.1069946289062,
+      "desc": "",
+      "resources": [],
+      "width": 60,
+      "height": 60
+    },
+    {
+      "id": 36,
+      "name": "END",
+      "role": "END",
+      "processType": "process",
+      "x": 285.4093322753906,
+      "y": 771.528564453125,
+      "desc": "End of process (extended obligations path)",
+      "resources": [],
+      "width": 100,
+      "height": 40
+    },
+    {
+      "id": 58,
+      "name": "YES",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 945.0627566305318,
+      "y": 333.593195411682,
+      "desc": "New node description",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 59,
+      "name": "NO (Final Release Only)",
+      "role": "Post Award",
+      "processType": "decision",
+      "x": 835.5203261314418,
+      "y": 486.45137062935964,
+      "desc": "Final Release only",
+      "resources": [],
+      "width": 80,
+      "height": 80
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 40,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 41,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 415.7574296769426,
+          "y": 266.97750814521004
+        }
+      ],
+      "sourceAnchor": "top",
+      "targetAnchor": null
+    },
+    {
+      "source": 40,
+      "target": 50,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 6,
+      "target": 42,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 6,
+      "target": 43,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 42,
+      "target": 7,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 43,
+      "target": 8,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 10,
+      "target": 44,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 10,
+      "target": 45,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 44,
+      "target": 11,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 45,
+      "target": 11,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": "bottom"
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 16,
+      "target": 46,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 16,
+      "target": 47,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 20,
+      "target": 19,
+      "arrowMode": "reverse",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 19,
+      "target": 21,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 47,
+      "target": 22,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 22,
+      "target": 48,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 22,
+      "target": 49,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 49,
+      "target": 24,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 25,
+      "target": 52,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 25,
+      "target": 53,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 27,
+      "target": 26,
+      "arrowMode": "reverse",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 26,
+      "target": 28,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 30,
+      "target": 54,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 30,
+      "target": 55,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 54,
+      "target": 31,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": "left",
+      "targetAnchor": null
+    },
+    {
+      "source": 55,
+      "target": 31,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": "left",
+      "targetAnchor": null
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 34,
+      "target": 56,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": "top",
+      "targetAnchor": null
+    },
+    {
+      "source": 34,
+      "target": 57,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 57,
+      "target": 35,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 41,
+      "target": 2,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 21.613782877908832,
+          "y": 259.1533234373954
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 50,
+      "target": 5,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 58,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 58,
+      "target": 6,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 59,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 23,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 48,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 46,
+      "target": 17,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 17,
+      "target": 51,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 51,
+      "target": 18,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 52,
+      "target": 23,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 53,
+      "target": 26,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 32,
+      "target": 34,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 56,
+      "target": 36,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 301.57766669363457,
+          "y": 731.2063514810617
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 59,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 2057.098272865821,
+          "y": 494.7905419998659
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "bottom"
+    }
+  ],
+  "navLinks": [],
+  "annotations": [
+    {
+      "id": 1,
+      "stroke": "#f13be2",
+      "strokeWidth": 2,
+      "fill": "none",
+      "dashed": true,
+      "opacity": 1,
+      "type": "rect",
+      "x": 1120.8344205200005,
+      "y": 208.44476887068615,
+      "width": 155.65271395753894,
+      "height": 289.06935917192095
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "x": 717.7847075824193,
+      "y": 28.027574532344193,
+      "text": "SP - Site Plan",
+      "fontSize": 14,
+      "stroke": "#858585",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "x": 713.5276748165948,
+      "y": 49.313069297553774,
+      "text": "HP - Harvest Plan",
+      "fontSize": 14,
+      "stroke": "#858585",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "x": 698.202174221997,
+      "y": 74.00422430909464,
+      "text": "W&R - Waste and Residue",
+      "fontSize": 14,
+      "stroke": "#858585",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "x": 702.4591913681486,
+      "y": 98.69537629737425,
+      "text": "SOP - Standard Operating Procedure",
+      "fontSize": 14,
+      "stroke": "#858585",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 7,
+      "stroke": "#3d3d3d",
+      "strokeWidth": 2,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1,
+      "type": "rect",
+      "x": 668.6783069461146,
+      "y": -4.3760522278185014,
+      "width": 283.52259224448164,
+      "height": 131.9699869900599
+    },
+    {
+      "id": 8,
+      "type": "text",
+      "x": 753.8202368565541,
+      "y": -16.295915256179555,
+      "text": "Acronyms",
+      "fontSize": 26,
+      "stroke": "#5d5b5b",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    }
+  ]
+}

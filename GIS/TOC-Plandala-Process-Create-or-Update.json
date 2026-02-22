@@ -1,0 +1,507 @@
+{
+  "appName": "Plandala",
+  "dataVersion": 2,
+  "headerTitle": "TOC Plandala Process",
+  "headerSubtitle": "Create or Update",
+  "roleCategoryLabel": "Workspace",
+  "processTypeCategoryLabel": "Process Types",
+  "settings": {
+    "nodeWidth": 130,
+    "nodeHeight": 40,
+    "linkOpacity": 0.4,
+    "linkWidth": 2,
+    "linkColor": "#6b7280",
+    "arrowSize": 12,
+    "isLightMode": true,
+    "defaultZoomLevel": 1.055606328618317,
+    "defaultPanX": -503.46485509900094,
+    "defaultPanY": -64.02317038256092
+  },
+  "roleColors": {
+    "Other": "#ffffff",
+    "Plandala Site": "#b800eb",
+    "File Explorer": "#f97316",
+    "VS Code/ Github": "#55f757"
+  },
+  "processTypes": {
+    "default-1": {
+      "label": "Process",
+      "shape": "rect",
+      "dashed": false
+    },
+    "default-3": {
+      "label": "Decsion",
+      "shape": "diamond",
+      "dashed": false
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Start a new Plandala from Scratch",
+      "role": "Plandala Site",
+      "processType": "default-1",
+      "x": 865.232264575308,
+      "y": 57.95977839528936,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 2,
+      "name": "Update and existing Plandala",
+      "role": "Plandala Site",
+      "processType": "default-1",
+      "x": 869.8144419034746,
+      "y": 238.4671424386607,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 3,
+      "name": "Open Plandala.io and open the editor",
+      "role": "Plandala Site",
+      "processType": "default-1",
+      "x": 648.5238606006817,
+      "y": 136.59514257279403,
+      "desc": "If it's you first time logging in Contact Daniel to get credentials",
+      "resources": [
+        {
+          "text": "Plandala.io",
+          "url": "Plandala.io"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 4,
+      "name": "Load in the JSON from the existing Plandala",
+      "role": "Plandala Site",
+      "processType": "default-1",
+      "x": 1044.6348454029278,
+      "y": 238.71991178360946,
+      "desc": "If it's the Business processes or Org charts, the current location is:\nF:\\toc_root\\GIS_Workspace\\Projects\\Plandala",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 5,
+      "name": "Clear saved data and refresh Browser",
+      "role": "Plandala Site",
+      "processType": "default-1",
+      "x": 1035.318713811131,
+      "y": 59.004331797037224,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 6,
+      "name": "Start edit mode and make/edit your Plandala",
+      "role": "Plandala Site",
+      "processType": "default-1",
+      "x": 1208.1766850025372,
+      "y": 149.95735380021105,
+      "desc": "Guides to come",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 7,
+      "name": "Once you're done Publish Viewer and export JSON",
+      "role": "Plandala Site",
+      "processType": "default-1",
+      "x": 1388.871806767674,
+      "y": 150.86764737931261,
+      "desc": "Files will go to download folder",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 8,
+      "name": "move files from downloads folder and either replace existing files or put in a new folder",
+      "role": "File Explorer",
+      "processType": "default-1",
+      "x": 1592.329700139256,
+      "y": 152.10397741166122,
+      "desc": "",
+      "resources": [],
+      "width": 180,
+      "height": null
+    },
+    {
+      "id": 9,
+      "name": "Are you \nupdating the TOC \nBusiness process \nGithub?",
+      "role": "Other",
+      "processType": "default-3",
+      "x": 1790.6115757496073,
+      "y": 132.05284902421,
+      "desc": "New node description",
+      "resources": [],
+      "width": 120,
+      "height": 80
+    },
+    {
+      "id": 10,
+      "name": "NO",
+      "role": "Other",
+      "processType": "default-3",
+      "x": 1789.3558349609375,
+      "y": 66.12034842624432,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 11,
+      "name": "YES",
+      "role": "Other",
+      "processType": "default-3",
+      "x": 1789.8080228615252,
+      "y": 287.9320022661076,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 12,
+      "name": "Are you \nupdating an existing \nfile",
+      "role": "Other",
+      "processType": "default-3",
+      "x": 1788.8331419590888,
+      "y": 373.70597645230094,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": 80
+    },
+    {
+      "id": 13,
+      "name": "YES",
+      "role": "Other",
+      "processType": "default-3",
+      "x": 1788.957208346104,
+      "y": 488.7922588573625,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 14,
+      "name": "NO",
+      "role": "Other",
+      "processType": "default-3",
+      "x": 1666.4649332140932,
+      "y": 398.46668224577564,
+      "desc": "New node description",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 15,
+      "name": "Create a new folder",
+      "role": "File Explorer",
+      "processType": "default-1",
+      "x": 1553.4993343206752,
+      "y": 393.7428894042969,
+      "desc": "F:\\toc_root\\GIS_Workspace\\Projects\\Plandala",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 16,
+      "name": "Replace the file in the Repo folder",
+      "role": "File Explorer",
+      "processType": "default-1",
+      "x": 1560.2041173225123,
+      "y": 484.21441891401605,
+      "desc": "F:\\toc_root\\GIS_Workspace\\Projects\\Plandala\\Repo\n",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 17,
+      "name": "Create a new folder in the repo or place into an existing one",
+      "role": "File Explorer",
+      "processType": "default-1",
+      "x": 1394.1443721629514,
+      "y": 393.7428894042969,
+      "desc": "F:\\toc_root\\GIS_Workspace\\Projects\\Plandala\\Repo",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 18,
+      "name": "Take screenshot of the Plandala",
+      "role": "Other",
+      "processType": "default-1",
+      "x": 1221.7435573117696,
+      "y": 393.90850103004504,
+      "desc": "This is to use on the site. after screenshot reduce size of image to width 250 pixel, this will keep the file size small.",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 19,
+      "name": "Use AI to help you rebuild the index.html with the new Plandala",
+      "role": "VS Code/ Github",
+      "processType": "default-1",
+      "x": 1065.6850717003751,
+      "y": 393.3011093231353,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 20,
+      "name": "Push and Commit to Github",
+      "role": "VS Code/ Github",
+      "processType": "default-1",
+      "x": 1239.5518324766822,
+      "y": 571.6389770507812,
+      "desc": "",
+      "resources": [
+        {
+          "text": "TOC Plandala Github",
+          "url": "https://github.com/SIGG-Vibe-Coders/TOC_Plandala"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 21,
+      "name": "Check the Site",
+      "role": "Other",
+      "processType": "default-1",
+      "x": 1240.6130618416853,
+      "y": 673.6643676757812,
+      "desc": "Make sure everything looks good and test links",
+      "resources": [
+        {
+          "text": "TOC Plandala live site",
+          "url": "https://sigg-vibe-coders.github.io/TOC_Plandala/"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 22,
+      "name": "Store the files somewhere you won't forget and use as you want",
+      "role": "Other",
+      "processType": "default-1",
+      "x": 1789.4532470703125,
+      "y": -5.31840181350708,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "source": 3,
+      "target": 1,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 2,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 1,
+      "target": 5,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 10,
+      "target": 22,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": "bottom",
+      "targetAnchor": null
+    },
+    {
+      "source": 16,
+      "target": 20,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    }
+  ],
+  "navLinks": [],
+  "annotations": []
+}

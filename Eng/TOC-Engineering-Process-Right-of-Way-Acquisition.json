@@ -1,0 +1,827 @@
+{
+  "appName": "Plandala",
+  "dataVersion": 2,
+  "headerTitle": "TOC Engineering Process",
+  "headerSubtitle": "Right-of-Way Acquisition",
+  "roleCategoryLabel": "Responsibility",
+  "processTypeCategoryLabel": "Node Types",
+  "settings": {
+    "nodeWidth": 130,
+    "nodeHeight": 40,
+    "linkOpacity": 0.4,
+    "linkWidth": 2,
+    "linkColor": "#6b7280",
+    "arrowSize": 12,
+    "isLightMode": true,
+    "defaultZoomLevel": 0.6964404506369023,
+    "defaultPanX": 147.64769281155247,
+    "defaultPanY": 9.115358370836873
+  },
+  "roleColors": {
+    "Engineering": "#ababab",
+    "FLAG": "#0011ff",
+    "Development": "#ff85e9",
+    "Communication Point": "#fece7c",
+    "Process Details": "#ffffff"
+  },
+  "processTypes": {
+    "process": {
+      "label": "Process",
+      "shape": "rect",
+      "dashed": false
+    },
+    "document": {
+      "label": "Document",
+      "shape": "rect",
+      "dashed": true
+    },
+    "outside": {
+      "label": "Outside Process",
+      "shape": "circle",
+      "dashed": false
+    },
+    "decision": {
+      "label": "Decision",
+      "shape": "diamond",
+      "dashed": false
+    },
+    "communication": {
+      "label": "Records Management Protocol",
+      "shape": "hexagon",
+      "dashed": true
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "1. Plan & Identify Road Corridor",
+      "role": "Development",
+      "processType": "process",
+      "x": -22.849854469299316,
+      "y": 79.69387817382812,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 50
+    },
+    {
+      "id": 2,
+      "name": "2. Does Road Cross Private Land?",
+      "role": "Development",
+      "processType": "decision",
+      "x": 154.30029296875,
+      "y": 70,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 70
+    },
+    {
+      "id": 3,
+      "name": "YES",
+      "role": "Development",
+      "processType": "decision",
+      "x": 285.36444091796875,
+      "y": 90.0801773071289,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 4,
+      "name": "NO",
+      "role": "Development",
+      "processType": "decision",
+      "x": 154.30029296875,
+      "y": 10.276966094970703,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 5,
+      "name": "Proceed to Develop",
+      "role": "Development",
+      "processType": "outside",
+      "x": 153.60784912109375,
+      "y": -77.36880493164062,
+      "desc": "",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 6,
+      "name": "3. Viable Alternate via Crown Land?",
+      "role": "Development",
+      "processType": "decision",
+      "x": 411.7565612792969,
+      "y": 70,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 70
+    },
+    {
+      "id": 7,
+      "name": "YES",
+      "role": "Development",
+      "processType": "decision",
+      "x": 411.9533386230469,
+      "y": 12.529153823852539,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 8,
+      "name": "Proceed to Alternate",
+      "role": "Development",
+      "processType": "outside",
+      "x": 411.6326904296875,
+      "y": -74.02331924438477,
+      "desc": "",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 9,
+      "name": "NO",
+      "role": "Development",
+      "processType": "decision",
+      "x": 535.00732421875,
+      "y": 89.9052505493164,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 10,
+      "name": "4. Development Contacts Engineering Officer",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 651.3338012695312,
+      "y": 79.81048583984375,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 50
+    },
+    {
+      "id": 11,
+      "name": "5. Engineering Officer contacts FLAG for Research & Advice.",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 834.2400207519531,
+      "y": 80.45318603515625,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 50
+    },
+    {
+      "id": 12,
+      "name": "5a. \nFLAG provides:\n- Land status\n- Value\n- SRW vs Dedication advice\n- Project #\n\n- BCTS Reviews Options \nwith FLAG",
+      "role": "FLAG",
+      "processType": "process",
+      "x": 834.3070068359375,
+      "y": 170.62278747558594,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 120
+    },
+    {
+      "id": 13,
+      "name": "6. FLAG: Letter of 'Intent to Survey Property' mailed/handed to property owner",
+      "role": "FLAG",
+      "processType": "communication",
+      "x": 1045.745849609375,
+      "y": 80.09021759033203,
+      "desc": "",
+      "resources": [],
+      "width": 180,
+      "height": 50
+    },
+    {
+      "id": 14,
+      "name": "7. Development informs land owner prior to crossing property",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 1242.9205932617188,
+      "y": 79.8359146118164,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 50
+    },
+    {
+      "id": 15,
+      "name": "7a. Receive owner's permission to enter property?",
+      "role": "Development",
+      "processType": "decision",
+      "x": 1242.9945373535156,
+      "y": 193.78341674804688,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 80
+    },
+    {
+      "id": 16,
+      "name": "YES",
+      "role": "Development",
+      "processType": "decision",
+      "x": 1378.5072631835938,
+      "y": 219.439453125,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 17,
+      "name": "NO",
+      "role": "Development",
+      "processType": "decision",
+      "x": 1056.4258117675781,
+      "y": 217.74020385742188,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 18,
+      "name": "Proceed to Locate Road",
+      "role": "Development",
+      "processType": "outside",
+      "x": 1468.2394561767578,
+      "y": 215.60696411132812,
+      "desc": "Proceed to locate road without crossing private property.",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 19,
+      "name": "8. \nPrepare R/W \nAcquisition Request \n(FS959) with \nsupporting info",
+      "role": "Engineering",
+      "processType": "communication",
+      "x": 1620.7471008300781,
+      "y": 200.1933135986328,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 70
+    },
+    {
+      "id": 20,
+      "name": "9. Eng Officer Review & Sign-off",
+      "role": "Engineering",
+      "processType": "communication",
+      "x": 1796.0876159667969,
+      "y": 210.4274444580078,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 50
+    },
+    {
+      "id": 21,
+      "name": "10. Submit R/W Acquisition Request to FLAG",
+      "role": "Engineering",
+      "processType": "communication",
+      "x": 1963.1437072753906,
+      "y": 209.99472045898438,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 50
+    },
+    {
+      "id": 22,
+      "name": "10a. Copy of Signed FS959 to File",
+      "role": "Engineering",
+      "processType": "communication",
+      "x": 1962.779052734375,
+      "y": 291.41845703125,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 40
+    },
+    {
+      "id": 23,
+      "name": "11. FLAG establishes formal contact with Landowner and enters into negotiations",
+      "role": "FLAG",
+      "processType": "process",
+      "x": 1960.5505981445312,
+      "y": 541.6019287109375,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 50
+    },
+    {
+      "id": 24,
+      "name": "12. FLAG Statutory R/W Process",
+      "role": "FLAG",
+      "processType": "outside",
+      "x": 1642.9173889160156,
+      "y": 423.079833984375,
+      "desc": "",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 25,
+      "name": "12. FLAG Dedicated R/W Process",
+      "role": "FLAG",
+      "processType": "outside",
+      "x": 1643.4050903320312,
+      "y": 667.2984619140625,
+      "desc": "",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 26,
+      "name": "13. FLAG: Legal Plan registered at Land Title Office",
+      "role": "FLAG",
+      "processType": "process",
+      "x": 1432.2074584960938,
+      "y": 669.5789184570312,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 40
+    },
+    {
+      "id": 27,
+      "name": "13a. Copy of Legal Plan to File",
+      "role": "Engineering",
+      "processType": "communication",
+      "x": 1431.3692016601562,
+      "y": 752.779052734375,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 40
+    },
+    {
+      "id": 28,
+      "name": "14. \n- Take Possession\n- Assign FSR Section & Project #\n- Create FTA & Exhibit A",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 1247.1148071289062,
+      "y": 665.3182983398438,
+      "desc": "",
+      "resources": [],
+      "width": 170,
+      "height": 50
+    },
+    {
+      "id": 29,
+      "name": "15. TSM/DM Assignment of Maintenance Responsibility",
+      "role": "Development",
+      "processType": "process",
+      "x": 1055.9243774414062,
+      "y": 665.0568237304688,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 50
+    },
+    {
+      "id": 30,
+      "name": "13. Copy of Signed SRW to File",
+      "role": "Engineering",
+      "processType": "communication",
+      "x": 1427.9927978515625,
+      "y": 422.1926574707031,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 40
+    },
+    {
+      "id": 31,
+      "name": "14. BCTS staff & LCP review and comply with terms and conditions of the agreement",
+      "role": "Development",
+      "processType": "process",
+      "x": 1249.9929809570312,
+      "y": 417.7884521484375,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 50
+    },
+    {
+      "id": 32,
+      "name": "15. FLAG: At contract expiry, FLAG removes notation from the title or renews the contract if more time is required",
+      "role": "FLAG",
+      "processType": "process",
+      "x": 1015.95166015625,
+      "y": 417.5897521972656,
+      "desc": "",
+      "resources": [],
+      "width": 220,
+      "height": 50
+    },
+    {
+      "id": 33,
+      "name": "16. BCTS use ends at the expiry of SRW Agreement",
+      "role": "Development",
+      "processType": "process",
+      "x": 799.7521362304688,
+      "y": 418.4404296875,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 50
+    },
+    {
+      "id": 34,
+      "name": "Required:\nLot Numbers(s)\n-PID\n-Land Title\n-Plan-Map\n-Spatial",
+      "role": "Process Details",
+      "processType": "process",
+      "x": 651.3818646443111,
+      "y": -50.28767967224121,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 90
+    },
+    {
+      "id": 35,
+      "name": "Field Team to Confirm / \nProvide:\n-Term of Use (years)\n-Timber volume accessed\n-Timber volume on property\n-Length of access\n-Existing road and condition\n-Record of communication \nw/ owners\n-Map showing existing \nand proposed access",
+      "role": "Process Details",
+      "processType": "process",
+      "x": 1619.959093480119,
+      "y": 8.796835436156215,
+      "desc": "New node description",
+      "resources": [],
+      "width": 150,
+      "height": 150
+    },
+    {
+      "id": 36,
+      "name": "Include:\n-FS959, signed\n-Record of communication \nwith owners\n-Map showing existing & \nproposed access",
+      "role": "Process Details",
+      "processType": "process",
+      "x": 1962.1719970703125,
+      "y": 80.97545129839772,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 80
+    },
+    {
+      "id": 37,
+      "name": "During Negotiation Process, BCTS Staff:\n\n-ONLY engage land owner at the request of FLAG\n-DO NOT discuss compensation with land owner\n-FORWARD any comments received from land owner to FLAG\n-Provide INPUT into terms and conditions as requested by FLAG",
+      "role": "Process Details",
+      "processType": "process",
+      "x": 1643.24609375,
+      "y": 530.1185302734375,
+      "desc": "",
+      "resources": [],
+      "width": 350,
+      "height": 70
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 1806.4657289028291,
+          "y": 476.72316694607906
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 23,
+      "target": 25,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 1795.9705777745075,
+          "y": 662.4867830077037
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 26,
+      "target": 28,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 10,
+      "target": 34,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 17,
+      "target": 12,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 35,
+      "target": 19,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 36,
+      "target": 21,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 2084.5864936802072,
+          "y": 242.68190599820468
+        },
+        {
+          "x": 2080.3885431585054,
+          "y": 563.832639204219
+        }
+      ],
+      "sourceAnchor": "right",
+      "targetAnchor": "right"
+    },
+    {
+      "source": 24,
+      "target": 37,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 25,
+      "target": 37,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 24,
+      "target": 30,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    }
+  ],
+  "navLinks": [],
+  "annotations": []
+}

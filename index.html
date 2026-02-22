@@ -205,7 +205,7 @@ section { margin-bottom: 48px; }
 /* Card grid */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 24px;
 }
 
@@ -255,50 +255,6 @@ section { margin-bottom: 48px; }
     font-size: 1.05rem;
     font-weight: 600;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-}
-
-/* Coming soon cards — elegant placeholders */
-.card-grid-small {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-}
-.card-coming-soon {
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    aspect-ratio: 16 / 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    opacity: 0.65;
-    padding: 16px;
-    text-align: center;
-    max-width: 260px;
-    transition: opacity 0.3s ease;
-}
-.card-coming-soon:hover {
-    opacity: 0.85;
-}
-.card-coming-soon svg {
-    width: 28px;
-    height: 28px;
-    color: var(--accent);
-    opacity: 0.6;
-}
-.card-coming-soon .coming-label {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--text-secondary);
-}
-.card-coming-soon .coming-desc {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    max-width: 200px;
 }
 
 /* Footer */
@@ -355,8 +311,6 @@ footer {
     .how-to-grid { grid-template-columns: 1fr; }
     .content { padding: 28px 16px 40px; }
     .card-grid { grid-template-columns: 1fr; }
-    .card-grid-small { grid-template-columns: 1fr; }
-    .card-coming-soon { max-width: 100%; }
     .section-header { font-size: 1.2rem; }
 }
 </style>
@@ -372,10 +326,12 @@ footer {
         </div>
     </div>
     <nav class="jump-nav">
+        <a class="jump-btn" href="#org-chart">Org Chart</a>
+        <a class="jump-btn" href="#planning-development">Planning &amp; Development</a>
         <a class="jump-btn" href="#tsl-management">TSL Management</a>
         <a class="jump-btn" href="#engineering">Engineering</a>
-        <a class="jump-btn" href="#planning-development">Planning &amp; Development</a>
         <a class="jump-btn" href="#silviculture">Silviculture</a>
+        <a class="jump-btn" href="#gis">GIS</a>
     </nav>
 </header>
 
@@ -412,19 +368,39 @@ footer {
 
 <main class="content">
 
+    <section id="org-chart" class="fade-in">
+        <h2 class="section-header">Org Chart</h2>
+        <div class="card-grid">
+            <a class="card-link" href="Org_Chart/TOC-Org-Chart-viewer.html">
+                <img src="Org_Chart/Org_Chart.png" alt="TOC Org Chart preview">
+                <div class="card-overlay"><h3>TOC Org Chart</h3></div>
+            </a>
+        </div>
+    </section>
+
+    <section id="planning-development" class="fade-in">
+        <h2 class="section-header">Planning &amp; Development</h2>
+        <div class="card-grid">
+            <a class="card-link" href="Dev/TOC-Business-Process-Planning--Development-Process-Map-viewer.html">
+                <img src="Dev/Planning_Dev.png" alt="Planning &amp; Development Process Map preview">
+                <div class="card-overlay"><h3>Planning &amp; Development Process Map</h3></div>
+            </a>
+        </div>
+    </section>
+
     <section id="tsl-management" class="fade-in">
         <h2 class="section-header">TSL Management</h2>
         <div class="card-grid">
             <a class="card-link" href="TSL/TOC-Business-Process-TSL-Award-viewer.html">
-                <img src="Site%20Assets/TSL_Award.png" alt="TOC Award Process preview">
+                <img src="TSL/TSL_Award.png" alt="TOC Award Process preview">
                 <div class="card-overlay"><h3>TOC Award Process</h3></div>
             </a>
             <a class="card-link" href="TSL/TOC-Business-Process-Post-Award-viewer.html">
-                <img src="Site%20Assets/TSL_Post_Award.png" alt="TOC Post Award preview">
+                <img src="TSL/TSL_Post_Award.png" alt="TOC Post Award preview">
                 <div class="card-overlay"><h3>TOC Post Award</h3></div>
             </a>
             <a class="card-link" href="TSL/TOC-Business-Process-Post-Award-Outstanding-Obligations-Process-viewer.html">
-                <img src="Site%20Assets/TSL_obligations.png" alt="Post Award Outstanding Obligations preview">
+                <img src="TSL/TSL_obligations.png" alt="Post Award Outstanding Obligations preview">
                 <div class="card-overlay"><h3>Post Award Outstanding Obligations</h3></div>
             </a>
         </div>
@@ -432,40 +408,47 @@ footer {
 
     <section id="engineering" class="fade-in">
         <h2 class="section-header">Engineering</h2>
-        <div class="card-grid-small">
-            <div class="card-coming-soon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 3L5 11h3l-2 5h4l-2 5h8l-2-5h4l-2-5h3L12 3z"/>
-                </svg>
-                <span class="coming-label">Coming Soon</span>
-                <span class="coming-desc">Engineering workflows under development</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="planning-development" class="fade-in">
-        <h2 class="section-header">Planning &amp; Development</h2>
-        <div class="card-grid-small">
-            <div class="card-coming-soon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 3L5 11h3l-2 5h4l-2 5h8l-2-5h4l-2-5h3L12 3z"/>
-                </svg>
-                <span class="coming-label">Coming Soon</span>
-                <span class="coming-desc">Planning &amp; Development workflows under development</span>
-            </div>
+        <div class="card-grid">
+            <a class="card-link" href="Eng/TOC-Engineering-Process-Deactivation-Admin-viewer.html">
+                <img src="Eng/deact_admin.png" alt="Deactivation Admin preview">
+                <div class="card-overlay"><h3>Deactivation Admin</h3></div>
+            </a>
+            <a class="card-link" href="Eng/TOC-Engineering-Process-FLTC-Process-viewer.html">
+                <img src="Eng/FLTC.png" alt="FLTC Process preview">
+                <div class="card-overlay"><h3>FLTC Process</h3></div>
+            </a>
+            <a class="card-link" href="Eng/TOC-Engineering-Process-Right-of-Way-Acquisition-viewer.html">
+                <img src="Eng/ROW.png" alt="Right of Way Acquisition preview">
+                <div class="card-overlay"><h3>Right of Way Acquisition</h3></div>
+            </a>
+            <a class="card-link" href="Eng/TOC-Business-Process-Develop--Construct-FSR-viewer.html">
+                <img src="Eng/develop_contruct_fsr.png" alt="Develop / Construct FSR preview">
+                <div class="card-overlay"><h3>Develop / Construct FSR</h3></div>
+            </a>
         </div>
     </section>
 
     <section id="silviculture" class="fade-in">
         <h2 class="section-header">Silviculture</h2>
-        <div class="card-grid-small">
-            <div class="card-coming-soon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 3L5 11h3l-2 5h4l-2 5h8l-2-5h4l-2-5h3L12 3z"/>
-                </svg>
-                <span class="coming-label">Coming Soon</span>
-                <span class="coming-desc">Silviculture workflows under development</span>
-            </div>
+        <div class="card-grid">
+            <a class="card-link" href="Silv/TOC-Business-Process-Silviculture-Process-viewer.html">
+                <img src="Silv/Silv_Process.png" alt="Silviculture Process preview">
+                <div class="card-overlay"><h3>Silviculture Process</h3></div>
+            </a>
+            <a class="card-link" href="Silv/TOC-Silviculture-Process-Sowing--Planting-viewer.html">
+                <img src="Silv/Sowing_Planting.png" alt="Sowing &amp; Planting preview">
+                <div class="card-overlay"><h3>Sowing &amp; Planting</h3></div>
+            </a>
+        </div>
+    </section>
+
+    <section id="gis" class="fade-in">
+        <h2 class="section-header">GIS</h2>
+        <div class="card-grid">
+            <a class="card-link" href="GIS/TOC-Plandala-Process-Create-or-Update-viewer.html">
+                <img src="GIS/Plandala_process.png" alt="Plandala Process Create or Update preview">
+                <div class="card-overlay"><h3>Plandala Process Create or Update</h3></div>
+            </a>
         </div>
     </section>
 

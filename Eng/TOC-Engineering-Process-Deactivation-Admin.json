@@ -1,0 +1,975 @@
+{
+  "appName": "Plandala",
+  "dataVersion": 2,
+  "headerTitle": "TOC Engineering Process",
+  "headerSubtitle": "Deactivation Admin",
+  "roleCategoryLabel": "Responsibility",
+  "processTypeCategoryLabel": "Process Type",
+  "settings": {
+    "nodeWidth": 130,
+    "nodeHeight": 40,
+    "linkOpacity": 0.4,
+    "linkWidth": 2,
+    "linkColor": "#6b7280",
+    "arrowSize": 12,
+    "isLightMode": true,
+    "defaultZoomLevel": 0.568393712441402,
+    "defaultPanX": 92.8323982235795,
+    "defaultPanY": 34.10815346620507
+  },
+  "roleColors": {
+    "Engineering": "#949494",
+    "LRM": "#18c00c",
+    "Communication Point": "#ffd780",
+    "TBD": "#ff00c8"
+  },
+  "processTypes": {
+    "Process": {
+      "shape": "rect",
+      "label": "Process",
+      "dashed": false
+    },
+    "Start/End": {
+      "shape": "circle",
+      "label": "Outside Process",
+      "dashed": false
+    },
+    "Decision": {
+      "shape": "diamond",
+      "label": "Decision",
+      "dashed": false
+    },
+    "Document": {
+      "shape": "hexagon",
+      "dashed": false,
+      "label": "Corporate Accounting Mandatory"
+    },
+    "LRM Update": {
+      "shape": "hexagon",
+      "label": "Records Management Protocol",
+      "dashed": true
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "1. DEACTIVATION Required?",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 94.03765869140625,
+      "y": 279.7942810058594,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 80
+    },
+    {
+      "id": 3,
+      "name": "2. ENTER ROAD DEACT into Deactivation Tracker, Input Prescription Requirements",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 269.7039794921875,
+      "y": 299.6195068359375,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": null
+    },
+    {
+      "id": 4,
+      "name": "3. ET - SCHEDULE DEACT Activity in LRM Planned Date, Planned Cost",
+      "role": "LRM",
+      "processType": "Document",
+      "x": 472.4266662597656,
+      "y": 293.91204833984375,
+      "desc": "t",
+      "resources": [],
+      "width": 170,
+      "height": 50
+    },
+    {
+      "id": 5,
+      "name": "4. NOTIFY DM of intent to Deactivate. *Provide annual list w/ map",
+      "role": "Communication Point",
+      "processType": "Process",
+      "x": 686.564208984375,
+      "y": 298.0975341796875,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": null
+    },
+    {
+      "id": 6,
+      "name": "5. Complete REFERRAL\n\nPost Public Notification",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 882.8184814453125,
+      "y": 298.8584899902344,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 7,
+      "name": "6. BCTS Takes Public Calls. Concerns summarized and provided to DM",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 1072.604248046875,
+      "y": 298.8585205078125,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": null
+    },
+    {
+      "id": 8,
+      "name": "7. DM adjudicates public concerns, Informs BCTS of decision",
+      "role": "Communication Point",
+      "processType": "Process",
+      "x": 1262.0096435546875,
+      "y": 298.8584899902344,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 9,
+      "name": "8. Proceed w/ deactivation?",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 1425.16064453125,
+      "y": 269.560302734375,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 100
+    },
+    {
+      "id": 10,
+      "name": "YES",
+      "role": "District Manager",
+      "processType": "Decision",
+      "x": 1536.516357421875,
+      "y": 304.1854553222656,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 11,
+      "name": "NO",
+      "role": "District Manager",
+      "processType": "Decision",
+      "x": 1425.5411376953125,
+      "y": 402.2237548828125,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 12,
+      "name": "8a. DM Assumes maintenance responsibility (update records)",
+      "role": "Communication Point",
+      "processType": "Process",
+      "x": 1425.5411376953125,
+      "y": 464.0078125,
+      "desc": "8a. DM Assumes maintenance responsibility (update records)",
+      "resources": [],
+      "width": 160,
+      "height": null
+    },
+    {
+      "id": 13,
+      "name": "9. BARRIER Exempt?",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 1636.4571533203125,
+      "y": 279.07269287109375,
+      "desc": "",
+      "resources": [],
+      "width": 80,
+      "height": 80
+    },
+    {
+      "id": 14,
+      "name": "YES",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 1636.4571533203125,
+      "y": 398.0382995605469,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 15,
+      "name": "NO",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 1737.5394287109375,
+      "y": 304.56597900390625,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 16,
+      "name": "9a. BARRIER Exemption Letter to District Manager. *Recommend annual list",
+      "role": "Communication Point",
+      "processType": "Process",
+      "x": 1635.6961669921875,
+      "y": 462.8663330078125,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": null
+    },
+    {
+      "id": 17,
+      "name": "9b. Digital Letter on Road File",
+      "role": "Communication Point",
+      "processType": "LRM Update",
+      "x": 1635.3155517578125,
+      "y": 545.6847534179688,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 20,
+      "name": "10. Determine Prescription Requirements",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 1848.5145263671875,
+      "y": 299.6195068359375,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 21,
+      "name": "Simple?",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 1961.8927001953125,
+      "y": 212.45819091796875,
+      "desc": "10a. Simple?",
+      "resources": [],
+      "width": 60,
+      "height": 60
+    },
+    {
+      "id": 22,
+      "name": "Complex?",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 1956.03125,
+      "y": 368.5851135253906,
+      "desc": "10b. Complex? (PGEO)",
+      "resources": [],
+      "width": 60,
+      "height": 60
+    },
+    {
+      "id": 23,
+      "name": "11. Complete Deactivation \nPrescription and Field Layout. \n\nSEE: Deactivation Standards per \nEng Manual 7.2; FPInnovations Doc",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 2179.325439453125,
+      "y": 358.5028991699219,
+      "desc": "",
+      "resources": [],
+      "width": 180,
+      "height": 80
+    },
+    {
+      "id": 24,
+      "name": "11a. Signed & Sealed Deactivation Prescription",
+      "role": "Engineering",
+      "processType": "LRM Update",
+      "x": 2179.397216796875,
+      "y": 472.77996826171875,
+      "desc": "11a. Signed & Sealed Deactivation Prescription",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 25,
+      "name": "12. Complete Deactivation",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 2389.839599609375,
+      "y": 378.1729431152344,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 26,
+      "name": "12a. Signed & Sealed \nDeactivation Conformance \nfor Complex Deact; \nSimple Deact as needed",
+      "role": "Engineering",
+      "processType": "LRM Update",
+      "x": 2388.703857421875,
+      "y": 513.8130187988281,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 60
+    },
+    {
+      "id": 27,
+      "name": "13. Post Deactivation Hazard Signage",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 887.3270263671875,
+      "y": 661.0242919921875,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 28,
+      "name": "14. ET - Update LRM Activities",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 886.40185546875,
+      "y": 826.9291381835938,
+      "desc": "Deactivation Tab: \nDate \nLevel = Permanent\nAccess Type\nMethod = Deact or Rehab\nActual Costs\n\nAttributes Status Tab: \nState = Deactivated\nSteward = former BCTS",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 29,
+      "name": "14a. Delete any future planned inspections for deactivated road sections",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 885.2483520507812,
+      "y": 958.8397216796875,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 30,
+      "name": "15. Entire Road Deactivated?",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 1061.911376953125,
+      "y": 796.1256103515625,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 100
+    },
+    {
+      "id": 31,
+      "name": "YES",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 1168.136962890625,
+      "y": 831.5838623046875,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 32,
+      "name": "NO",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 1061.9114990234375,
+      "y": 741.7230224609375,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 33,
+      "name": "16. ENG TECH \nSplits Road into 2 \nUpdate segments in \nLRM & RRS",
+      "role": "TBD",
+      "processType": "Process",
+      "x": 1062.060791015625,
+      "y": 655.0391845703125,
+      "desc": "",
+      "resources": [],
+      "width": 110,
+      "height": 60
+    },
+    {
+      "id": 34,
+      "name": "17. Complete FS301 Discontinue & Close Document; Attach Exhibit A",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 1317.719482421875,
+      "y": 826.7125854492188,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": null
+    },
+    {
+      "id": 35,
+      "name": "18. Submit FS301 to DM for Signature",
+      "role": "Communication Point",
+      "processType": "Process",
+      "x": 1491.6427001953125,
+      "y": 826.8618774414062,
+      "desc": "",
+      "resources": [],
+      "width": 110,
+      "height": null
+    },
+    {
+      "id": 36,
+      "name": "19a. Digital scan of signed FS301 on road file",
+      "role": "Engineering",
+      "processType": "LRM Update",
+      "x": 1664.5965576171875,
+      "y": 760.0020751953125,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 37,
+      "name": "19. DM Forwards signed FS301 to FLAG in Victoria, cc to BCTS",
+      "role": "Communication Point",
+      "processType": "Process",
+      "x": 1663.8935546875,
+      "y": 826.8954467773438,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 38,
+      "name": "20. Update Master FSR Designation List",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 1824.8560791015625,
+      "y": 826.8954467773438,
+      "desc": "",
+      "resources": [],
+      "width": 110,
+      "height": null
+    },
+    {
+      "id": 39,
+      "name": "Consolidate Proposed Road \nDeactivation Input from \nvarious sources\n>Planner \n>FT Feedback\n>LRM >Deact Tracker \n>Evaluate Road Amortization",
+      "role": "Engineering",
+      "processType": "Start/End",
+      "x": 95.01637991615424,
+      "y": 91.5918172285516,
+      "desc": "New node description",
+      "resources": [],
+      "width": 90,
+      "height": 90
+    },
+    {
+      "id": 40,
+      "name": "See Road Inspection, Maintenance, Deactivation Process",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 94.3440471524823,
+      "y": 458.8832126539371,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 41,
+      "name": "YES",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 2038.1036376953125,
+      "y": 383.53978345698977,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 42,
+      "name": "YES",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 2168.943603515625,
+      "y": 226.9866344421963,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 43,
+      "name": "NO",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 94.10365461623599,
+      "y": 393.43857283571265,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    }
+  ],
+  "links": [
+    {
+      "source": 3,
+      "target": 4,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 15,
+      "target": 20,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "arrowMode": "end",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 28,
+      "target": 30,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 30,
+      "target": 32,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 31,
+      "target": 34,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 35,
+      "target": 37,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 39,
+      "target": 1,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 1,
+      "target": 43,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 43,
+      "target": 40,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 21,
+      "target": 42,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 42,
+      "target": 25,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 20,
+      "target": 22,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 22,
+      "target": 41,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 41,
+      "target": 23,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 23,
+      "target": 25,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 37,
+      "target": 36,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 2382.8636478506605,
+          "y": 627.3493766953703
+        },
+        {
+          "x": 892.2778120759237,
+          "y": 615.4246940781825
+        }
+      ],
+      "sourceAnchor": "bottom",
+      "targetAnchor": "top"
+    }
+  ],
+  "navLinks": [],
+  "annotations": [
+    {
+      "id": 1,
+      "type": "text",
+      "x": 445.0363660835359,
+      "y": -93.5510871316279,
+      "text": "SP- Site Plan",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "x": 422.10482718379626,
+      "y": -74.82041771265746,
+      "text": "W&R - Waste & Residue",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "x": 429.4552503608794,
+      "y": -54.76478138618582,
+      "text": "RUP - Road Use Permit",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "x": 436.39351330033264,
+      "y": -35.91301543566516,
+      "text": "RP - Road Permit",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "x": 430.69074433874266,
+      "y": -15.384211928178189,
+      "text": "FTA - Forest Tenures Administration",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "x": 423.36276175410774,
+      "y": 6.309826939771995,
+      "text": "FLTC - Forest Licence to Cut",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "x": 488.7163384142651,
+      "y": -123.49717528673816,
+      "text": "Acronyms",
+      "fontSize": 22,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 8,
+      "stroke": "#94a3b8",
+      "strokeWidth": 2,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1,
+      "type": "rect",
+      "x": 397.4954034418146,
+      "y": -117.62061457876516,
+      "width": 283.2248885339418,
+      "height": 147.7315205933936
+    }
+  ]
+}

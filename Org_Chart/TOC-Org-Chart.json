@@ -1,0 +1,1328 @@
+{
+  "appName": "Plandala",
+  "dataVersion": 2,
+  "headerTitle": "TOC",
+  "headerSubtitle": "Org Chart",
+  "roleCategoryLabel": "Responsibility",
+  "processTypeCategoryLabel": "Process Types",
+  "settings": {
+    "nodeWidth": 130,
+    "nodeHeight": 40,
+    "linkOpacity": 0.4,
+    "linkWidth": 2,
+    "linkColor": "#6b7280",
+    "arrowSize": 12,
+    "isLightMode": true,
+    "defaultZoomLevel": 0.6964404506369007,
+    "defaultPanX": 229.3613407426442,
+    "defaultPanY": 13.01748425246302
+  },
+  "roleColors": {
+    "Management": "#f58080",
+    "BA/Admin": "#ffed29",
+    "Planning": "#3ed8fe",
+    "GIS": "#7404dc",
+    "Practices Forester": "#008a09",
+    "Operations Tech": "#fe7cdb",
+    "Engineering Tech": "#999999",
+    "Forest Tech": "#24ff50",
+    "IRL": "#a8ffe5",
+    "Vacant": "#ffffff"
+  },
+  "processTypes": {
+    "default-1": {
+      "label": "All Zones",
+      "shape": "rect",
+      "dashed": false
+    },
+    "default-2": {
+      "label": "Columbia",
+      "shape": "hexagon",
+      "dashed": false
+    },
+    "default-3": {
+      "label": "North Zone",
+      "shape": "rect",
+      "dashed": true
+    },
+    "south-zone": {
+      "label": "South Zone",
+      "shape": "hexagon",
+      "dashed": true
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Timber Sales Manager\nChristian Guay",
+      "role": "Management",
+      "processType": "default-1",
+      "x": 898.1304321289062,
+      "y": 85.84965896606445,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 2,
+      "name": "Woodlands Manager\nVacant",
+      "role": "Management",
+      "processType": "default-1",
+      "x": 1102.8123291515053,
+      "y": 162.11782297553006,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 3,
+      "name": "Woodlands Supervisor\nJennifer Wright",
+      "role": "Management",
+      "processType": "default-3",
+      "x": 907.8085141223235,
+      "y": 243.07890014740025,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 4,
+      "name": "Woodlands Supervisor\nJoanna deMontreuil",
+      "role": "Management",
+      "processType": "south-zone",
+      "x": 1304.6042828574248,
+      "y": 256.3022052143934,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 5,
+      "name": "Woodlands Supervisor\nBrianna Lukkar",
+      "role": "Management",
+      "processType": "default-2",
+      "x": 1720.0323276147535,
+      "y": 251.10874268333822,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 6,
+      "name": "Engineering Officer\nBrad Wolgram",
+      "role": "Management",
+      "processType": "default-1",
+      "x": 2033.176257375207,
+      "y": 247.7801320161285,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 7,
+      "name": "Engineering Tech\nMatt McClusky",
+      "role": "Engineering Tech",
+      "processType": "default-3",
+      "x": 2037.1804516477607,
+      "y": 336.73146809335316,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 8,
+      "name": "Engineering Tech\nGraham Williams",
+      "role": "Engineering Tech",
+      "processType": "south-zone",
+      "x": 2035.6826715842335,
+      "y": 413.77439997924546,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 9,
+      "name": "Engineering Tech\nVacant",
+      "role": "Engineering Tech",
+      "processType": "default-2",
+      "x": 2040.7969923746962,
+      "y": 488.2701416015625,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 10,
+      "name": "Practices Forester\nLluvia Lopez",
+      "role": "Management",
+      "processType": "default-2",
+      "x": 1810.299398543636,
+      "y": 331.6434994053586,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 11,
+      "name": "Practices Forester\nMadeline Kruschke",
+      "role": "Practices Forester",
+      "processType": "default-2",
+      "x": 1639.2417703535273,
+      "y": 332.2266845703125,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 12,
+      "name": "Practices Forester\nMatthew Alves",
+      "role": "Practices Forester",
+      "processType": "south-zone",
+      "x": 1221.8748095131446,
+      "y": 332.8722453614197,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 13,
+      "name": "Practices Forester\nVacant",
+      "role": "Vacant",
+      "processType": "south-zone",
+      "x": 1395.0031746423917,
+      "y": 336.7314758300781,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 14,
+      "name": "Practices Forester\nColin Langston",
+      "role": "Practices Forester",
+      "processType": "default-3",
+      "x": 821.7976139758007,
+      "y": 331.8913269042969,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 15,
+      "name": "Practices Forester\nDylan Harvey",
+      "role": "Practices Forester",
+      "processType": "default-3",
+      "x": 984.2979651274713,
+      "y": 331.89129638671875,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 16,
+      "name": "Practices Forester\nVacant",
+      "role": "Vacant",
+      "processType": "default-3",
+      "x": 817.978405705397,
+      "y": 424.57086181640625,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 17,
+      "name": "Practices Forester\nKyle Wright",
+      "role": "Practices Forester",
+      "processType": "default-3",
+      "x": 989.5019977587424,
+      "y": 424.2355041503906,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 18,
+      "name": "Practices Forester\nBrook allard",
+      "role": "Practices Forester",
+      "processType": "south-zone",
+      "x": 1225.459541925036,
+      "y": 421.427490234375,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 19,
+      "name": "Practices Forester\nStephanie Dacre",
+      "role": "Practices Forester",
+      "processType": "south-zone",
+      "x": 1399.4377472851374,
+      "y": 424.8515319824219,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 20,
+      "name": "Operations Tech\nJeff Schochter",
+      "role": "Operations Tech",
+      "processType": "default-2",
+      "x": 1816.9412036155636,
+      "y": 427.36151123046875,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 21,
+      "name": "Operations Tech\nRonan Lee Kam",
+      "role": "Operations Tech",
+      "processType": "default-2",
+      "x": 1639.6818652366576,
+      "y": 423.20697021484375,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 22,
+      "name": "Operations Tech\nKassandra Harding",
+      "role": "Operations Tech",
+      "processType": "south-zone",
+      "x": 1398.8339038108772,
+      "y": 509.7974853515625,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 23,
+      "name": "Operations Tech\nEmily Campbell",
+      "role": "Operations Tech",
+      "processType": "south-zone",
+      "x": 1233.9238543724011,
+      "y": 511.83673095703125,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 24,
+      "name": "Operations Tech\nVacant",
+      "role": "Operations Tech",
+      "processType": "south-zone",
+      "x": 1235.8979296897837,
+      "y": 593.9258422851562,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 25,
+      "name": "Operations Tech\nJesse Wildeman",
+      "role": "Operations Tech",
+      "processType": "south-zone",
+      "x": 1396.1784472679087,
+      "y": 594.1168212890625,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 26,
+      "name": "Operations Tech\nTeresa Chrapko",
+      "role": "Operations Tech",
+      "processType": "default-3",
+      "x": 991.6909332275391,
+      "y": 513.2215576171875,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 27,
+      "name": "Operations Tech\nJillian Schochter",
+      "role": "Operations Tech",
+      "processType": "default-3",
+      "x": 819.856730959316,
+      "y": 510.451904296875,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 28,
+      "name": "Forest Tech\nKate Lawrence ",
+      "role": "Forest Tech",
+      "processType": "default-2",
+      "x": 1823.8652606223986,
+      "y": 514.6063842773438,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 29,
+      "name": "Forest Tech\nVacant",
+      "role": "Forest Tech",
+      "processType": "default-2",
+      "x": 1639.681697389977,
+      "y": 511.83673095703125,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 30,
+      "name": "Forest Tech\nJulia Craig",
+      "role": "Forest Tech",
+      "processType": "default-3",
+      "x": 821.2412677024788,
+      "y": 600.4664916992188,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 31,
+      "name": "Resource Professional\nVacant",
+      "role": "Vacant",
+      "processType": "default-3",
+      "x": 994.3462329124397,
+      "y": 601.851318359375,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 32,
+      "name": "Forest Operations Manager\nDavid Strahl",
+      "role": "Management",
+      "processType": "default-1",
+      "x": 390.6434363246608,
+      "y": 162.84030544002712,
+      "desc": "New node description",
+      "resources": [],
+      "width": 140,
+      "height": null
+    },
+    {
+      "id": 33,
+      "name": "Business Manager\nMichelle Boettcher",
+      "role": "Management",
+      "processType": "default-1",
+      "x": -114.75688284719536,
+      "y": 165.64193024841126,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 34,
+      "name": "Certification Standards \nOfficer\nBrad Sindlinger",
+      "role": "Management",
+      "processType": "default-1",
+      "x": 721.0488131766667,
+      "y": 240.87929111530207,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 35,
+      "name": "Land Resource Specialist\nMichael Kyler",
+      "role": "Planning",
+      "processType": "default-1",
+      "x": 292.2623152013273,
+      "y": 242.61988121812192,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 36,
+      "name": "Indigenous Relations Team Lead\nLuke Kowalski",
+      "role": "Management",
+      "processType": "default-1",
+      "x": 525.2439869250373,
+      "y": 239.87890920931613,
+      "desc": "New node description",
+      "resources": [],
+      "width": 160,
+      "height": null
+    },
+    {
+      "id": 37,
+      "name": "Indigenous Relation Liaison\nJesse Grigg",
+      "role": "IRL",
+      "processType": "default-3",
+      "x": 527.5443622418234,
+      "y": 333.98523642273824,
+      "desc": "New node description",
+      "resources": [],
+      "width": 160,
+      "height": null
+    },
+    {
+      "id": 38,
+      "name": "Indigenous Relation Liaison\nVacant",
+      "role": "IRL",
+      "processType": "default-2",
+      "x": 532.1450685706994,
+      "y": 506.7514741224527,
+      "desc": "New node description",
+      "resources": [],
+      "width": 160,
+      "height": null
+    },
+    {
+      "id": 39,
+      "name": "Indigenous Relation Liaison\nVacant",
+      "role": "IRL",
+      "processType": "south-zone",
+      "x": 530.0229301452637,
+      "y": 424.8775423043072,
+      "desc": "New node description",
+      "resources": [],
+      "width": 160,
+      "height": null
+    },
+    {
+      "id": 40,
+      "name": "Planning Officer\nGrace Chomitz",
+      "role": "Management",
+      "processType": "default-1",
+      "x": 104.47796800940665,
+      "y": 244.47789708850325,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 41,
+      "name": "GIS Team Lead\nDaniel Otto",
+      "role": "GIS",
+      "processType": "default-1",
+      "x": 297.36123336688854,
+      "y": 337.5498009701172,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 42,
+      "name": "GIS Analyst\nSarah Blair",
+      "role": "GIS",
+      "processType": "default-1",
+      "x": 300.34102630615234,
+      "y": 423.81549072265625,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 43,
+      "name": "GIS Analyst\nKieran Watts",
+      "role": "GIS",
+      "processType": "default-1",
+      "x": 301.2547073364258,
+      "y": 509.6988525390625,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 44,
+      "name": "Planning Forester\nLeanne Jennings",
+      "role": "Planning",
+      "processType": "south-zone",
+      "x": 105.73286056518555,
+      "y": 337.6747374011451,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 45,
+      "name": "Planning Forester\nMitchell Long",
+      "role": "Planning",
+      "processType": "default-2",
+      "x": 109.3874626159668,
+      "y": 424.7291564941406,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 46,
+      "name": "Planning Forester\nVacant",
+      "role": "Planning",
+      "processType": "default-3",
+      "x": 116.69670104980469,
+      "y": 512.4398193359375,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 47,
+      "name": "Business Analyst\nGerald Ward",
+      "role": "BA/Admin",
+      "processType": "default-1",
+      "x": -115.16349220275879,
+      "y": 245.5699797176806,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 48,
+      "name": "Business Admin\nJenni Stevens",
+      "role": "BA/Admin",
+      "processType": "default-1",
+      "x": -116.0296401977539,
+      "y": 337.4198148725346,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 49,
+      "name": "Business Admin\nAleasha Yess",
+      "role": "BA/Admin",
+      "processType": "default-1",
+      "x": -114.7734146118164,
+      "y": 426.23810977844204,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 50,
+      "name": "Business Admin\nVacant",
+      "role": "BA/Admin",
+      "processType": "default-1",
+      "x": -113.72389221191406,
+      "y": 510.07035786412234,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 51,
+      "name": "Business Admin\nVacant ",
+      "role": "BA/Admin",
+      "processType": "default-1",
+      "x": -113.72389602661133,
+      "y": 588.2883143283539,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 1096.2875034439035,
+          "y": 119.43455455035541
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 927.3160864961292,
+          "y": 186.60334432145058
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 1301.6329238253786,
+          "y": 194.98157715529192
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 1717.59882278605,
+          "y": 218.08869063046893
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": "right",
+      "targetAnchor": "right"
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": "right",
+      "targetAnchor": "right"
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": "right",
+      "targetAnchor": "right"
+    },
+    {
+      "source": 2,
+      "target": 6,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 2021.1025885421786,
+          "y": 226.4669496965604
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 5,
+      "target": 10,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 20,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 28,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": "left"
+    },
+    {
+      "source": 5,
+      "target": 11,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 21,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 29,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": "right"
+    },
+    {
+      "source": 4,
+      "target": 13,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 12,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 19,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": "left"
+    },
+    {
+      "source": 4,
+      "target": 18,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 22,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 1312.502142389338,
+          "y": 428.54940295870597
+        },
+        {
+          "x": 1321.5285497999064,
+          "y": 527.2864097089401
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "left"
+    },
+    {
+      "source": 4,
+      "target": 23,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 1309.4881966700634,
+          "y": 437.5911723427736
+        },
+        {
+          "x": 1309.1941585936788,
+          "y": 524.5453879747799
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "right"
+    },
+    {
+      "source": 4,
+      "target": 25,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 1311.858110888986,
+          "y": 440.4762665965576
+        },
+        {
+          "x": 1321.5440192094688,
+          "y": 608.7825561341576
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "left"
+    },
+    {
+      "source": 4,
+      "target": 24,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 1310.2997572030774,
+          "y": 437.67987811561375
+        },
+        {
+          "x": 1309.4882086130222,
+          "y": 611.7964890468025
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "right"
+    },
+    {
+      "source": 3,
+      "target": 15,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 908.4047197321034,
+          "y": 347.17808227639296
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 14,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 901.5828207845387,
+          "y": 349.8018599365414
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 17,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 906.1528625069383,
+          "y": 389.6299671071168
+        },
+        {
+          "x": 909.3506483320374,
+          "y": 438.96722794573094
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 16,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 904.3254991777685,
+          "y": 407.4461762944958
+        },
+        {
+          "x": 903.4118633368242,
+          "y": 438.0535754114166
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 26,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 911.4348334619751,
+          "y": 521.5867818975782
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "left"
+    },
+    {
+      "source": 3,
+      "target": 27,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 896.6703821641825,
+          "y": 524.9211470646202
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "right"
+    },
+    {
+      "source": 3,
+      "target": 31,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 913.6549968623035,
+          "y": 596.5822387178373
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "left"
+    },
+    {
+      "source": 3,
+      "target": 30,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 897.6661096638221,
+          "y": 592.4707813832258
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "right"
+    },
+    {
+      "source": 1,
+      "target": 32,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 391.3449927106995,
+          "y": 125.17761476663239
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 1,
+      "target": 33,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": -109.33708570613635,
+          "y": 129.74587515608007
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 32,
+      "target": 34,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 713.3140656478415,
+          "y": 196.01094154887954
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 32,
+      "target": 36,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 520.2038046056167,
+          "y": 186.5653424259246
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 32,
+      "target": 35,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 292.4596502053065,
+          "y": 184.46630499739965
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 32,
+      "target": 40,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 112.99307475822854,
+          "y": 192.86240167247448
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 427.59728485472573,
+          "y": 265.65491407724653
+        },
+        {
+          "x": 428.39266884600397,
+          "y": 349.96534943871853
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    },
+    {
+      "source": 36,
+      "target": 39,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 429.98345478369316,
+          "y": 264.85951291022116
+        },
+        {
+          "x": 433.1649761480939,
+          "y": 440.6388078442714
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    },
+    {
+      "source": 36,
+      "target": 38,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 428.3927242049615,
+          "y": 266.4502445937448
+        },
+        {
+          "x": 438.73266386030224,
+          "y": 519.3816066619145
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 213.2603724862214,
+          "y": 363.8349611667425
+        },
+        {
+          "x": 214.64516862879947,
+          "y": 442.07837318456467
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    },
+    {
+      "source": 41,
+      "target": 43,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 213.26037248622137,
+          "y": 364.5273783115179
+        },
+        {
+          "x": 220.87694963465884,
+          "y": 518.9369547275332
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "arrowMode": "none",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 40,
+      "target": 44,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 24.082684632459905,
+          "y": 268.3839418106153
+        },
+        {
+          "x": 17.850903626600484,
+          "y": 352.16677300263177
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    },
+    {
+      "source": 40,
+      "target": 45,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 22.697829362074117,
+          "y": 269.07642285156976
+        },
+        {
+          "x": 24.77505981556534,
+          "y": 434.56473557282186
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    },
+    {
+      "source": 40,
+      "target": 46,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": 23.39024269215227,
+          "y": 269.7688113861158
+        },
+        {
+          "x": 30.31445037953013,
+          "y": 523.8869096450874
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    },
+    {
+      "source": 33,
+      "target": 47,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": -201.2683594505742,
+          "y": 186.39388310085522
+        },
+        {
+          "x": -206.80775001453904,
+          "y": 264.6373034633276
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    },
+    {
+      "source": 33,
+      "target": 48,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": -201.26835945057414,
+          "y": 187.77873646389233
+        },
+        {
+          "x": -208.88500526356248,
+          "y": 349.80494987140844
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    },
+    {
+      "source": 33,
+      "target": 49,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": -199.88348701405073,
+          "y": 187.0863100207924
+        },
+        {
+          "x": -204.7304947655156,
+          "y": 440.51195060383003
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    },
+    {
+      "source": 33,
+      "target": 50,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": -200.57598426746867,
+          "y": 185.7014609492893
+        },
+        {
+          "x": -204.03807380604292,
+          "y": 522.2175265468228
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    },
+    {
+      "source": 33,
+      "target": 51,
+      "arrowMode": "none",
+      "waypoints": [
+        {
+          "x": -201.26835945057414,
+          "y": 187.08629905353746
+        },
+        {
+          "x": -200.57596900867966,
+          "y": 604.6154948390589
+        }
+      ],
+      "sourceAnchor": "left",
+      "targetAnchor": "left"
+    }
+  ],
+  "navLinks": [],
+  "annotations": []
+}

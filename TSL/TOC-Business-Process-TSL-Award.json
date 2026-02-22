@@ -1,0 +1,1754 @@
+{
+  "appName": "Plandala",
+  "dataVersion": 2,
+  "headerTitle": "TOC Business Process",
+  "headerSubtitle": "TSL Award",
+  "roleCategoryLabel": "Responsibility or Process Description",
+  "processTypeCategoryLabel": "Process Types",
+  "settings": {
+    "nodeWidth": 130,
+    "nodeHeight": 40,
+    "linkOpacity": 0.4,
+    "linkWidth": 2,
+    "linkColor": "#6b7280",
+    "arrowSize": 12,
+    "isLightMode": true,
+    "defaultZoomLevel": 0.5278031643091589,
+    "defaultPanX": 137.38622033451702,
+    "defaultPanY": 5.858639222266788
+  },
+  "roleColors": {
+    "Engineering": "#c7c2c2",
+    "LRM or Other Corp. Systems": "#18c00c",
+    "Development": "#8b5cf6",
+    "Communication Point": "#917221",
+    "BA / Admin": "#f5ed00",
+    "TSL Award": "#f0a505",
+    "Other": "#f7f7f7"
+  },
+  "processTypes": {
+    "process": {
+      "label": "Process",
+      "shape": "rect",
+      "dashed": false
+    },
+    "document": {
+      "label": "Document",
+      "shape": "rect",
+      "dashed": true
+    },
+    "outside-process": {
+      "label": "Outside Process",
+      "shape": "circle",
+      "dashed": false
+    },
+    "process-tbd": {
+      "label": "Process to be developed",
+      "shape": "circle",
+      "dashed": true
+    },
+    "queue": {
+      "label": "Queue or Wait Period",
+      "shape": "triangle",
+      "dashed": false
+    },
+    "corporate-accounting": {
+      "label": "Process: Corporate Accounting Mandatory",
+      "shape": "hexagon",
+      "dashed": false
+    },
+    "records-management": {
+      "label": "Process: Records Management Protocol",
+      "shape": "hexagon",
+      "dashed": true
+    },
+    "decision": {
+      "label": "Decision",
+      "shape": "diamond",
+      "dashed": false
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "START TSL Award Process",
+      "role": "Other",
+      "processType": "process",
+      "x": -50,
+      "y": 250,
+      "desc": "Starting point",
+      "resources": [],
+      "width": 120,
+      "height": 40
+    },
+    {
+      "id": 2,
+      "name": "2. Hand-off Meeting with Development",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 110,
+      "y": 250,
+      "desc": "Inform special conditions. Safety form received from PRF;\nReview complete",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 3,
+      "name": "3. OPS TECH - Exhibit A",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 270,
+      "y": 250,
+      "desc": "Exhibit 'A' Submission (Blocks). Check external shape bdys & Ex A",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 4,
+      "name": "4. OPS TECH Communicates with BA",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 430,
+      "y": 250,
+      "desc": "Initiates TSL folder and Documents",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 5,
+      "name": "5. OPS TECH - Appraisal",
+      "role": "LRM or Other Corp. Systems",
+      "processType": "process",
+      "x": 588.6093139648438,
+      "y": 215.23194885253906,
+      "desc": "Complete or Review Appraisal in Cengea. Refer to SOP",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 6,
+      "name": "6. OPS TECH - Receives Rate",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 756.1815185546875,
+      "y": 216.00155639648438,
+      "desc": "Receives Preliminary Rate from Cengea",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 7,
+      "name": "7. PRF-Dev - Complete VCU",
+      "role": "Development",
+      "processType": "process",
+      "x": 931.4007568359375,
+      "y": 216.52418518066406,
+      "desc": "Complete Variable Cost (VCU) Calculator",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 8,
+      "name": "8. ECAS Peer Review",
+      "role": "TSL Award",
+      "processType": "records-management",
+      "x": 1116.9896850585938,
+      "y": 216.0949249267578,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 9,
+      "name": "9. Modified Rate Required?",
+      "role": "Communication Point",
+      "processType": "decision",
+      "x": 1294.6490478515625,
+      "y": 205.5185089111328,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 60
+    },
+    {
+      "id": 10,
+      "name": "10. ECAS OPS TECH Submits Appraisal to Region",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 1547.8743896484375,
+      "y": 209.96853637695312,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": 50
+    },
+    {
+      "id": 11,
+      "name": "11. Approved?",
+      "role": "Communication Point",
+      "processType": "decision",
+      "x": 1739.3677978515625,
+      "y": 206.24317932128906,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 60
+    },
+    {
+      "id": 12,
+      "name": "12. Rate Received by submitter",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 1982.745849609375,
+      "y": 216.214111328125,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 13,
+      "name": "13. Check FTA To Ensure Exhibit 'A' Cleared by District (Blocks)",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 2169.21337890625,
+      "y": 213.3842315673828,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": 50
+    },
+    {
+      "id": 14,
+      "name": "14. OPS TECH Build TSL & Safety Highlights Document",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 2356.0028076171875,
+      "y": 213.09420776367188,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": 50
+    },
+    {
+      "id": 15,
+      "name": "15. PRF works with IRL",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 2530.2279052734375,
+      "y": 211.06251525878906,
+      "desc": "Check that Consultation Summary & Due Diligence are completed",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 16,
+      "name": "16. OPS TECH Notify WLS of TSL Doc readiness",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 2357.8499755859375,
+      "y": 332.57623291015625,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 17,
+      "name": "17. WLS completes TSL Review",
+      "role": "TSL Award",
+      "processType": "document",
+      "x": 2358.8660888671875,
+      "y": 451.4160461425781,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 18,
+      "name": "18. WLS Fill Out Apportionment",
+      "role": "LRM or Other Corp. Systems",
+      "processType": "process",
+      "x": 2359.627685546875,
+      "y": 561.8319702148438,
+      "desc": "Fill out Apportionment on Mark Screen & Commitment TAB in LRM",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 19,
+      "name": "19. WLS completes TSL Request to Post Form & sends to BA",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 2361.048828125,
+      "y": 662.5172729492188,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": 50
+    },
+    {
+      "id": 20,
+      "name": "20. TSL Tender Completion & BA Peer Review",
+      "role": "BA / Admin",
+      "processType": "process",
+      "x": 2360.5152587890625,
+      "y": 767.5498657226562,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": 50
+    },
+    {
+      "id": 21,
+      "name": "21. BA notifies WLS that TSL Docs are prepared for posting",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 2169.66650390625,
+      "y": 768.1993408203125,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": 50
+    },
+    {
+      "id": 22,
+      "name": "22. WLS completes final TSL Review & advises approval for posting",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 2169.6668701171875,
+      "y": 659.8756713867188,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 50
+    },
+    {
+      "id": 23,
+      "name": "23. Post to BC Bid Site",
+      "role": "BA / Admin",
+      "processType": "process",
+      "x": 2169.378173828125,
+      "y": 559.8363647460938,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 24,
+      "name": "24. Receive/ Review Enquiries",
+      "role": "BA / Admin",
+      "processType": "process",
+      "x": 2171.1334228515625,
+      "y": 452.2855529785156,
+      "desc": "All must be sent to\n \nTOC.TIMBERAUCTIONS@gov.bc.ca\n\nNo Direct Responses",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 25,
+      "name": "25. Amendment Required? (WLS)",
+      "role": "TSL Award",
+      "processType": "decision",
+      "x": 1956.7261962890625,
+      "y": 401.3883056640625,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 80
+    },
+    {
+      "id": 26,
+      "name": "26. Tender Opening Process",
+      "role": "BA / Admin",
+      "processType": "process",
+      "x": 1666.8504638671875,
+      "y": 508.447998046875,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 27,
+      "name": "27. High Bidder Eligible?",
+      "role": "BA / Admin",
+      "processType": "decision",
+      "x": 1409.2601318359375,
+      "y": 513.7131958007812,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 60
+    },
+    {
+      "id": 28,
+      "name": "28. Bid Accepted",
+      "role": "BA / Admin",
+      "processType": "process",
+      "x": 1151.7095947265625,
+      "y": 503.1827392578125,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 29,
+      "name": "29. Admin Updates (LRM, FTA, BC Admin)",
+      "role": "BA / Admin",
+      "processType": "process",
+      "x": 961.2439575195312,
+      "y": 502.1614074707031,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 30,
+      "name": "30. Award Letter & TSL Sent to Licensee for signature, security",
+      "role": "BA / Admin",
+      "processType": "process",
+      "x": 770.9601440429688,
+      "y": 502.16143798828125,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": 50
+    },
+    {
+      "id": 31,
+      "name": "31. Signature & Security",
+      "role": "BA / Admin",
+      "processType": "queue",
+      "x": 605.8947143554688,
+      "y": 492.5981140136719,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": 60
+    },
+    {
+      "id": 32,
+      "name": "32. TSL (& RP) Issued, TSM Signs",
+      "role": "BA / Admin",
+      "processType": "process",
+      "x": 442.4883728027344,
+      "y": 501.65185546875,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 33,
+      "name": "33. ECAS 2nd Pass",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 263.55140686035156,
+      "y": 503.10333251953125,
+      "desc": "Update Bonus Bid & Sale Term",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 34,
+      "name": "END Post Award Hand Over",
+      "role": "Other",
+      "processType": "process",
+      "x": 93.03418350219727,
+      "y": 503.1033020019531,
+      "desc": "End point",
+      "resources": [],
+      "width": 120,
+      "height": 40
+    },
+    {
+      "id": 100,
+      "name": "3a. ET Exhibit 'A' Submission for ROAD PERMIT",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 270,
+      "y": 120,
+      "desc": "Provide Reference # to OPS TECH",
+      "resources": [],
+      "width": null,
+      "height": 60
+    },
+    {
+      "id": 101,
+      "name": "5a. Multiphase Contractor",
+      "role": "Other",
+      "processType": "process",
+      "x": 590,
+      "y": 112.06595611572266,
+      "desc": "inputs initial Appraisal info",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 102,
+      "name": "5b. OPS TECH - Communicate changes with Dev",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 588.3066711425781,
+      "y": 349.2310791015625,
+      "desc": "Communication with Development regarding any Changes Req'd",
+      "resources": [],
+      "width": null,
+      "height": 60
+    },
+    {
+      "id": 103,
+      "name": "9a. MODIFIED RATE Approval Process",
+      "role": "TSL Award",
+      "processType": "records-management",
+      "x": 1293.5349731445312,
+      "y": 14.039623260498047,
+      "desc": "- Complete Rationale for Approval of Modified Stumpage Rate (FS1374)\n(e.g., Lump Sum, VCU Rate, Exec. Dir. Rate)\n-Attach VCU Calculation Form (if applicable)\n-Provide Forms to WLS\n-Submit to Executive Director",
+      "resources": [],
+      "width": 170,
+      "height": 80
+    },
+    {
+      "id": 104,
+      "name": "YES",
+      "role": "Communication Point",
+      "processType": "decision",
+      "x": 1294.252685546875,
+      "y": 138.18622589111328,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 105,
+      "name": "NO",
+      "role": "Communication Point",
+      "processType": "decision",
+      "x": 1422.09716796875,
+      "y": 221.09335327148438,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 106,
+      "name": "Executive Director Approval",
+      "role": "Other",
+      "processType": "outside-process",
+      "x": 1549.183837890625,
+      "y": 23.968682289123535,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 60
+    },
+    {
+      "id": 107,
+      "name": "YES",
+      "role": "Communication Point",
+      "processType": "decision",
+      "x": 1862.9373779296875,
+      "y": 221.09132385253906,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 108,
+      "name": "NO",
+      "role": "Communication Point",
+      "processType": "decision",
+      "x": 1738.398193359375,
+      "y": 300.7611541748047,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 109,
+      "name": "11a. Make Changes to Appraisal in ECAS",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 1548.59619140625,
+      "y": 296.8482360839844,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 110,
+      "name": "12a. Ops Tech Saves ECAS Rate e-mail on TSL File",
+      "role": "TSL Award",
+      "processType": "document",
+      "x": 1983.4998779296875,
+      "y": 290.7259979248047,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": 50
+    },
+    {
+      "id": 111,
+      "name": "13a. ET to check RRS",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 2169.6407470703125,
+      "y": 123.62287139892578,
+      "desc": " Ensure RP Exhibit 'A' Is cleared by District",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 112,
+      "name": "14a. ET builds Road Permit and RUP Documents",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 2356.580810546875,
+      "y": 105.36605453491211,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": 50
+    },
+    {
+      "id": 113,
+      "name": "25a. Prepare Amendment (BA)",
+      "role": "BA / Admin",
+      "processType": "process",
+      "x": 1958.4813232421875,
+      "y": 558.0812072753906,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 114,
+      "name": "YES",
+      "role": "TSL Award",
+      "processType": "decision",
+      "x": 1956.7261962890625,
+      "y": 496.3655090332031,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 115,
+      "name": "NO",
+      "role": "TSL Award",
+      "processType": "decision",
+      "x": 1819.339111328125,
+      "y": 512.1218566894531,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 116,
+      "name": "NO BIDS",
+      "role": "BA / Admin",
+      "processType": "decision",
+      "x": 1667.256591796875,
+      "y": 597.7538452148438,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 117,
+      "name": "Bids",
+      "role": "BA / Admin",
+      "processType": "decision",
+      "x": 1547.2565307617188,
+      "y": 513.7132263183594,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 118,
+      "name": "26a. BA LRM Update: 'No Bid Sale'",
+      "role": "LRM or Other Corp. Systems",
+      "processType": "process",
+      "x": 1667.256591796875,
+      "y": 674.774169921875,
+      "desc": "Licence Activity; 'No Bid Sale'",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 119,
+      "name": "26b. Meet w/ WLS, Review TSL Options",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 1667.2567138671875,
+      "y": 764.0800170898438,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 120,
+      "name": "26c. Re-Offer?",
+      "role": "TSL Award",
+      "processType": "decision",
+      "x": 1667.6627807617188,
+      "y": 851.8338623046875,
+      "desc": "",
+      "resources": [],
+      "width": 110,
+      "height": 60
+    },
+    {
+      "id": 121,
+      "name": "Do Not Proceed to Sale Process",
+      "role": "Development",
+      "processType": "process-tbd",
+      "x": 1919.56005859375,
+      "y": 857.5123901367188,
+      "desc": "",
+      "resources": [],
+      "width": 60,
+      "height": 60
+    },
+    {
+      "id": 122,
+      "name": "NO",
+      "role": "TSL Award",
+      "processType": "decision",
+      "x": 1787.3233032226562,
+      "y": 868.1680908203125,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 123,
+      "name": "YES",
+      "role": "TSL Award",
+      "processType": "decision",
+      "x": 1544.2959594726562,
+      "y": 867.1692504882812,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 124,
+      "name": "26d. Re-Work of Development Deliverables Requ'd?",
+      "role": "TSL Award",
+      "processType": "decision",
+      "x": 1402.5374145507812,
+      "y": 833.7562866210938,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 100
+    },
+    {
+      "id": 125,
+      "name": "NO",
+      "role": "TSL Award",
+      "processType": "decision",
+      "x": 1255.71142578125,
+      "y": 867.0651245117188,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 126,
+      "name": "YES",
+      "role": "TSL Award",
+      "processType": "decision",
+      "x": 1402.5374145507812,
+      "y": 964.7550659179688,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 127,
+      "name": "26e. Communication with Development re: Amendments / Changes",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 1402.1209106445312,
+      "y": 1028.0639038085938,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 60
+    },
+    {
+      "id": 128,
+      "name": "Development",
+      "role": "Development",
+      "processType": "outside-process",
+      "x": 1562.8991088867188,
+      "y": 1027.0072021484375,
+      "desc": "",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 129,
+      "name": "26f. Communication: WLS notifies TSM",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 1119.6759033203125,
+      "y": 762.549072265625,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 130,
+      "name": "26g. Update Rate",
+      "role": "TSL Award",
+      "processType": "process",
+      "x": 1121.4344482421875,
+      "y": 861.8935546875,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 131,
+      "name": "Go To Step 20",
+      "role": "Other",
+      "processType": "process",
+      "x": 923.4013366699219,
+      "y": 861.8934936523438,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 132,
+      "name": "27a. TSM Discretion; Reviews Options",
+      "role": "Other",
+      "processType": "decision",
+      "x": 1411.0152587890625,
+      "y": 352.16973876953125,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 80
+    },
+    {
+      "id": 133,
+      "name": "(YES) Eligible",
+      "role": "Other",
+      "processType": "decision",
+      "x": 1152.3643798828125,
+      "y": 377.0203857421875,
+      "desc": "",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 134,
+      "name": "(NO) Ineligible",
+      "role": "Other",
+      "processType": "decision",
+      "x": 1667.911376953125,
+      "y": 378.0812072753906,
+      "desc": "",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 135,
+      "name": "28a. Sales Record email to TOC & DM",
+      "role": "BA / Admin",
+      "processType": "process",
+      "x": 1152.0952758789062,
+      "y": 589.2575073242188,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 136,
+      "name": "29a. BA LRM Update",
+      "role": "LRM or Other Corp. Systems",
+      "processType": "corporate-accounting",
+      "x": 961.2439575195312,
+      "y": 609.2575073242188,
+      "desc": "Set Auction Status to Done\n\nIn Lic. Activities Tab, Set Auction Status to Done",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 137,
+      "name": "32a. Systems Update",
+      "role": "BA / Admin",
+      "processType": "process",
+      "x": 441.9306335449219,
+      "y": 588.8964233398438,
+      "desc": "-Systems Update\n-E-mail Licencee & Ops Tech issuance documents\n-Silviculture Tech notified",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 138,
+      "name": "32b. BA LRM Update",
+      "role": "LRM or Other Corp. Systems",
+      "processType": "corporate-accounting",
+      "x": 444.03407287597656,
+      "y": 675.2067260742188,
+      "desc": "Lic. Issued Date & Lic. Expiry Date",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 139,
+      "name": "Issues",
+      "role": "LRM or Other Corp. Systems",
+      "processType": "process",
+      "x": 588.6606482012191,
+      "y": 294.5164478779134,
+      "desc": "",
+      "resources": [],
+      "width": 40,
+      "height": 20
+    },
+    {
+      "id": 140,
+      "name": "YES",
+      "role": "BA / Admin",
+      "processType": "decision",
+      "x": 1278.431258864401,
+      "y": 506.81719970703125,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 141,
+      "name": "NO",
+      "role": "BA / Admin",
+      "processType": "decision",
+      "x": 1410.0620270139354,
+      "y": 455.9199523925781,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 142,
+      "name": "Do not Proceed to Sale Process",
+      "role": "BA / Admin",
+      "processType": "process-tbd",
+      "x": 1511.9577287726308,
+      "y": 613.0299682617188,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 9,
+      "target": 104,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 9,
+      "target": 105,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 104,
+      "target": 103,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 103,
+      "target": 106,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 105,
+      "target": 10,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 106,
+      "target": 10,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 11,
+      "target": 107,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 11,
+      "target": 108,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 107,
+      "target": 12,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 108,
+      "target": 109,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 109,
+      "target": 10,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 12,
+      "target": 110,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 111,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 25,
+      "target": 114,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 25,
+      "target": 115,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 114,
+      "target": 113,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 115,
+      "target": 26,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 26,
+      "target": 116,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 28,
+      "target": 135,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 29,
+      "target": 136,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 32,
+      "target": 137,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 100,
+      "arrowMode": "reverse",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 101,
+      "arrowMode": "reverse",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 116,
+      "target": 118,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 118,
+      "target": 119,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 119,
+      "target": 120,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 120,
+      "target": 122,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 120,
+      "target": 123,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 122,
+      "target": 121,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 123,
+      "target": 124,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 124,
+      "target": 125,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 124,
+      "target": 126,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 126,
+      "target": 127,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 130,
+      "target": 131,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 113,
+      "target": 23,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 139,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 139,
+      "target": 102,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": "bottom",
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 112,
+      "arrowMode": "both",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 134,
+      "target": 26,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 132,
+      "target": 134,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 132,
+      "target": 133,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 133,
+      "target": 28,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 27,
+      "target": 140,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 140,
+      "target": 28,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 26,
+      "target": 117,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 117,
+      "target": 27,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 27,
+      "target": 141,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 141,
+      "target": 132,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 127,
+      "target": 128,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 125,
+      "target": 130,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 130,
+      "target": 129,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 137,
+      "target": 138,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    }
+  ],
+  "navLinks": [],
+  "annotations": [
+    {
+      "id": 1,
+      "type": "text",
+      "x": 821.8549034523826,
+      "y": -59.21893836934895,
+      "text": "Acronyms",
+      "fontSize": 20,
+      "stroke": "#0f0f0f",
+      "strokeWidth": 4,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "x": 737.379698984609,
+      "y": -16.288907069758025,
+      "text": "VCU - Variable Cost Upset",
+      "fontSize": 14,
+      "stroke": "#6b6f76",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "x": 734.6099846291402,
+      "y": 8.638201218053126,
+      "text": "ECAS - Electronic Commerce Apprasial System",
+      "fontSize": 14,
+      "stroke": "#6b6f76",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "x": 749.8432304787495,
+      "y": 32.18048379938236,
+      "text": "RP - Road Permit",
+      "fontSize": 14,
+      "stroke": "#6b6f76",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "x": 740.1493980812888,
+      "y": 57.107596855565205,
+      "text": "RUP - Road Use Permit",
+      "fontSize": 14,
+      "stroke": "#6b6f76",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "x": 741.5341942238664,
+      "y": 104.19213769952876,
+      "text": "RRS - Resource Road System",
+      "fontSize": 14,
+      "stroke": "#6b6f76",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "x": 742.919020884023,
+      "y": 79.26502893488042,
+      "text": "RRS - Resource Road System",
+      "fontSize": 14,
+      "stroke": "#6b6f76",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 8,
+      "stroke": "#000000",
+      "strokeWidth": 2,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1,
+      "type": "rect",
+      "x": 694.4496605324609,
+      "y": -39.831182081297364,
+      "width": 357.28866577148347,
+      "height": 162.02623993158304
+    }
+  ]
+}

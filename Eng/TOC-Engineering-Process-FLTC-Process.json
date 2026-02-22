@@ -1,0 +1,1131 @@
+{
+  "appName": "Plandala",
+  "dataVersion": 2,
+  "headerTitle": "TOC Engineering Process",
+  "headerSubtitle": "FLTC Process",
+  "roleCategoryLabel": "Responsibility",
+  "processTypeCategoryLabel": "Process Type",
+  "settings": {
+    "nodeWidth": 130,
+    "nodeHeight": 40,
+    "linkOpacity": 0.4,
+    "linkWidth": 2,
+    "linkColor": "#6b7280",
+    "arrowSize": 12,
+    "isLightMode": true,
+    "defaultZoomLevel": 0.4547149699531196,
+    "defaultPanX": 58.793061469852546,
+    "defaultPanY": 67.64719238046587
+  },
+  "roleColors": {
+    "Engineering": "#a2a3a4",
+    "LRM": "#00cc22",
+    "GIS": "#b800b1",
+    "TSL Award": "#ff9500",
+    "BA/Admin": "#f5ed00",
+    "Communication Point": "#f9c08b",
+    "Process Details": "#ffffff",
+    "STOP": "#ff0000"
+  },
+  "processTypes": {
+    "Process": {
+      "shape": "rect",
+      "label": "Process",
+      "dashed": false
+    },
+    "Document": {
+      "shape": "rect",
+      "dashed": true,
+      "label": "Document"
+    },
+    "Decision": {
+      "shape": "diamond",
+      "label": "Decision",
+      "dashed": false
+    },
+    "Start/End": {
+      "shape": "circle",
+      "label": "Outside Process",
+      "dashed": false
+    },
+    "process-to-be-developed": {
+      "label": "Process to be Developed",
+      "shape": "circle",
+      "dashed": true
+    },
+    "LRM Update": {
+      "shape": "hexagon",
+      "label": "Corporate Accounting Process",
+      "dashed": false
+    },
+    "Outside Process": {
+      "shape": "hexagon",
+      "dashed": true,
+      "label": "Records Management Protocol"
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "START\nFLTC Required",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 112.00194549560547,
+      "y": 299.7084503173828,
+      "desc": "",
+      "resources": [],
+      "width": 90,
+      "height": 60
+    },
+    {
+      "id": 2,
+      "name": "Sell R/W Timber?",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 225.07289123535156,
+      "y": 289.5529479980469,
+      "desc": "1. Sell R/W timber w/ Construction Contract?",
+      "resources": [],
+      "width": 80,
+      "height": 80
+    },
+    {
+      "id": 3,
+      "name": "YES",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 226.23292541503906,
+      "y": 200.7301025390625,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 4,
+      "name": "NO",
+      "role": "Engineering",
+      "processType": "Decision",
+      "x": 223.47946166992188,
+      "y": 456.0012512207031,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 10,
+      "name": "2. ET Requests FLTC G Drive folder from BA",
+      "role": "Communication Point",
+      "processType": "Process",
+      "x": 353.65704345703125,
+      "y": 195.7015380859375,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 11,
+      "name": "3. ET Creates FLTC in FTA, Specifies Management Unit",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 536.125732421875,
+      "y": 195.40306091308594,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 12,
+      "name": "4. Create FLTC License & Block",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 705.595458984375,
+      "y": 194.872802734375,
+      "desc": "Block Activities \n- Logging Start Date (Done)\nBlock Allocation \n- Estimated Volume",
+      "resources": [],
+      "width": 110,
+      "height": null
+    },
+    {
+      "id": 13,
+      "name": "5. ET submits spatial for FLTC & FSR Exhibit A's through DOS Sharepoint",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 883.5993041992188,
+      "y": 195.676513671875,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": null
+    },
+    {
+      "id": 14,
+      "name": "Submission Accepted?",
+      "role": "GIS",
+      "processType": "Decision",
+      "x": 1042.447265625,
+      "y": 176.40402221679688,
+      "desc": "Sends Email to ET",
+      "resources": [],
+      "width": 80,
+      "height": 80
+    },
+    {
+      "id": 15,
+      "name": "YES",
+      "role": "GIS",
+      "processType": "Decision",
+      "x": 1140.398681640625,
+      "y": 201.86610412597656,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 16,
+      "name": "NO",
+      "role": "GIS",
+      "processType": "Decision",
+      "x": 1041.6435546875,
+      "y": 283.5779113769531,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 17,
+      "name": "7. Resolve Conflicts",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 1041.0799560546875,
+      "y": 338.5035400390625,
+      "desc": "",
+      "resources": [],
+      "width": 80,
+      "height": null
+    },
+    {
+      "id": 18,
+      "name": "8. District Clears Exhibit A",
+      "role": "Process Details",
+      "processType": "Start/End",
+      "x": 1233.709716796875,
+      "y": 197.0438232421875,
+      "desc": "8. District Clears Exhibit A",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 19,
+      "name": "9. ET checks status & clearance, Approves Exhibit A through SNCSC Inbox",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 1387.478759765625,
+      "y": 196.51356506347656,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": null
+    },
+    {
+      "id": 20,
+      "name": "10. ET Prepares FLTC Documents; Cut & Haul Timber & Attach Exhibit A",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 1568.3504638671875,
+      "y": 196.51356506347656,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": null
+    },
+    {
+      "id": 21,
+      "name": "11. ET Makes Stumpage Rate Request to Timber Pricing Coordinator",
+      "role": "Communication Point",
+      "processType": "Process",
+      "x": 1743.2894287109375,
+      "y": 196.7870330810547,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 22,
+      "name": "12a. File Records to G Drive",
+      "role": "Engineering",
+      "processType": "Outside Process",
+      "x": 1902.9320068359375,
+      "y": 303.6445617675781,
+      "desc": "",
+      "resources": [],
+      "width": 110,
+      "height": null
+    },
+    {
+      "id": 23,
+      "name": "12. Timber Pricing Generates Stumpage Rate",
+      "role": "Process Details",
+      "processType": "Start/End",
+      "x": 1903.3310546875,
+      "y": 187.14242553710938,
+      "desc": "",
+      "resources": [],
+      "width": 60,
+      "height": 60
+    },
+    {
+      "id": 24,
+      "name": "13. ET Submits Short Form back to Timber Pricing Coordinator",
+      "role": "Communication Point",
+      "processType": "Process",
+      "x": 2063.340087890625,
+      "y": 196.7870330810547,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 25,
+      "name": "14. FLTC Award Process; FTA update - License = Issued",
+      "role": "BA/Admin",
+      "processType": "Process",
+      "x": 2224.118896484375,
+      "y": 196.7870330810547,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 26,
+      "name": "15. Construction Complete; Wood marked & hauled",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 2388.609130859375,
+      "y": 196.53024291992188,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 27,
+      "name": "16a. Update Logging Residue & Waste System",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 2686.229736328125,
+      "y": 196.56356811523438,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 28,
+      "name": "16. Contractor completes Waste Assessment",
+      "role": "Process Details",
+      "processType": "Start/End",
+      "x": 2537.515869140625,
+      "y": 191.63800048828125,
+      "desc": "",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 29,
+      "name": "17. ET completes LRM inputs",
+      "role": "LRM",
+      "processType": "LRM Update",
+      "x": 2848.97265625,
+      "y": 196.83702087402344,
+      "desc": "Block Activities \n- Logging Completed Date (Done); \n- Balance Harvest Volume",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 30,
+      "name": "17a. Delete Spatial",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 2848.97265625,
+      "y": 269.50831604003906,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 31,
+      "name": "18. Notify BA Contract 688, FLTC are complete",
+      "role": "Communication Point",
+      "processType": "Process",
+      "x": 3015.037353515625,
+      "y": 196.0333251953125,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 32,
+      "name": "19. Close FLTC file in FTA, Cut Block = LC",
+      "role": "BA/Admin",
+      "processType": "Outside Process",
+      "x": 3183.803955078125,
+      "y": 196.30679321289062,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 33,
+      "name": "STOP",
+      "role": "STOP",
+      "processType": "Process",
+      "x": 3346.03271484375,
+      "y": 197.5240478515625,
+      "desc": "",
+      "resources": [],
+      "width": 60,
+      "height": 40
+    },
+    {
+      "id": 40,
+      "name": "20. ET Requests FLTC G Drive folder from BA",
+      "role": "Communication Point",
+      "processType": "Process",
+      "x": 335.08453369140625,
+      "y": 450.8182830810547,
+      "desc": "",
+      "resources": [],
+      "width": 110,
+      "height": null
+    },
+    {
+      "id": 41,
+      "name": "21. ET Creates FLTC in FTA, Specifies Management Unit",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 500.3181457519531,
+      "y": 451.2462615966797,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": null
+    },
+    {
+      "id": 42,
+      "name": "22. Create FLTC License & Block",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 653.1727294921875,
+      "y": 450.20921325683594,
+      "desc": "Block Activities - Logging Start Date (Done) \nBlock Allocation - Estimated Volume",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 43,
+      "name": "23. ET submits spatial; for FLCT & FSR Exhibit 'A's through DOS SharePoint",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 818.9090576171875,
+      "y": 450.20921325683594,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": null
+    },
+    {
+      "id": 44,
+      "name": "25. Submission Accepted? Sends email to ET",
+      "role": "GIS",
+      "processType": "Decision",
+      "x": 1000.4661254882812,
+      "y": 429.40013122558594,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 80
+    },
+    {
+      "id": 45,
+      "name": "YES",
+      "role": "GIS",
+      "processType": "Decision",
+      "x": 1127.3929443359375,
+      "y": 454.1418914794922,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 46,
+      "name": "NO",
+      "role": "GIS",
+      "processType": "Decision",
+      "x": 1000.7159423828125,
+      "y": 542.0943145751953,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 47,
+      "name": "25a. Resolve Conflicts",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 1000.6552734375,
+      "y": 599.1761627197266,
+      "desc": "",
+      "resources": [],
+      "width": 80,
+      "height": null
+    },
+    {
+      "id": 48,
+      "name": "26. District Clears Exhibit A",
+      "role": "Process Details",
+      "processType": "Start/End",
+      "x": 1222.7490234375,
+      "y": 448.91380310058594,
+      "desc": "",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 49,
+      "name": "27. ET checks status & clearance, Approves Exhibit A through SNCSC Inbox",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 1397.7442626953125,
+      "y": 448.8749237060547,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": null
+    },
+    {
+      "id": 50,
+      "name": "28. ET Prepares FLTC Documents, Attach Ex. A",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 1599.0159912109375,
+      "y": 449.98280334472656,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 51,
+      "name": "29. FLTC Award Process",
+      "role": "BA/Admin",
+      "processType": "Process",
+      "x": 1784.9925537109375,
+      "y": 450.7213592529297,
+      "desc": "FTA update - License = Issued",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 52,
+      "name": "30. Construction Complete; Wood marked & decked",
+      "role": "Engineering",
+      "processType": "Process",
+      "x": 1967.10107421875,
+      "y": 451.05174255371094,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 53,
+      "name": "31. Add decked Volume to TSL Block - Allocation Tab - 'RoW Vol'",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 2153.15478515625,
+      "y": 451.7514190673828,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": null
+    },
+    {
+      "id": 54,
+      "name": "31a. Sale & Removal of Wood included in TSL Documents",
+      "role": "TSL Award",
+      "processType": "Process",
+      "x": 2152.532958984375,
+      "y": 532.4994049072266,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 55,
+      "name": "32. ET completes LRM Updates",
+      "role": "LRM",
+      "processType": "LRM Update",
+      "x": 2327.197021484375,
+      "y": 452.08177185058594,
+      "desc": "Block Activities - Logging Completed Date (Done)",
+      "resources": [],
+      "width": 90,
+      "height": null
+    },
+    {
+      "id": 56,
+      "name": "32a. Delete Spatial",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 2326.458740234375,
+      "y": 532.8878631591797,
+      "desc": "",
+      "resources": [],
+      "width": 90,
+      "height": null
+    },
+    {
+      "id": 57,
+      "name": "33. Notify BA Contract 688 & FLTC are complete",
+      "role": "Communication Point",
+      "processType": "Process",
+      "x": 2497.197509765625,
+      "y": 453.48121643066406,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 58,
+      "name": "34. Close FLTC file in FTA, Cut Block = LC",
+      "role": "BA/Admin",
+      "processType": "Process",
+      "x": 2675.39892578125,
+      "y": 454.5890350341797,
+      "desc": "",
+      "resources": [],
+      "width": 110,
+      "height": null
+    },
+    {
+      "id": 59,
+      "name": "STOP",
+      "role": "STOP",
+      "processType": "Process",
+      "x": 2814.958251953125,
+      "y": 454.64625549316406,
+      "desc": "",
+      "resources": [],
+      "width": 60,
+      "height": 40
+    },
+    {
+      "id": 60,
+      "name": "Interior Stumpage Rate Request Form",
+      "role": "Process Details",
+      "processType": "Process",
+      "x": 1743.3630520399224,
+      "y": 266.08049148748967,
+      "desc": "New node description",
+      "resources": [],
+      "width": 100,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "arrowMode": "end",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 27,
+      "target": 29,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 29,
+      "target": 31,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 44,
+      "target": 45,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 44,
+      "target": 46,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 45,
+      "target": 48,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 51,
+      "target": 52,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 52,
+      "target": 53,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 53,
+      "target": 54,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 53,
+      "target": 55,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 55,
+      "target": 56,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 55,
+      "target": 57,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 57,
+      "target": 58,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 58,
+      "target": 59,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 10,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 21,
+      "target": 60,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 23,
+      "target": 22,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 26,
+      "target": 28,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 28,
+      "target": 27,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 40,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    }
+  ],
+  "navLinks": [],
+  "annotations": [
+    {
+      "id": 1,
+      "type": "text",
+      "x": 536.2632097818309,
+      "y": -15.072160040026969,
+      "text": "FLTC - Forest Licence to Cut",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "x": 532.3450414722759,
+      "y": 5.638215402488406,
+      "text": "W&R - Waste and Residue",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "x": 542.4203734697437,
+      "y": 24.109627065177193,
+      "text": "FTA - Forest TEnures Administration",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "x": 535.1437510983761,
+      "y": 42.02131014116918,
+      "text": "RoW - Right of Way",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "x": 521.1502436583818,
+      "y": 62.17193573266525,
+      "text": "SNCSC - Status & Clearance Service Component",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "x": 621.6342870777446,
+      "y": -46.66608639367557,
+      "text": "Acronyms",
+      "fontSize": 22,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 7,
+      "stroke": "#94a3b8",
+      "strokeWidth": 2,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1,
+      "type": "rect",
+      "x": 505.13110902665375,
+      "y": -39.95720460432726,
+      "width": 323.4985758463541,
+      "height": 122.6044769287109
+    }
+  ]
+}

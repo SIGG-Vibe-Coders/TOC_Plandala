@@ -1,0 +1,1244 @@
+{
+  "appName": "Plandala",
+  "dataVersion": 2,
+  "headerTitle": "TOC Business Process",
+  "headerSubtitle": "Silviculture Process",
+  "roleCategoryLabel": "Responsibility",
+  "processTypeCategoryLabel": "Process Type",
+  "settings": {
+    "nodeWidth": 130,
+    "nodeHeight": 40,
+    "linkOpacity": 0.4,
+    "linkWidth": 2,
+    "linkColor": "#6b7280",
+    "arrowSize": 12,
+    "isLightMode": true,
+    "defaultZoomLevel": 0.6529129224720953,
+    "defaultPanX": 366.19837244392966,
+    "defaultPanY": -103.54646590705147
+  },
+  "roleColors": {
+    "Silviculture": "#cf5e8f",
+    "LRM": "#0cb300",
+    "Other": "#ffffff",
+    "Communication": "#fedf6c",
+    "Start": "#00ff62",
+    "End": "#ff0000"
+  },
+  "processTypes": {
+    "Process": {
+      "shape": "rect",
+      "label": "Process",
+      "dashed": false
+    },
+    "Decision": {
+      "shape": "diamond",
+      "label": "Decision",
+      "dashed": false
+    },
+    "Start/End": {
+      "shape": "circle",
+      "label": "Outside Process",
+      "dashed": false
+    },
+    "Communication": {
+      "shape": "hexagon",
+      "label": "Corporate Accounting Mandatory",
+      "dashed": false
+    },
+    "LRM Update": {
+      "shape": "hexagon",
+      "label": "Records Management Protocol",
+      "dashed": true
+    },
+    "Document": {
+      "shape": "rect",
+      "dashed": true,
+      "label": "Document"
+    },
+    "Outside Process": {
+      "shape": "rect",
+      "dashed": true
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Ops Tech Harvesting Notification To Silvi Forester re: Harvest Start",
+      "role": "Communication",
+      "processType": "Process",
+      "x": 264.11817932128906,
+      "y": 264.2077331542969,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 2,
+      "name": "1. Multi-Phase Contractor LRM Entry",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 87.84847259521484,
+      "y": 264.31390380859375,
+      "desc": "i) Populate Silviculture Regime at final Site Plan (Dev-Multiphase)",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 3,
+      "name": "Ops Tech Notification To Silvi Forester",
+      "role": "Communication",
+      "processType": "Process",
+      "x": 793.6494140625,
+      "y": 263.0846252441406,
+      "desc": "Harvest Complete (Post Award 13). Prov. 30 days, Best 14 days",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 4,
+      "name": "2a. Silvi Forester Review Site Information in LRM",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 614.7048950195312,
+      "y": 263.61505126953125,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 5,
+      "name": "2. Start Planting Plan & Sowing Process",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 441.17291259765625,
+      "y": 264.2958679199219,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 6,
+      "name": "3. Post Harvest Silviculture Recce",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 979.3507690429688,
+      "y": 262.96392822265625,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 7,
+      "name": "4. Silvi Forester Create Planting Plan in LRM",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 1156.3391723632812,
+      "y": 262.27276611328125,
+      "desc": "i) Revise regime\nii) Ensure dates aligned \niii) Enter Post Harvest Recce info\niv) Finalize Planting Rx",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 8,
+      "name": "4a .Silviculture Sowing & Planting Process",
+      "role": "Silviculture",
+      "processType": "Start/End",
+      "x": 1156.35888671875,
+      "y": 142.62884521484375,
+      "desc": "See also Sowing Request & Planting User Guide\nTEAMS – Working Docs",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 9,
+      "name": "5. Review Site Plan Amendment Req'd?",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 1330.307861328125,
+      "y": 232.16818237304688,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 100
+    },
+    {
+      "id": 10,
+      "name": "YES",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 1330.2882080078125,
+      "y": 184.1460723876953,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 11,
+      "name": "NO",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 1578.5347900390625,
+      "y": 265.8741149902344,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 12,
+      "name": "5a. SP Amendment Process",
+      "role": "Silviculture",
+      "processType": "Start/End",
+      "x": 1423.0118408203125,
+      "y": 178.8648223876953,
+      "desc": "See SP Amend HOW TO DOC TEAMS",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 13,
+      "name": "5b. Silvi Forester Update Data in LRM, RESULTS",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 1575.6983642578125,
+      "y": 179.197265625,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 14,
+      "name": "5c. Silvi Forester Schedule/Update Silv Activities",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 1758.30615234375,
+      "y": 180.11981201171875,
+      "desc": "Check Tabular & Spatial inputs",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 15,
+      "name": "6. Silvi Forester Verify & Update against actual Planned Activities",
+      "role": "LRM",
+      "processType": "Document",
+      "x": 1757.6766357421875,
+      "y": 262.108642578125,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 16,
+      "name": "7. Communication with Harvesting re: completion of W&R on TSL",
+      "role": "Communication",
+      "processType": "Process",
+      "x": 1757.277099609375,
+      "y": 346.7052917480469,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": null
+    },
+    {
+      "id": 17,
+      "name": "8. Silvi Forester Generate RG/FG Due Report (Oct. 31)",
+      "role": "LRM",
+      "processType": "Document",
+      "x": 1757.3751220703125,
+      "y": 434.2632751464844,
+      "desc": "8. Silvi Forester Generate RG/FG Due Report (Oct. 31)",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 18,
+      "name": "9. Review Site Plan Amendment Req'd?",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 1757.3912353515625,
+      "y": 525.6522521972656,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 70
+    },
+    {
+      "id": 19,
+      "name": "9a. SP Amendment Process",
+      "role": "Silviculture",
+      "processType": "Start/End",
+      "x": 1568.9097900390625,
+      "y": 540.9233093261719,
+      "desc": "9a. SP Amendment Process",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 20,
+      "name": "10. Silvi Forester Check & Update LRM Activity Details (Tabular & Spatial)",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 1758.0802001953125,
+      "y": 645.4342346191406,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": null
+    },
+    {
+      "id": 21,
+      "name": "11a. Generate Treatment Area Maps (from Templates)",
+      "role": "Silviculture",
+      "processType": "Document",
+      "x": 1758.4656982421875,
+      "y": 739.3210754394531,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 22,
+      "name": "12. Silviculture Contract Process",
+      "role": "Silviculture",
+      "processType": "Start/End",
+      "x": 1593.8598022460938,
+      "y": 735.3727111816406,
+      "desc": "Possible Contract Types\n-Planting\n-Brushing\n-MSP\n-Surveys",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 23,
+      "name": "12a. PLANTING ",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 1593.9280395507812,
+      "y": 843.9691467285156,
+      "desc": "Seed Transfer: Assess Seedlot Compliance & Report Trees Outside Transfer Limits",
+      "resources": [],
+      "width": 90,
+      "height": null
+    },
+    {
+      "id": 24,
+      "name": "13. Review Site Plan Amendment Req'd?",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 1432.2628784179688,
+      "y": 721.0715026855469,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 80
+    },
+    {
+      "id": 25,
+      "name": "13a. SP Amendment Process",
+      "role": "Silviculture",
+      "processType": "Start/End",
+      "x": 1342.4088134765625,
+      "y": 647.8662414550781,
+      "desc": "",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 26,
+      "name": "13b. Silvi Forester Update Data in LRM, RESULTS",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 1198.51806640625,
+      "y": 648.9444274902344,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 27,
+      "name": "13c. Silvi Forester Enter Completed Activity Details in RESULTS",
+      "role": "LRM",
+      "processType": "LRM Update",
+      "x": 1197.88525390625,
+      "y": 741.4153747558594,
+      "desc": "Due/Compliance Reporting: May 31",
+      "resources": [],
+      "width": 160,
+      "height": null
+    },
+    {
+      "id": 28,
+      "name": "14. \nMilestone Activity? \nLegal Obligation?",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 1011.2718505859375,
+      "y": 716.1222229003906,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 90
+    },
+    {
+      "id": 29,
+      "name": "YES\nMilestone",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 882.4291381835938,
+      "y": 725.7947692871094,
+      "desc": "undefined",
+      "resources": [],
+      "width": 70,
+      "height": 70
+    },
+    {
+      "id": 30,
+      "name": "NOT Milestone",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 1011.759033203125,
+      "y": 613.4336242675781,
+      "desc": "undefined",
+      "resources": [],
+      "width": 70,
+      "height": 70
+    },
+    {
+      "id": 31,
+      "name": "14a. Silvi Forester RESULTS Activity Reporting (Create XML File)",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 1011.1072998046875,
+      "y": 538.9158630371094,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": null
+    },
+    {
+      "id": 32,
+      "name": "14b. Silvi Forester Update Data in LRM, RESULTS",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 1011.7589721679688,
+      "y": 465.0072021484375,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 33,
+      "name": "15. \nRegen Met \nwithin RG Deadline? \nALL SU's?",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 727.2945976257324,
+      "y": 721.4908752441406,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": 80
+    },
+    {
+      "id": 34,
+      "name": "YES \nRG within \nDeadline",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 567.8394622802734,
+      "y": 725.7407531738281,
+      "desc": "undefined",
+      "resources": [],
+      "width": 70,
+      "height": 70
+    },
+    {
+      "id": 35,
+      "name": "NO \nRG Exceeded \nDeadline",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 728.49267578125,
+      "y": 597.3439025878906,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 70
+    },
+    {
+      "id": 36,
+      "name": "16. Report RG Delay Met",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 454.0313491821289,
+      "y": 740.4236145019531,
+      "desc": "",
+      "resources": [],
+      "width": 80,
+      "height": null
+    },
+    {
+      "id": 37,
+      "name": "17. Silvi Forester Block Activity: 'RG Delay' = Done, Block State = RG",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 309.0928421020508,
+      "y": 740.7518615722656,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 38,
+      "name": "18. \nFG Met within \nFTG Deadline? \nALL SU's?",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 144.99897003173828,
+      "y": 725.5520935058594,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 70
+    },
+    {
+      "id": 39,
+      "name": "YES\nFTG within\nDdeadline",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 144.9391212463379,
+      "y": 827.0187072753906,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 70
+    },
+    {
+      "id": 40,
+      "name": "19. Report FG Obligation Met",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 145.09309196472168,
+      "y": 940.4153137207031,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 41,
+      "name": "19a. \nSilvi Forester \nRESULTS \nForest Cover Reporting \n(Create XML File)",
+      "role": "LRM",
+      "processType": "Communication",
+      "x": 144.7956829071045,
+      "y": 1019.6740417480469,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 70
+    },
+    {
+      "id": 42,
+      "name": "20. Silvi Forester Block Activity",
+      "role": "LRM",
+      "processType": "Communication",
+      "x": 306.99346923828125,
+      "y": 941.2893981933594,
+      "desc": "Block Activity: \n- FG Met=Done\n- Block State=FG\n- CMB-Free Growing Met=Done",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 43,
+      "name": "21. Silvi Forester \nAll Blocks = FG\nSet Licence to FG",
+      "role": "LRM",
+      "processType": "Communication",
+      "x": 480.3302917480469,
+      "y": 940.5059509277344,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 44,
+      "name": "22. Archive Opening File 15 Months after FG Declaration is Submitted",
+      "role": "Silviculture",
+      "processType": "LRM Update",
+      "x": 673.7255859375,
+      "y": 940.5059509277344,
+      "desc": "22. Archive Opening File 15 Months after FG Declaration is Submitted",
+      "resources": [],
+      "width": 180,
+      "height": null
+    },
+    {
+      "id": 45,
+      "name": "Start Silviculture Process",
+      "role": "Start",
+      "processType": "Process",
+      "x": -280.6366271972656,
+      "y": 265.7189256072535,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 46,
+      "name": "Communication: PrFDev connects with Silvi PrF",
+      "role": "Communication",
+      "processType": "Process",
+      "x": -97.90672764406112,
+      "y": 265.3861491244845,
+      "desc": "regarding: Access or other potential concerns for Silvi prior to finalizing SP12a.",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 47,
+      "name": "9b.Silvi Forester Update Data in LRM, RESULTS",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 1569.8408784475694,
+      "y": 433.79407248932904,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 48,
+      "name": "YES",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 1652.3862995047664,
+      "y": 546.3162841796875,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 49,
+      "name": "YES",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 1432.4660658285256,
+      "y": 652.7412109375,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 50,
+      "name": "NO",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 1316.341765430134,
+      "y": 746.5372314453125,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 51,
+      "name": "NO\nFG Exceeded\nDeadline",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": -14.166766204216792,
+      "y": 725.7156372070312,
+      "desc": "",
+      "resources": [],
+      "width": 90,
+      "height": 70
+    },
+    {
+      "id": 52,
+      "name": "Non\nCompliance\nProcess\nReport to C&E",
+      "role": "Other",
+      "processType": "Start/End",
+      "x": -115.79064178466797,
+      "y": 603.5689086914062,
+      "desc": "New node description",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 53,
+      "name": "End Silviculture Process",
+      "role": "End",
+      "processType": "Process",
+      "x": 867.2622372191761,
+      "y": 939.6824951171875,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "source": 7,
+      "target": 8,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "arrowMode": "end",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 18,
+      "target": 20,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 22,
+      "target": 24,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 28,
+      "target": 30,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 33,
+      "target": 35,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 40,
+      "target": 42,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 46,
+      "target": 2,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 2,
+      "target": 1,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 1,
+      "target": 5,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 4,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 3,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 11,
+      "target": 15,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 47,
+      "target": 17,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 19,
+      "target": 47,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 18,
+      "target": 48,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 48,
+      "target": 19,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 24,
+      "target": 49,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 49,
+      "target": 25,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 24,
+      "target": 50,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 50,
+      "target": 27,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 29,
+      "target": 33,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 34,
+      "target": 36,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 38,
+      "target": 51,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 51,
+      "target": 52,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 35,
+      "target": 52,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 44,
+      "target": 53,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    }
+  ],
+  "navLinks": [],
+  "annotations": [
+    {
+      "id": 1,
+      "type": "text",
+      "x": -84.65558697567661,
+      "y": 32.920734676051076,
+      "text": "SP - Site Plan",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "x": -101.61835948930462,
+      "y": 53.91931769663098,
+      "text": "W&R - Waste and Residue",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "x": -96.70813536275477,
+      "y": 75.82092988232532,
+      "text": "MSP - Mechanical Site Prep",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "x": -111.50241767684145,
+      "y": 97.49518394659626,
+      "text": "REGEN - Regeneration",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "x": -128.9978024132011,
+      "y": 119.3588004324474,
+      "text": "FTG or FG - Free to Grow / Free Growing",
+      "fontSize": 14,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "x": -65.56121886294773,
+      "y": -6.464976956099228,
+      "text": "Acronyms",
+      "fontSize": 22,
+      "stroke": "#94a3b8",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 7,
+      "stroke": "#94a3b8",
+      "strokeWidth": 2,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1,
+      "type": "rect",
+      "x": -148.76083286504888,
+      "y": -1.3379607231300055,
+      "width": 286.13325368045184,
+      "height": 146.87157328951432
+    }
+  ]
+}

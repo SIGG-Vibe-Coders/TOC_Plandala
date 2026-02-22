@@ -1,0 +1,448 @@
+{
+  "appName": "Plandala",
+  "dataVersion": 2,
+  "headerTitle": "TOC Silviculture Process",
+  "headerSubtitle": "Sowing & Planting",
+  "roleCategoryLabel": "Responsibility",
+  "processTypeCategoryLabel": "Process Type",
+  "settings": {
+    "nodeWidth": 130,
+    "nodeHeight": 40,
+    "linkOpacity": 0.4,
+    "linkWidth": 2,
+    "linkColor": "#6b7280",
+    "arrowSize": 12,
+    "isLightMode": true,
+    "defaultZoomLevel": 1.2125732532083202,
+    "defaultPanX": 145.11750542372386,
+    "defaultPanY": -232.38452795239104
+  },
+  "roleColors": {
+    "Silviculture": "#fb74a3",
+    "LRM": "#05ab03",
+    "BA/Admin": "#edfe01",
+    "Start": "#2afe2d",
+    "End": "#ff0000"
+  },
+  "processTypes": {
+    "Process": {
+      "shape": "rect",
+      "label": "Process",
+      "dashed": false
+    },
+    "Decision": {
+      "shape": "diamond",
+      "label": "Decision",
+      "dashed": false
+    },
+    "Start/End": {
+      "shape": "circle",
+      "label": "Outside Process",
+      "dashed": false
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "START",
+      "role": "Start",
+      "processType": "Process",
+      "x": 100,
+      "y": 300,
+      "desc": "",
+      "resources": [],
+      "width": 60,
+      "height": 40
+    },
+    {
+      "id": 2,
+      "name": "1. Plan Which Blocks Need Planting",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 250,
+      "y": 300,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 3,
+      "name": "2. Develop Planting Rx to fit BEC",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 418.3609619140625,
+      "y": 300,
+      "desc": "-Species\n-BEC & Subzone\n-Amount",
+      "resources": [],
+      "width": 100,
+      "height": 40
+    },
+    {
+      "id": 4,
+      "name": "3. SPAR (Plant Wizard) Research Seedlots",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 590,
+      "y": 300,
+      "desc": "Best Available: \n1) >5% Genetic Worth\n2) Use Climate-Based Seed Transfer",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 5,
+      "name": "3a. Silvi Forester Enter Planting Rx to LRM",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 590,
+      "y": 217.66705322265625,
+      "desc": "",
+      "resources": [],
+      "width": 110,
+      "height": null
+    },
+    {
+      "id": 6,
+      "name": "4. Submit sowing Requests in SPAR",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 760,
+      "y": 300,
+      "desc": "Early Sow-Sept. 15\nLate Sow-Oct 1",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 7,
+      "name": "5. Review final Lifts",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 917.3890380859375,
+      "y": 279.1938171386719,
+      "desc": "Review Blocks, Determine Shortfalls/Overruns?",
+      "resources": [],
+      "width": 80,
+      "height": 80
+    },
+    {
+      "id": 8,
+      "name": "YES",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 918.5267944335938,
+      "y": 193.1597137451172,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 9,
+      "name": "NO",
+      "role": "Silviculture",
+      "processType": "Decision",
+      "x": 1018.2047119140625,
+      "y": 304.09759521484375,
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 10,
+      "name": "6. Look For More Trees or Sell Trees",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 1121.3505859375,
+      "y": 188.71524047851562,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 11,
+      "name": "7. Final Assignment of Trees to Blocks",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 1122.1458740234375,
+      "y": 300,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 12,
+      "name": "8. Silvi Forester Transfer Info from Plant Wizard to LRM",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 1123.3255615234375,
+      "y": 418.896240234375,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 13,
+      "name": "9. Identify Any Areas Which Might Fall Outside 5% Seed Transfer Guideline",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 1122.8846435546875,
+      "y": 534.3233947753906,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": null
+    },
+    {
+      "id": 14,
+      "name": "10. Generate Planting Maps",
+      "role": "",
+      "processType": "Process",
+      "x": 918.6689758300781,
+      "y": 535.8890075683594,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 15,
+      "name": "Contract Process",
+      "role": "BA/Admin",
+      "processType": "Start/End",
+      "x": 918.1208801269531,
+      "y": 624.0468444824219,
+      "desc": "Contract Process",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 16,
+      "name": "11. PLANT",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 766.5491943359375,
+      "y": 534.9180603027344,
+      "desc": "",
+      "resources": [],
+      "width": 90,
+      "height": null
+    },
+    {
+      "id": 17,
+      "name": "12. Check Seedlots for Compliance with Transfer Guidelines",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 619.4738159179688,
+      "y": 533.9766540527344,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 18,
+      "name": "13. Silvi Forester Enter Final Planting Information in Plant Wizard and Send to LRM via Datalink",
+      "role": "LRM",
+      "processType": "Process",
+      "x": 425.1903991699219,
+      "y": 534.4325866699219,
+      "desc": "",
+      "resources": [],
+      "width": 180,
+      "height": null
+    },
+    {
+      "id": 19,
+      "name": "14. Enter Final Planting Information into RESULTS",
+      "role": "Silviculture",
+      "processType": "Process",
+      "x": 232.73057556152344,
+      "y": 533.9470520019531,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 20,
+      "name": "END",
+      "role": "End",
+      "processType": "Process",
+      "x": 98.15934753417969,
+      "y": 533.91748046875,
+      "desc": "",
+      "resources": [],
+      "width": 60,
+      "height": 40
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    }
+  ],
+  "navLinks": [],
+  "annotations": []
+}

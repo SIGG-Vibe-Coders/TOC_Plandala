@@ -50,945 +50,903 @@
 const defaultNodes = [
     {
         "id": 1,
-        "name": "START       Post Award Process",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "process",
-        "x": -50.48802185058594,
-        "y": 73.76710510253906,
-        "desc": "Starting point",
+        "name": "START\nFLTC Required",
+        "role": "LRM",
+        "processType": "Process",
+        "x": 112.00194549560547,
+        "y": 299.7084503173828,
+        "desc": "",
         "resources": [],
-        "width": 120,
-        "height": 40
+        "width": 90,
+        "height": 60
     },
     {
         "id": 2,
-        "name": "0.  TSL (& RP) Issued",
-        "role": "BA / Admin",
-        "processType": "process",
-        "x": 108,
-        "y": 74,
-        "desc": "Signed TSL Documents sent to Licensee & HARV CONFM TECH",
+        "name": "Sell R/W Timber?",
+        "role": "Engineering",
+        "processType": "Decision",
+        "x": 225.07289123535156,
+        "y": 289.5529479980469,
+        "desc": "1. Sell R/W timber w/ Construction Contract?",
         "resources": [],
-        "width": null,
-        "height": null
+        "width": 80,
+        "height": 80
     },
     {
         "id": 3,
-        "name": "1. Request \nfor Pre-Work \nLicensee\n",
-        "role": "Communication Point",
-        "processType": "queue",
-        "x": 263.9984130859375,
-        "y": 59.051788330078125,
-        "desc": "",
+        "name": "YES",
+        "role": "Engineering",
+        "processType": "Decision",
+        "x": 226.23292541503906,
+        "y": 200.7301025390625,
         "resources": [],
-        "width": 120,
-        "height": 70
+        "width": 30,
+        "height": 30
     },
     {
-        "id": 13,
-        "name": "2. HARV CONFRM TECH",
-        "role": "Post Award",
-        "processType": "document",
-        "x": 420.4826965332031,
-        "y": 73.53783416748047,
-        "desc": "Document Results of Risk Assessment on Pre-work Form CHK-01R",
+        "id": 4,
+        "name": "NO",
+        "role": "Engineering",
+        "processType": "Decision",
+        "x": 223.47946166992188,
+        "y": 456.0012512207031,
+        "resources": [],
+        "width": 30,
+        "height": 30
+    },
+    {
+        "id": 10,
+        "name": "2. ET Requests FLTC G Drive folder from BA",
+        "role": "Communication Point",
+        "processType": "Process",
+        "x": 353.65704345703125,
+        "y": 195.7015380859375,
+        "desc": "",
         "resources": [],
         "width": null,
         "height": null
     },
     {
-        "id": 15,
-        "name": "3. TSL (& RP) Pre-Work",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 587.3886108398438,
-        "y": 72.83027648925781,
-        "desc": "CHK-003 Include ET in PW if significant road",
+        "id": 11,
+        "name": "3. ET Creates FLTC in FTA, Specifies Management Unit",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 536.125732421875,
+        "y": 195.40306091308594,
+        "desc": "",
         "resources": [],
         "width": null,
+        "height": null
+    },
+    {
+        "id": 12,
+        "name": "4. Create FLTC License & Block",
+        "role": "LRM",
+        "processType": "Process",
+        "x": 705.595458984375,
+        "y": 194.872802734375,
+        "desc": "Block Activities \n- Logging Start Date (Done)\nBlock Allocation \n- Estimated Volume",
+        "resources": [],
+        "width": 110,
+        "height": null
+    },
+    {
+        "id": 13,
+        "name": "5. ET submits spatial for FLTC & FSR Exhibit A's through DOS Sharepoint",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 883.5993041992188,
+        "y": 195.676513671875,
+        "desc": "",
+        "resources": [],
+        "width": 130,
+        "height": null
+    },
+    {
+        "id": 14,
+        "name": "Submission Accepted?",
+        "role": "GIS",
+        "processType": "Decision",
+        "x": 1042.447265625,
+        "y": 176.40402221679688,
+        "desc": "Sends Email to ET",
+        "resources": [],
+        "width": 80,
+        "height": 80
+    },
+    {
+        "id": 15,
+        "name": "YES",
+        "role": "GIS",
+        "processType": "Decision",
+        "x": 1140.398681640625,
+        "y": 201.86610412597656,
+        "resources": [],
+        "width": 30,
+        "height": 30
+    },
+    {
+        "id": 16,
+        "name": "NO",
+        "role": "GIS",
+        "processType": "Decision",
+        "x": 1041.6435546875,
+        "y": 283.5779113769531,
+        "resources": [],
+        "width": 30,
+        "height": 30
+    },
+    {
+        "id": 17,
+        "name": "7. Resolve Conflicts",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 1041.0799560546875,
+        "y": 338.5035400390625,
+        "desc": "",
+        "resources": [],
+        "width": 80,
+        "height": null
+    },
+    {
+        "id": 18,
+        "name": "8. District Clears Exhibit A",
+        "role": "Process Details",
+        "processType": "Start/End",
+        "x": 1233.709716796875,
+        "y": 197.0438232421875,
+        "desc": "8. District Clears Exhibit A",
+        "resources": [],
+        "width": 40,
+        "height": 40
+    },
+    {
+        "id": 19,
+        "name": "9. ET checks status & clearance, Approves Exhibit A through SNCSC Inbox",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 1387.478759765625,
+        "y": 196.51356506347656,
+        "desc": "",
+        "resources": [],
+        "width": 150,
         "height": null
     },
     {
         "id": 20,
-        "name": "4. RUP in Place?",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 743.5457763671875,
-        "y": 72.9834213256836,
+        "name": "10. ET Prepares FLTC Documents; Cut & Haul Timber & Attach Exhibit A",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 1568.3504638671875,
+        "y": 196.51356506347656,
         "desc": "",
         "resources": [],
-        "width": null,
-        "height": 40
+        "width": 140,
+        "height": null
     },
     {
-        "id": 46,
-        "name": "Waste & Residue",
-        "role": "Post Award",
-        "processType": "outside-process",
-        "x": 585.4140925872557,
-        "y": -47.829617035080716,
-        "desc": "Contract Process",
+        "id": 21,
+        "name": "11. ET Makes Stumpage Rate Request to Timber Pricing Coordinator",
+        "role": "Communication Point",
+        "processType": "Process",
+        "x": 1743.2894287109375,
+        "y": 196.7870330810547,
+        "desc": "",
         "resources": [],
         "width": null,
         "height": null
     },
     {
-        "id": 47,
-        "name": "3a. HARV CONFM TECH",
+        "id": 22,
+        "name": "12a. File Records to G Drive",
+        "role": "Engineering",
+        "processType": "Outside Process",
+        "x": 1902.9320068359375,
+        "y": 303.6445617675781,
+        "desc": "",
+        "resources": [],
+        "width": 110,
+        "height": null
+    },
+    {
+        "id": 23,
+        "name": "12. Timber Pricing Generates Stumpage Rate",
+        "role": "Process Details",
+        "processType": "Start/End",
+        "x": 1903.3310546875,
+        "y": 187.14242553710938,
+        "desc": "",
+        "resources": [],
+        "width": 60,
+        "height": 60
+    },
+    {
+        "id": 24,
+        "name": "13. ET Submits Short Form back to Timber Pricing Coordinator",
         "role": "Communication Point",
-        "processType": "process",
-        "x": 588.0143667415848,
-        "y": 156.5581507829406,
-        "desc": "If Cruise-Based, Review Billing Process with Licensee (Must be Reported to HBS by the 7th of each Month)",
+        "processType": "Process",
+        "x": 2063.340087890625,
+        "y": 196.7870330810547,
+        "desc": "",
         "resources": [],
         "width": null,
+        "height": null
+    },
+    {
+        "id": 25,
+        "name": "14. FLTC Award Process; FTA update - License = Issued",
+        "role": "BA/Admin",
+        "processType": "Process",
+        "x": 2224.118896484375,
+        "y": 196.7870330810547,
+        "desc": "",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 26,
+        "name": "15. Construction Complete; Wood marked & hauled",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 2388.609130859375,
+        "y": 196.53024291992188,
+        "desc": "",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 27,
+        "name": "16a. Update Logging Residue & Waste System",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 2686.229736328125,
+        "y": 196.56356811523438,
+        "desc": "",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 28,
+        "name": "16. Contractor completes Waste Assessment",
+        "role": "Process Details",
+        "processType": "Start/End",
+        "x": 2537.515869140625,
+        "y": 191.63800048828125,
+        "desc": "",
+        "resources": [],
+        "width": 50,
+        "height": 50
+    },
+    {
+        "id": 29,
+        "name": "17. ET completes LRM inputs",
+        "role": "LRM",
+        "processType": "LRM Update",
+        "x": 2848.97265625,
+        "y": 196.83702087402344,
+        "desc": "Block Activities \n- Logging Completed Date (Done); \n- Balance Harvest Volume",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 30,
+        "name": "17a. Delete Spatial",
+        "role": "LRM",
+        "processType": "Process",
+        "x": 2848.97265625,
+        "y": 269.50831604003906,
+        "desc": "",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 31,
+        "name": "18. Notify BA Contract 688, FLTC are complete",
+        "role": "Communication Point",
+        "processType": "Process",
+        "x": 3015.037353515625,
+        "y": 196.0333251953125,
+        "desc": "",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 32,
+        "name": "19. Close FLTC file in FTA, Cut Block = LC",
+        "role": "BA/Admin",
+        "processType": "Outside Process",
+        "x": 3183.803955078125,
+        "y": 196.30679321289062,
+        "desc": "",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 33,
+        "name": "STOP",
+        "role": "STOP",
+        "processType": "Process",
+        "x": 3346.03271484375,
+        "y": 197.5240478515625,
+        "desc": "",
+        "resources": [],
+        "width": 60,
+        "height": 40
+    },
+    {
+        "id": 40,
+        "name": "20. ET Requests FLTC G Drive folder from BA",
+        "role": "Communication Point",
+        "processType": "Process",
+        "x": 335.08453369140625,
+        "y": 450.8182830810547,
+        "desc": "",
+        "resources": [],
+        "width": 110,
+        "height": null
+    },
+    {
+        "id": 41,
+        "name": "21. ET Creates FLTC in FTA, Specifies Management Unit",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 500.3181457519531,
+        "y": 451.2462615966797,
+        "desc": "",
+        "resources": [],
+        "width": 120,
+        "height": null
+    },
+    {
+        "id": 42,
+        "name": "22. Create FLTC License & Block",
+        "role": "LRM",
+        "processType": "Process",
+        "x": 653.1727294921875,
+        "y": 450.20921325683594,
+        "desc": "Block Activities - Logging Start Date (Done) \nBlock Allocation - Estimated Volume",
+        "resources": [],
+        "width": 100,
+        "height": null
+    },
+    {
+        "id": 43,
+        "name": "23. ET submits spatial; for FLCT & FSR Exhibit 'A's through DOS SharePoint",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 818.9090576171875,
+        "y": 450.20921325683594,
+        "desc": "",
+        "resources": [],
+        "width": 140,
+        "height": null
+    },
+    {
+        "id": 44,
+        "name": "25. Submission Accepted? Sends email to ET",
+        "role": "GIS",
+        "processType": "Decision",
+        "x": 1000.4661254882812,
+        "y": 429.40013122558594,
+        "desc": "",
+        "resources": [],
+        "width": 120,
+        "height": 80
+    },
+    {
+        "id": 45,
+        "name": "YES",
+        "role": "GIS",
+        "processType": "Decision",
+        "x": 1127.3929443359375,
+        "y": 454.1418914794922,
+        "resources": [],
+        "width": 30,
+        "height": 30
+    },
+    {
+        "id": 46,
+        "name": "NO",
+        "role": "GIS",
+        "processType": "Decision",
+        "x": 1000.7159423828125,
+        "y": 542.0943145751953,
+        "resources": [],
+        "width": 30,
+        "height": 30
+    },
+    {
+        "id": 47,
+        "name": "25a. Resolve Conflicts",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 1000.6552734375,
+        "y": 599.1761627197266,
+        "desc": "",
+        "resources": [],
+        "width": 80,
         "height": null
     },
     {
         "id": 48,
-        "name": "No",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 743.2526613768396,
-        "y": 143.4146592982786,
+        "name": "26. District Clears Exhibit A",
+        "role": "Process Details",
+        "processType": "Start/End",
+        "x": 1222.7490234375,
+        "y": 448.91380310058594,
         "desc": "",
         "resources": [],
-        "width": 30,
-        "height": 30
+        "width": 40,
+        "height": 40
     },
     {
         "id": 49,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 847.5974850312858,
-        "y": 78.21397825218058,
+        "name": "27. ET checks status & clearance, Approves Exhibit A through SNCSC Inbox",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 1397.7442626953125,
+        "y": 448.8749237060547,
         "desc": "",
         "resources": [],
-        "width": 30,
-        "height": 30
+        "width": 150,
+        "height": null
     },
     {
         "id": 50,
-        "name": "4a. RUP Required",
-        "role": "Post Award",
-        "processType": "process",
-        "x": 744.1614291499297,
-        "y": 216.86504267205862,
-        "desc": "Confirm in place with Licensee prior to start",
+        "name": "28. ET Prepares FLTC Documents, Attach Ex. A",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 1599.0159912109375,
+        "y": 449.98280334472656,
+        "desc": "",
         "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 51,
-        "name": "5. >90 Days Since Pre-work?",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 955.054627166618,
-        "y": 62.95928122527144,
-        "desc": "",
+        "name": "29. FLTC Award Process",
+        "role": "BA/Admin",
+        "processType": "Process",
+        "x": 1784.9925537109375,
+        "y": 450.7213592529297,
+        "desc": "FTA update - License = Issued",
         "resources": [],
         "width": null,
-        "height": 60
+        "height": null
     },
     {
         "id": 52,
-        "name": "NO",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1067.544794203444,
-        "y": 77.9805436202031,
+        "name": "30. Construction Complete; Wood marked & decked",
+        "role": "Engineering",
+        "processType": "Process",
+        "x": 1967.10107421875,
+        "y": 451.05174255371094,
         "desc": "",
         "resources": [],
-        "width": 30,
-        "height": 30
+        "width": null,
+        "height": null
     },
     {
         "id": 53,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 955.1200748738767,
-        "y": 146.55395550148216,
+        "name": "31. Add decked Volume to TSL Block - Allocation Tab - 'RoW Vol'",
+        "role": "LRM",
+        "processType": "Process",
+        "x": 2153.15478515625,
+        "y": 451.7514190673828,
         "desc": "",
         "resources": [],
-        "width": 30,
-        "height": 30
+        "width": 140,
+        "height": null
     },
     {
         "id": 54,
-        "name": "5a. HARV CONFM TECH",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1067.5447704598946,
-        "y": 140.76377346143465,
-        "desc": "Reviews; New Pre-work Req’d Then Proceed",
+        "name": "31a. Sale & Removal of Wood included in TSL Documents",
+        "role": "TSL Award",
+        "processType": "Process",
+        "x": 2152.532958984375,
+        "y": 532.4994049072266,
+        "desc": "",
         "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 55,
-        "name": "External Communication Process with Licensee",
-        "role": "Communication Point",
-        "processType": "outside-process",
-        "x": 883.9271333158975,
-        "y": -48.190341950473126,
-        "desc": "",
+        "name": "32. ET completes LRM Updates",
+        "role": "LRM",
+        "processType": "LRM Update",
+        "x": 2327.197021484375,
+        "y": 452.08177185058594,
+        "desc": "Block Activities - Logging Completed Date (Done)",
         "resources": [],
-        "width": 60,
-        "height": 60
+        "width": 90,
+        "height": null
     },
     {
         "id": 56,
-        "name": "6. Harvest Start and Road Construction Start",
-        "role": "Post Award",
-        "processType": "process",
-        "x": 1215.421638816729,
-        "y": 72.73875703126745,
+        "name": "32a. Delete Spatial",
+        "role": "LRM",
+        "processType": "Process",
+        "x": 2326.458740234375,
+        "y": 532.8878631591797,
         "desc": "",
         "resources": [],
-        "width": null,
+        "width": 90,
         "height": null
     },
     {
         "id": 57,
-        "name": "6b. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 1214.476430676693,
-        "y": -71.56752375567453,
-        "desc": "LRM Update Block Activity Logging Started (LS) Block Details/State = ADV to HB (Logging Started)",
+        "name": "33. Notify BA Contract 688 & FLTC are complete",
+        "role": "Communication Point",
+        "processType": "Process",
+        "x": 2497.197509765625,
+        "y": 453.48121643066406,
+        "desc": "",
         "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 58,
-        "name": "6a. HARV CONFM TECH",
-        "role": "Communication Point",
-        "processType": "process",
-        "x": 1214.833938231526,
-        "y": -0.19157440655350655,
-        "desc": "Notify Silviculture Tech, Eng Tech PLF & C&E",
+        "name": "34. Close FLTC file in FTA, Cut Block = LC",
+        "role": "BA/Admin",
+        "processType": "Process",
+        "x": 2675.39892578125,
+        "y": 454.5890350341797,
+        "desc": "",
         "resources": [],
-        "width": null,
+        "width": 110,
         "height": null
     },
     {
         "id": 59,
-        "name": "6c. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 1216.2324537303377,
-        "y": 142.4309173272657,
-        "desc": "Road Permit & Schedule C: Construct Start Date",
+        "name": "STOP",
+        "role": "STOP",
+        "processType": "Process",
+        "x": 2814.958251953125,
+        "y": 454.64625549316406,
+        "desc": "",
         "resources": [],
-        "width": null,
-        "height": null
+        "width": 60,
+        "height": 40
     },
     {
         "id": 60,
-        "name": "6d. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "process",
-        "x": 1216.232393187165,
-        "y": 209.54737681343374,
-        "desc": "EMS-LRM Pre-work (Toggle Certification Tab: Licence Level);",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 61,
-        "name": "7. Inspections",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1381.74236043248,
-        "y": 71.7084357054765,
-        "desc": "-Initial-within 10 days\n- Progress based on Risk Rating, minimum 1/month",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 62,
-        "name": "7a. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "process",
-        "x": 1381.742266197169,
-        "y": -1.7857444741722652,
-        "desc": "Updates LRM with Inspection Dates",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 63,
-        "name": "8a. Change of Plan Requested",
-        "role": "Communication Point",
-        "processType": "decision",
-        "x": 1542.8041475526081,
-        "y": 51.38027873455155,
-        "desc": "",
-        "resources": [],
-        "width": 130,
-        "height": 80
-    },
-    {
-        "id": 64,
-        "name": "YES",
-        "role": "Communication Point",
-        "processType": "decision",
-        "x": 1542.8039918198263,
-        "y": -5.634256306194288,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 65,
-        "name": "NO",
-        "role": "Communication Point",
-        "processType": "decision",
-        "x": 1644.4448024889082,
-        "y": 76.39955259354963,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 66,
-        "name": "8a. Change of Plan",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1542.8401371423167,
-        "y": -73.03003521518713,
-        "desc": "Proposal meets legal requirements",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 67,
-        "name": "8b. Change of Plan Accepted",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1543.3605227303055,
-        "y": -150.6520751954951,
-        "desc": "TSL Proceeds accordingly",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 68,
-        "name": "8c. Plan Rejected ",
-        "role": "Post Award",
-        "processType": "process",
-        "x": 1706.3123563981326,
-        "y": -73.02287477555132,
-        "desc": "Plan Returned to Licensee for Changes & Re-submission",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 69,
-        "name": "9b. CSO Document issue in EMS",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "outside-process",
-        "x": 1644.081033845509,
-        "y": 211.7541665042993,
-        "desc": "",
-        "resources": [],
-        "width": 40,
-        "height": 40
-    },
-    {
-        "id": 70,
-        "name": "9. In Conformance / Compliance?",
-        "role": "Post Award",
-        "processType": "process-tbd",
-        "x": 1770.0856911011576,
-        "y": 211.09501489721558,
-        "desc": "",
-        "resources": [],
-        "width": 40,
-        "height": 40
-    },
-    {
-        "id": 71,
-        "name": "9a. Conformance / Compliance Process",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1769.1076214973589,
-        "y": 71.50486266348165,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 73,
-        "name": "NO",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1769.1075217626096,
-        "y": 140.81639040610747,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 74,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1866.055415489026,
-        "y": 76.25718089284622,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 75,
-        "name": "10a. Licensee",
-        "role": "Communication Point",
-        "processType": "outside-process",
-        "x": 1997.7222810055102,
-        "y": -62.285482132781254,
-        "desc": "Notification re: Shutdown & Start-up",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 76,
-        "name": "10a. Operations / Shutdown - Interruption > 90 Days?",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1998.2904118185204,
-        "y": 49.78523243542581,
-        "desc": "",
-        "resources": [],
-        "width": 190,
-        "height": 80
-    },
-    {
-        "id": 77,
-        "name": "Go to Step 5",
-        "role": "Post Award",
-        "processType": "process",
-        "x": 2228.095082602009,
-        "y": 69.63053794733696,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 78,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 2128.376890695512,
-        "y": 74.71819066402324,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 79,
-        "name": "NO",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1998.132873923661,
-        "y": 155.10328003880431,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 80,
-        "name": "12. HARV CONFM TECH",
-        "role": "Communication Point",
-        "processType": "document",
-        "x": 1997.2099852128918,
-        "y": 305.1887817348019,
-        "desc": "Receives notification from Licensee;\nLogging Complete (LC) on all blocks",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 81,
-        "name": "13. Licensee Submits Completion Form",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1996.4268314057765,
-        "y": 389.24185559197684,
-        "desc": "- Licensee submits “TSL Harvest Completion & Deposit Release Form” with Harvest Complete.\n- HARV CONFM TECH completes Final\nInspection & confirms LC and outstanding obligations.",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 82,
-        "name": "11. HARV CONFM TECH",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1998.1194828192706,
-        "y": 227.59542800637755,
-        "desc": "Continues with inspections until LC",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 83,
-        "name": "14. Primary Logging Complete",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1835.452370538944,
-        "y": 379.37317479605196,
-        "desc": "",
-        "resources": [],
-        "width": 120,
-        "height": 60
-    },
-    {
-        "id": 84,
-        "name": "NO",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1847.9210292819728,
-        "y": 232.53700729862248,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 85,
-        "name": "15. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "process",
-        "x": 1583.2627646904864,
-        "y": 389.1101624811349,
-        "desc": "- LRM Logging Complete Entry\n\n- LC- Block Activity Tab (All wood felled & skid to roadside or landing)\n\n- SC-Substantial completion LRM\ntoggle at License Activity level (only if all blocks are LC)",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 86,
-        "name": "15a. HARV CONFM TECH",
-        "role": "Post Award",
-        "processType": "process",
-        "x": 1583.7897488447097,
-        "y": 468.94098490738145,
-        "desc": "Updates FTA from LS to LC to ensure Licensee 3 TSL Limit status is presented as appropriate",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 87,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1712.269928986621,
-        "y": 394.5024277346663,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 88,
-        "name": "16. HARV CONFM TECH",
-        "role": "Post Award",
-        "processType": "records-management",
-        "x": 1404.8978620593748,
-        "y": 388.75765194337225,
-        "desc": "Outstanding Obligations Letter to Licensee",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 89,
-        "name": "17. Has there been a Change of Plan resulting in a Change of Circumstance or Amendment that required documentation? Blocks or Roads?",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1134.2913809236231,
-        "y": 348.4368099117,
-        "desc": "",
-        "resources": [],
-        "width": 330,
-        "height": 120
-    },
-    {
-        "id": 90,
-        "name": "Change of Circumstance Process & Calculator",
-        "role": "Post Award",
-        "processType": "outside-process",
-        "x": 1063.9244316210822,
-        "y": 611.7021451025907,
-        "desc": "",
-        "resources": [],
-        "width": 60,
-        "height": 60
-    },
-    {
-        "id": 91,
-        "name": "Site Plan Amendment Process",
-        "role": "Post Award",
-        "processType": "outside-process",
-        "x": 1205.5346174732979,
-        "y": 613.2114923788093,
-        "desc": "",
-        "resources": [],
-        "width": 60,
-        "height": 60
-    },
-    {
-        "id": 92,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1204.3200290970271,
-        "y": 503.89936783306314,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 93,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1063.4288174589506,
-        "y": 505.11390117399276,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 94,
-        "name": "17a. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 1063.42890204069,
-        "y": 750.4588761576705,
-        "desc": "LRM\nToggle Change of Circumstance\nYES",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 95,
-        "name": "NO",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 897.031584009472,
-        "y": 394.58733414496885,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 96,
-        "name": "18. HARV CONFM TECH LRM",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 774.8466194927987,
-        "y": 389.2131102506429,
-        "desc": "LRM Change of Circumstance – NO = toggle N/A",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 97,
-        "name": "19. HARV CONFM TECH",
-        "role": "Communication Point",
-        "processType": "process",
-        "x": 595.5883278952081,
-        "y": 389.21311929913054,
-        "desc": "Notify Silviculture - Harvest Complete",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 98,
-        "name": "19a. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 595.588301557246,
-        "y": 283.8988766379881,
-        "desc": "Completes Harvest Depletion and submits to RESULTS by not later than May 31 annually.",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 99,
-        "name": "POST AWARD OUTSTANDING OBLIGATIONS PROCESS",
-        "role": "Post Award",
-        "processType": "outside-process",
-        "x": 389.4412399702933,
-        "y": 369.04654562515566,
-        "desc": "",
-        "resources": [],
-        "width": 80,
-        "height": 80
-    },
-    {
-        "id": 100,
-        "name": "20b. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 181.2314521098391,
-        "y": 195.44131733283075,
-        "desc": "Timber Mark Activity: Balance Cruise Based Harvest Vol.in HBS",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 101,
-        "name": "20a. HARV CONFM TECH LRM",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 181.40937913546168,
-        "y": 288.8835001338924,
-        "desc": "LRM - Enter “Change of Circumstance Record Post-award” record",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 102,
-        "name": "20. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": 180.12091656678348,
-        "y": 389.52940657042166,
-        "desc": "Update Activities (Roads and Blocks) Update Deactivation Dates for Road Permit & Schedule C Roads",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 103,
-        "name": "21b. BA Processes 45D",
-        "role": "BA / Admin",
-        "processType": "records-management",
-        "x": -13.763145629105338,
-        "y": 192.92208513427647,
-        "desc": "Close File Process, Retire RP",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 104,
-        "name": "21a. BA LRM Update",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "corporate-accounting",
-        "x": -13.763129266195364,
-        "y": 291.43510896807805,
-        "desc": "BA LRM Update Activities License Activity: License Closed = Done License State = HC",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 105,
-        "name": "21. Final Deposit Release",
-        "role": "Post Award",
-        "processType": "process",
-        "x": -12.003928793948518,
-        "y": 389.94812069214277,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 106,
-        "name": "Silviculture Process",
-        "role": "Silviculture",
-        "processType": "outside-process",
-        "x": -191.71507432203754,
-        "y": 381.05366171308253,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 107,
-        "name": "13a. HARV CONFM TECH",
-        "role": "LRM or Other Corp. Systems",
-        "processType": "process",
-        "x": 1995.4480549225088,
-        "y": 522.6351586504235,
-        "desc": "Inputs Final Harvest Inspection into LRM Certification Tab",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 108,
-        "name": "13b. HARV CONFM TECH",
-        "role": "Communication Point",
-        "processType": "records-management",
-        "x": 1994.2191218339321,
-        "y": 648.0038811462539,
-        "desc": "Advises ET Logging/Road Construction Complete Provides Tenure Disposal Form",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 109,
-        "name": "13c. ET completes inspection",
-        "role": "Engineering",
-        "processType": "process",
-        "x": 1994.218961631314,
-        "y": 765.9978232828803,
-        "desc": "Notifies HARV CONFM TECH if any quality or conformance issues observed",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 110,
-        "name": "13d. ET completes Tenure Disposal Form",
-        "role": "Engineering",
-        "processType": "records-management",
-        "x": 1993.9940084108134,
-        "y": 893.270034240935,
+        "name": "Interior Stumpage Rate Request Form",
+        "role": "Process Details",
+        "processType": "Process",
+        "x": 1743.3630520399224,
+        "y": 266.08049148748967,
         "desc": "New node description",
         "resources": [],
-        "width": null,
+        "width": 100,
         "height": null
-    },
-    {
-        "id": 111,
-        "name": "Tenure DELETION Process",
-        "role": "Engineering",
-        "processType": "outside-process",
-        "x": 1815.7478030050045,
-        "y": 700.6042771147603,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 112,
-        "name": "13e. Is Tenure Retired?",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1815.9986308293646,
-        "y": 876.6173352066443,
-        "desc": "Follow DELETION Process",
-        "resources": [],
-        "width": 110,
-        "height": 80
-    },
-    {
-        "id": 113,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1815.998847824461,
-        "y": 818.7441859462091,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 114,
-        "name": "NO",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1699.1063783504592,
-        "y": 901.7096420623204,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 115,
-        "name": "13f. Is Tenure to be TRANSFERRED?",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1559.39680652086,
-        "y": 876.514054693746,
-        "desc": "Follow Transfer Process",
-        "resources": [],
-        "width": 140,
-        "height": 80
-    },
-    {
-        "id": 116,
-        "name": "YES",
-        "role": "Post Award",
-        "processType": "decision",
-        "x": 1424.3507547640977,
-        "y": 902.455144999928,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 117,
-        "name": "Tenure TRANSFER Process",
-        "role": "Engineering",
-        "processType": "outside-process",
-        "x": 1306.8528902181436,
-        "y": 897.8772357775089,
-        "desc": "",
-        "resources": [],
-        "width": null,
-        "height": null
-    },
-    {
-        "id": 118,
-        "name": "Engineering Inspection- Maintenance- Deactivation Process",
-        "role": "Engineering",
-        "processType": "outside-process",
-        "x": 1123.4067035210471,
-        "y": 892.3978865096556,
-        "desc": "",
-        "resources": [],
-        "width": 70,
-        "height": 70
     }
 ];
 const defaultLinks = [
     {
         "source": 1,
         "target": 2,
+        "arrowMode": "end",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 10,
+        "target": 11,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 11,
+        "target": 12,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 12,
+        "target": 13,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 13,
+        "target": 14,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 14,
+        "target": 15,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 14,
+        "target": 16,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 16,
+        "target": 17,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 15,
+        "target": 18,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 18,
+        "target": 19,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 19,
+        "target": 20,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 20,
+        "target": 21,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 21,
+        "target": 23,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 23,
+        "target": 24,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 24,
+        "target": 25,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 25,
+        "target": 26,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 27,
+        "target": 29,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 29,
+        "target": 30,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 29,
+        "target": 31,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 31,
+        "target": 32,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 32,
+        "target": 33,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 40,
+        "target": 41,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 41,
+        "target": 42,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 42,
+        "target": 43,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 43,
+        "target": 44,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 44,
+        "target": 45,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 44,
+        "target": 46,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 46,
+        "target": 47,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 45,
+        "target": 48,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 48,
+        "target": 49,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 49,
+        "target": 50,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 50,
+        "target": 51,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 51,
+        "target": 52,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 52,
+        "target": 53,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 53,
+        "target": 54,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 53,
+        "target": 55,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 55,
+        "target": 56,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 55,
+        "target": 57,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 57,
+        "target": 58,
+        "arrowMode": "forward",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 58,
+        "target": 59,
         "arrowMode": "forward",
         "waypoints": [],
         "sourceAnchor": null,
@@ -1004,607 +962,55 @@ const defaultLinks = [
     },
     {
         "source": 3,
-        "target": 13,
+        "target": 10,
         "arrowMode": "forward",
         "waypoints": [],
         "sourceAnchor": null,
         "targetAnchor": null
     },
     {
-        "source": 13,
-        "target": 15,
+        "source": 21,
+        "target": 60,
         "arrowMode": "forward",
         "waypoints": [],
         "sourceAnchor": null,
         "targetAnchor": null
     },
     {
-        "source": 15,
-        "target": 20,
+        "source": 23,
+        "target": 22,
         "arrowMode": "forward",
         "waypoints": [],
         "sourceAnchor": null,
         "targetAnchor": null
     },
     {
-        "source": 47,
-        "target": 15,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 54,
-        "target": 52,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 53,
-        "target": 54,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 51,
-        "target": 53,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 51,
-        "target": 52,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 20,
-        "target": 49,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 49,
-        "target": 51,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 20,
-        "target": 48,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 48,
-        "target": 50,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 60,
-        "target": 59,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 59,
-        "target": 56,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 56,
-        "target": 58,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 58,
-        "target": 57,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 52,
-        "target": 56,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 56,
-        "target": 61,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 61,
-        "target": 62,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 61,
-        "target": 63,
-        "arrowMode": "none",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 63,
-        "target": 64,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 63,
-        "target": 65,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 69,
-        "target": 65,
-        "arrowMode": "none",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 69,
-        "target": 70,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 70,
-        "target": 73,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 73,
-        "target": 71,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 65,
-        "target": 71,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 71,
-        "target": 74,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 66,
-        "target": 64,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 66,
-        "target": 67,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 66,
-        "target": 68,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 74,
-        "target": 76,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 76,
-        "target": 75,
-        "arrowMode": "reverse",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 76,
-        "target": 78,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 78,
-        "target": 77,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 76,
-        "target": 79,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 79,
-        "target": 82,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 82,
-        "target": 80,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 80,
-        "target": 81,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 81,
-        "target": 83,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 83,
-        "target": 84,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 84,
-        "target": 82,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 85,
-        "target": 86,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 85,
-        "target": 88,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 83,
-        "target": 87,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 87,
-        "target": 85,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 88,
-        "target": 89,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 89,
-        "target": 93,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 89,
-        "target": 92,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 92,
-        "target": 91,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 93,
-        "target": 90,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 90,
-        "target": 94,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 89,
-        "target": 95,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 95,
-        "target": 96,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 96,
-        "target": 97,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 97,
-        "target": 98,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 97,
-        "target": 99,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 99,
-        "target": 102,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 102,
-        "target": 101,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 101,
-        "target": 100,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 102,
-        "target": 105,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 105,
-        "target": 104,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 104,
-        "target": 103,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 105,
-        "target": 106,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 81,
-        "target": 107,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 107,
-        "target": 108,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 108,
-        "target": 109,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 109,
-        "target": 110,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 110,
-        "target": 112,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 112,
-        "target": 113,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 113,
-        "target": 111,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 112,
-        "target": 114,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 114,
-        "target": 115,
+        "source": 26,
+        "target": 28,
         "arrowMode": "forward",
         "waypoints": [],
         "sourceAnchor": null,
         "targetAnchor": null
     },
     {
-        "source": 115,
-        "target": 116,
+        "source": 28,
+        "target": 27,
         "arrowMode": "forward",
         "waypoints": [],
         "sourceAnchor": null,
         "targetAnchor": null
     },
     {
-        "source": 116,
-        "target": 117,
+        "source": 2,
+        "target": 4,
         "arrowMode": "forward",
         "waypoints": [],
         "sourceAnchor": null,
         "targetAnchor": null
     },
     {
-        "source": 117,
-        "target": 118,
+        "source": 4,
+        "target": 40,
         "arrowMode": "forward",
         "waypoints": [],
         "sourceAnchor": null,
@@ -1616,9 +1022,9 @@ const defaultAnnotations = [
     {
         "id": 1,
         "type": "text",
-        "x": 145.1289836025245,
-        "y": -333.2668879745877,
-        "text": "SP - Site Plan",
+        "x": 536.2632097818309,
+        "y": -15.072160040026969,
+        "text": "FLTC - Forest Licence to Cut",
         "fontSize": 14,
         "stroke": "#94a3b8",
         "strokeWidth": 1,
@@ -1629,8 +1035,8 @@ const defaultAnnotations = [
     {
         "id": 2,
         "type": "text",
-        "x": 127.2491234446079,
-        "y": -305.17007058309434,
+        "x": 532.3450414722759,
+        "y": 5.638215402488406,
         "text": "W&R - Waste and Residue",
         "fontSize": 14,
         "stroke": "#94a3b8",
@@ -1642,9 +1048,9 @@ const defaultAnnotations = [
     {
         "id": 3,
         "type": "text",
-        "x": 136.61473991600974,
-        "y": -279.627486818166,
-        "text": "RUP- Road Use Permit",
+        "x": 542.4203734697437,
+        "y": 24.109627065177193,
+        "text": "FTA - Forest TEnures Administration",
         "fontSize": 14,
         "stroke": "#94a3b8",
         "strokeWidth": 1,
@@ -1655,9 +1061,9 @@ const defaultAnnotations = [
     {
         "id": 4,
         "type": "text",
-        "x": 142.57467764220098,
-        "y": -258.34200993775397,
-        "text": "RP - Road Permit",
+        "x": 535.1437510983761,
+        "y": 42.02131014116918,
+        "text": "RoW - Right of Way",
         "fontSize": 14,
         "stroke": "#94a3b8",
         "strokeWidth": 1,
@@ -1668,9 +1074,9 @@ const defaultAnnotations = [
     {
         "id": 5,
         "type": "text",
-        "x": 133.20910748431658,
-        "y": -236.20510397243368,
-        "text": "CSO - Certification Standards Officer",
+        "x": 521.1502436583818,
+        "y": 62.17193573266525,
+        "text": "SNCSC - Status & Clearance Service Component",
         "fontSize": 14,
         "stroke": "#94a3b8",
         "strokeWidth": 1,
@@ -1681,10 +1087,10 @@ const defaultAnnotations = [
     {
         "id": 6,
         "type": "text",
-        "x": 145.98037631565654,
-        "y": -213.21679666301975,
-        "text": "LC - Logging Complete",
-        "fontSize": 14,
+        "x": 621.6342870777446,
+        "y": -46.66608639367557,
+        "text": "Acronyms",
+        "fontSize": 22,
         "stroke": "#94a3b8",
         "strokeWidth": 1,
         "fill": "none",
@@ -1693,134 +1099,79 @@ const defaultAnnotations = [
     },
     {
         "id": 7,
-        "type": "text",
-        "x": 141.72331211320835,
-        "y": -191.07986716465717,
-        "text": "SC - Substantial Completion",
-        "fontSize": 14,
         "stroke": "#94a3b8",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    },
-    {
-        "id": 8,
-        "type": "text",
-        "x": 135.76333461041037,
-        "y": -165.53729799579992,
-        "text": "FTA - Forest Tenures Administration",
-        "fontSize": 14,
-        "stroke": "#94a3b8",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    },
-    {
-        "id": 9,
-        "type": "text",
-        "x": 46.36431669590496,
-        "y": -138.29189166519973,
-        "text": "HARV CONF TECH - Harvest Conformance Technician",
-        "fontSize": 14,
-        "stroke": "#94a3b8",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
-    },
-    {
-        "id": 10,
-        "stroke": "#5f5d5d",
         "strokeWidth": 2,
         "fill": "none",
         "dashed": false,
         "opacity": 1,
         "type": "rect",
-        "x": 6.251779971086692,
-        "y": -369.9397243909289,
-        "width": 418.12525038350043,
-        "height": 261.9735856592797
-    },
-    {
-        "id": 11,
-        "type": "text",
-        "x": 154.66041762223892,
-        "y": -388.00686334492013,
-        "text": "Acronyms",
-        "fontSize": 26,
-        "stroke": "#41403e",
-        "strokeWidth": 1,
-        "fill": "none",
-        "dashed": false,
-        "opacity": 1
+        "x": 505.13110902665375,
+        "y": -39.95720460432726,
+        "width": 323.4985758463541,
+        "height": 122.6044769287109
     }
 ];
 
 let roleColors = {
-    "Engineering": "#c7c2c2",
-    "Silviculture": "#eb0acd",
-    "Post Award": "#2a8dcb",
-    "LRM or Other Corp. Systems": "#18c00c",
-    "Communication Point": "#917221",
-    "BA / Admin": "#f5ed00"
+    "Engineering": "#a2a3a4",
+    "LRM": "#00cc22",
+    "GIS": "#b800b1",
+    "TSL Award": "#ff9500",
+    "BA/Admin": "#f5ed00",
+    "Communication Point": "#f9c08b",
+    "Process Details": "#ffffff",
+    "STOP": "#ff0000"
 };
 
 let processTypes = {
-    "process": {
+    "Process": {
+        "shape": "rect",
         "label": "Process",
+        "dashed": false
+    },
+    "Document": {
         "shape": "rect",
-        "dashed": false
+        "dashed": true,
+        "label": "Document"
     },
-    "document": {
-        "label": "Document",
-        "shape": "rect",
-        "dashed": true
-    },
-    "outside-process": {
-        "label": "Outside Process",
-        "shape": "circle",
-        "dashed": false
-    },
-    "process-tbd": {
-        "label": "Process to be developed",
-        "shape": "circle",
-        "dashed": true
-    },
-    "queue": {
-        "label": "Queue or Wait Period",
-        "shape": "triangle",
-        "dashed": false
-    },
-    "corporate-accounting": {
-        "label": "Process: Corporate Accounting Mandatory",
-        "shape": "hexagon",
-        "dashed": false
-    },
-    "records-management": {
-        "label": "Process: Records Management Protocol",
-        "shape": "hexagon",
-        "dashed": true
-    },
-    "decision": {
-        "label": "Decision",
+    "Decision": {
         "shape": "diamond",
+        "label": "Decision",
         "dashed": false
+    },
+    "Start/End": {
+        "shape": "circle",
+        "label": "Outside Process",
+        "dashed": false
+    },
+    "process-to-be-developed": {
+        "label": "Process to be Developed",
+        "shape": "circle",
+        "dashed": true
+    },
+    "LRM Update": {
+        "shape": "hexagon",
+        "label": "Corporate Accounting Process",
+        "dashed": false
+    },
+    "Outside Process": {
+        "shape": "hexagon",
+        "dashed": true,
+        "label": "Records Management Protocol"
     }
 };
 
-let roleCategoryLabel = 'Responsibility or Process Description';
-let processTypeCategoryLabel = 'Process Types';
+let roleCategoryLabel = 'Responsibility';
+let processTypeCategoryLabel = 'Process Type';
 let linkColor = '#6b7280';
 let nodeWidth = 130;
 let nodeHeight = 40;
 let linkOpacity = 0.4;
 let linkWidth = 2;
 let arrowSize = 12;
-let defaultZoomLevel = 0.6062866266041593;
-let defaultPanX = 156.73335411188862;
-let defaultPanY = 93.78270167464694;
+let defaultZoomLevel = 0.4547149699531196;
+let defaultPanX = 58.793061469852546;
+let defaultPanY = 67.64719238046587;
 
 // ====== State object for non-export-critical state ======
 
@@ -4882,8 +4233,8 @@ body.dark-mode #version-label {
              alt="Plandala" class="header-logo" id="header-logo">
         </a>
         <div style="display: flex; align-items: baseline;">
-            <h1 id="main-title" contenteditable="false">TOC Business Process</h1>
-            <span class="subtitle" id="main-subtitle" contenteditable="false">Post Award</span>
+            <h1 id="main-title" contenteditable="false">TOC Engineering Process</h1>
+            <span class="subtitle" id="main-subtitle" contenteditable="false">FLTC Process</span>
         </div>
         <div class="controls">
             <label class="theme-toggle">

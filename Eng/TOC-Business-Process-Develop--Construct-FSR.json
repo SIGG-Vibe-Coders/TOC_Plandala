@@ -1,0 +1,1930 @@
+{
+  "appName": "Plandala",
+  "dataVersion": 2,
+  "headerTitle": "TOC Business Process",
+  "headerSubtitle": "Develop & Construct FSR",
+  "roleCategoryLabel": "Responsibility",
+  "processTypeCategoryLabel": "Process Type",
+  "settings": {
+    "nodeWidth": 130,
+    "nodeHeight": 40,
+    "linkOpacity": 0.4,
+    "linkWidth": 2,
+    "linkColor": "#6b7280",
+    "arrowSize": 12,
+    "isLightMode": true,
+    "defaultZoomLevel": 0.45471496995312016,
+    "defaultPanX": 59.90065708084194,
+    "defaultPanY": 87.27076044974149
+  },
+  "roleColors": {
+    "Engineering": "#979597",
+    "LRM": "#17c700",
+    "Planning": "#70baff",
+    "Development": "#fe4df8",
+    "Business Admin (BA)": "#efff0f",
+    "GIS": "#c2008e",
+    "Communication Point": "#f8ca68",
+    "Indiginous Relations": "#befed6",
+    "Other": "#f2f3f1"
+  },
+  "processTypes": {
+    "process": {
+      "label": "Process",
+      "shape": "rect",
+      "dashed": false
+    },
+    "document": {
+      "label": "Document",
+      "shape": "rect",
+      "dashed": true
+    },
+    "outside-process": {
+      "label": "Outside Process",
+      "shape": "circle",
+      "dashed": false
+    },
+    "process-to-be-developed": {
+      "label": "Process to be Developed",
+      "shape": "circle",
+      "dashed": true
+    },
+    "decision": {
+      "label": "Decision",
+      "shape": "diamond",
+      "dashed": false
+    },
+    "lrm-update": {
+      "label": "Corporate Accounting Mandatory",
+      "shape": "hexagon",
+      "dashed": false
+    },
+    "reference": {
+      "label": "Records Protocal: Digital/Hardcopy required on file",
+      "shape": "hexagon",
+      "dashed": true
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "4a. \nET confers with IRL \nregarding any significant \nlocation change as \ncompared to referred shape",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 679.7574787139893,
+      "y": -52.95547580718994,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 80
+    },
+    {
+      "id": 2,
+      "name": "23.\nEMS Safety & \nRisk Assessment \nCHK 01R",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 2513.0223541259766,
+      "y": 528.376953125,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 50
+    },
+    {
+      "id": 3,
+      "name": "TCP PROCESS if Available",
+      "role": "Communication Point",
+      "processType": "process-to-be-developed",
+      "x": 203.69247245788574,
+      "y": -27.88172483444214,
+      "desc": "ENGINEERING to CONFER WITH PLANNING & DEVELOPMENT REGARDING ROUTE SELECTION",
+      "resources": [],
+      "width": 60,
+      "height": 60
+    },
+    {
+      "id": 10,
+      "name": "1. Start FSR",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 200,
+      "y": 100,
+      "desc": "\nInitiate FSR records",
+      "resources": [],
+      "width": 80,
+      "height": 40
+    },
+    {
+      "id": 11,
+      "name": "1a. \nIf private property \nthen request FSR \nProject # from \nFLAG",
+      "role": "Communication Point",
+      "processType": "outside-process",
+      "x": 200,
+      "y": 198.63955688476562,
+      "desc": "Forest Land Acquisition Group, Victoria",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 12,
+      "name": "1b. Create Folder",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 200,
+      "y": 298.6395568847656,
+      "desc": "(project and/or section #) on LAN FSR directory1dET",
+      "resources": [],
+      "width": 80,
+      "height": 40
+    },
+    {
+      "id": 13,
+      "name": "1c. ET LRM \nUpdate Name \n(project/sec #)",
+      "role": "LRM",
+      "processType": "process",
+      "x": 200,
+      "y": 398.6395568847656,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 40
+    },
+    {
+      "id": 14,
+      "name": "1d. ET LRM \nSteward = BCTS, Assign URI \n(* prior to 1st Invoice)",
+      "role": "LRM",
+      "processType": "lrm-update",
+      "x": 200,
+      "y": 498.6395568847656,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 50
+    },
+    {
+      "id": 20,
+      "name": "2. Planning & Dev\nPLF & PRF confer with \nEngineering to confirm \naccess objectives, \nroad corridor",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 363.9427185058594,
+      "y": 80.91084289550781,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": 80
+    },
+    {
+      "id": 30,
+      "name": "3. \nMulti-phase \nContractor \nCompletes \nRoad Layout",
+      "role": "Other",
+      "processType": "outside-process",
+      "x": 536.2609252929688,
+      "y": 96.6827621459961,
+      "desc": "",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 40,
+      "name": "4. ET \nReviews layout \n\nChanges \nnecessary?",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 679.3659057617188,
+      "y": 86.7851333618164,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 70
+    },
+    {
+      "id": 41,
+      "name": "YES",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 679.0165405273438,
+      "y": 183.03805541992188,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 42,
+      "name": "NO",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 771.8795776367188,
+      "y": 106.39033150672913,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 43,
+      "name": "5. Multi-phase \nContractor \nCompletes \nGPS of final C/L",
+      "role": "Other",
+      "processType": "outside-process",
+      "x": 678.1409912109375,
+      "y": 261.2236022949219,
+      "desc": "",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 50,
+      "name": "6. ET LRM Input",
+      "role": "LRM",
+      "processType": "process",
+      "x": 849.6284790039062,
+      "y": 99.1962890625,
+      "desc": "Confer w/ PRF regarding key dates for Construction PLANNED Construction STARTED",
+      "resources": [],
+      "width": 70,
+      "height": 45
+    },
+    {
+      "id": 60,
+      "name": "Design Required?",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1113.6632080078125,
+      "y": 90,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 60
+    },
+    {
+      "id": 61,
+      "name": "Structure \nRequired?",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1244.822265625,
+      "y": 89.9071273803711,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 60
+    },
+    {
+      "id": 62,
+      "name": "YES",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1113.6630859375,
+      "y": 176.59938049316406,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 70,
+      "name": "7. TSA Required?",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1370.622802734375,
+      "y": 90.59563446044922,
+      "desc": "7. TSA Design Required? Structure Required?",
+      "resources": [],
+      "width": 100,
+      "height": 60
+    },
+    {
+      "id": 71,
+      "name": "Structure Term?",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1245.016357421875,
+      "y": 27.549293518066406,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 60
+    },
+    {
+      "id": 72,
+      "name": "YES",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1369.9232177734375,
+      "y": 177.40309143066406,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 80,
+      "name": "8. Survey & Design",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 1113.2470703125,
+      "y": 233.4612579345703,
+      "desc": "Requirements to Multiphase",
+      "resources": [],
+      "width": 60,
+      "height": 40
+    },
+    {
+      "id": 90,
+      "name": "9. Structure",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 1241.2173461914062,
+      "y": 234.500244140625,
+      "desc": "Requirements to South Area Eng",
+      "resources": [],
+      "width": 60,
+      "height": 40
+    },
+    {
+      "id": 100,
+      "name": "Structure General Arrangement Drawings signed & sealed.",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 1625.24755859375,
+      "y": -56.67420959472656,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 40
+    },
+    {
+      "id": 110,
+      "name": "11.Receive: Design, Terrain, Structure Deliverables as required",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 1516.4859619140625,
+      "y": 98.31207847595215,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 45
+    },
+    {
+      "id": 111,
+      "name": "Geometric Road Design signed & sealed.",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 1623.3875732421875,
+      "y": 7.547565460205078,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 40
+    },
+    {
+      "id": 112,
+      "name": "Evaluate Terrain Report per TSMM Process",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 1630.1519775390625,
+      "y": -123.43474769592285,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 40
+    },
+    {
+      "id": 120,
+      "name": "12a.Receives Road Site Plan & Road Construction Map",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 1696.354736328125,
+      "y": 98.093505859375,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 45
+    },
+    {
+      "id": 121,
+      "name": "13. Signs off Conformance Documents",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 1876.468017578125,
+      "y": 97.65736389160156,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 45
+    },
+    {
+      "id": 130,
+      "name": "13a. ET requests Due Diligence Summary &Consultation Summary",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 2052.7406005859375,
+      "y": 97.87197875976562,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": 45
+    },
+    {
+      "id": 131,
+      "name": "11b. \nReview structure inventory \nOR commence Purchase \nRequisition Process",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 1802.590576171875,
+      "y": -65.9779405593872,
+      "desc": "",
+      "resources": [],
+      "width": 140,
+      "height": 60
+    },
+    {
+      "id": 133,
+      "name": "13c. Due Diligence Summary",
+      "role": "Planning",
+      "processType": "process",
+      "x": 2052.3004150390625,
+      "y": 17.629677772521973,
+      "desc": "",
+      "resources": [],
+      "width": 80,
+      "height": 45
+    },
+    {
+      "id": 140,
+      "name": "13b.IRL Consultation Summary",
+      "role": "Indiginous Relations",
+      "processType": "process",
+      "x": 2052.37255859375,
+      "y": 177.80394744873047,
+      "desc": "",
+      "resources": [],
+      "width": 80,
+      "height": 45
+    },
+    {
+      "id": 150,
+      "name": "ET REQUESTS CONSTRUCTION Contract Documents From BA",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 2383.4287109375,
+      "y": 97.99339294433594,
+      "desc": "Contract File #",
+      "resources": [],
+      "width": 140,
+      "height": 45
+    },
+    {
+      "id": 160,
+      "name": "16.Create FLTC Folder on G Drive",
+      "role": "Business Admin (BA)",
+      "processType": "process",
+      "x": 2557.35205078125,
+      "y": 97.520263671875,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 45
+    },
+    {
+      "id": 170,
+      "name": "17. Receive FLTC Rate",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 2710.488037109375,
+      "y": 96.92850494384766,
+      "desc": "17. Receive FLTC Rate",
+      "resources": [],
+      "width": 100,
+      "height": 45
+    },
+    {
+      "id": 180,
+      "name": "18.Generate Detailed Cost Estimate",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 2847.135009765625,
+      "y": 97.27408599853516,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 45
+    },
+    {
+      "id": 181,
+      "name": "18a.\nPrepare Contract Draft \nSee Contract SOP",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 2845.8955078125,
+      "y": 220.58557891845703,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 45
+    },
+    {
+      "id": 190,
+      "name": "19.\nSubmit Request to Post \nFORM to BA",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 2845.42138671875,
+      "y": 325.2260055541992,
+      "desc": "",
+      "resources": [],
+      "width": 130,
+      "height": 45
+    },
+    {
+      "id": 200,
+      "name": "Refer to CQMS Intranet Website for Contract Guidance",
+      "role": "Business Admin (BA)",
+      "processType": "outside-process",
+      "x": 3041.31689453125,
+      "y": 413.3170394897461,
+      "desc": "",
+      "resources": [],
+      "width": 60,
+      "height": 60
+    },
+    {
+      "id": 201,
+      "name": "20. Evaluate Bid, Recommend Award",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 2845.77099609375,
+      "y": 423.47924041748047,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 45
+    },
+    {
+      "id": 210,
+      "name": "21. Award Contract?",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 2844.412109375,
+      "y": 513.9094161987305,
+      "desc": "",
+      "resources": [],
+      "width": 80,
+      "height": 80
+    },
+    {
+      "id": 211,
+      "name": "YES",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 2761.7099609375,
+      "y": 539.4557647705078,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 212,
+      "name": "NO",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 2844.15185546875,
+      "y": 623.2218551635742,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 213,
+      "name": "Refer to EA - Do Not Proceed Process",
+      "role": "Engineering",
+      "processType": "outside-process",
+      "x": 2844.139892578125,
+      "y": 711.4275436401367,
+      "desc": "",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 220,
+      "name": "22. BA LRM Update",
+      "role": "LRM",
+      "processType": "process",
+      "x": 2660.9132080078125,
+      "y": 531.1466827392578,
+      "desc": "- Planned Construction Date\n- FLTC Start Date",
+      "resources": [],
+      "width": 100,
+      "height": 45
+    },
+    {
+      "id": 231,
+      "name": "24a. Notify C&E of Start",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 2368.72705078125,
+      "y": 411.0656280517578,
+      "desc": "CEB.SouthArea@gov.bc.ca",
+      "resources": [],
+      "width": 80,
+      "height": 45
+    },
+    {
+      "id": 240,
+      "name": "24. PRE-WORK FSR",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 2366.77490234375,
+      "y": 535.1452178955078,
+      "desc": "CHK 002-PWSee PW Guidance Document",
+      "resources": [],
+      "width": 80,
+      "height": 45
+    },
+    {
+      "id": 250,
+      "name": "Contractor Constructs Road",
+      "role": "Other",
+      "processType": "outside-process",
+      "x": 2247.53466796875,
+      "y": 536.0728302001953,
+      "desc": "",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 260,
+      "name": "26. EMS Inspection",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 2106.6700439453125,
+      "y": 532.6627349853516,
+      "desc": "(Initial & Progress) Construction Monitoring Inspection forms CHK 006",
+      "resources": [],
+      "width": 100,
+      "height": 45
+    },
+    {
+      "id": 261,
+      "name": "Conformance/\nCompliance?",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1968.3792724609375,
+      "y": 520.7046051025391,
+      "desc": "Conformance / Compliance?",
+      "resources": [],
+      "width": 100,
+      "height": 70
+    },
+    {
+      "id": 270,
+      "name": "27.Operations Con’t or Shutdown/Interruption",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 1693.959228515625,
+      "y": 534.2463226318359,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 45
+    },
+    {
+      "id": 275,
+      "name": "28.\nProf. Conformance \nInspection",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1479.687973022461,
+      "y": 517.3523101806641,
+      "desc": "",
+      "resources": [],
+      "width": 110,
+      "height": 80
+    },
+    {
+      "id": 276,
+      "name": "YES",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1480.387435913086,
+      "y": 624.2629547119141,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 278,
+      "name": "28a. Complete Prof. Inspection & Document",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 1480.3872985839844,
+      "y": 682.7776031494141,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 45
+    },
+    {
+      "id": 290,
+      "name": "29a. ET - Road Deactivation Liability if 5 or 10 Year road, Road Accounting Type",
+      "role": "LRM",
+      "processType": "lrm-update",
+      "x": 1324.0360622406006,
+      "y": 448.84901428222656,
+      "desc": "",
+      "resources": [],
+      "width": 200,
+      "height": 45
+    },
+    {
+      "id": 291,
+      "name": "29. Substantial CompletionInspection",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 1324.0360622406006,
+      "y": 534.8555450439453,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 45
+    },
+    {
+      "id": 300,
+      "name": "30. Final / Total CompletionInspection",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 1153.8746318817139,
+      "y": 534.5058746337891,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 45
+    },
+    {
+      "id": 310,
+      "name": "31.Final Payment (Invoice Process)",
+      "role": "Business Admin (BA)",
+      "processType": "outside-process",
+      "x": 1000.3937225341797,
+      "y": 533.5254669189453,
+      "desc": "",
+      "resources": [],
+      "width": 45,
+      "height": 45
+    },
+    {
+      "id": 320,
+      "name": "32.Contract Completion Forms Initiated",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 1000.0789489746094,
+      "y": 699.8997955322266,
+      "desc": "NRS 688 – Contract Evaluation Form\nNRS 687 – Contract Completion Certificate\nNRS 263 – Statutory Declaration",
+      "resources": [],
+      "width": 120,
+      "height": 45
+    },
+    {
+      "id": 330,
+      "name": "33. Statutory Declaration Received from Contractor",
+      "role": "Business Admin (BA)",
+      "processType": "reference",
+      "x": 1000.7361450195312,
+      "y": 821.4752960205078,
+      "desc": "",
+      "resources": [],
+      "width": 120,
+      "height": 50
+    },
+    {
+      "id": 340,
+      "name": "34.Road Conformance Sign-off",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 1002.0390014648438,
+      "y": 942.8053741455078,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 45
+    },
+    {
+      "id": 350,
+      "name": "35. Finalize Updates to FSR Diligence/Planning Files",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 1188.0361328125,
+      "y": 943.3776397705078,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 45
+    },
+    {
+      "id": 360,
+      "name": "36. ET Ensures that Contract File Documentation is Complete",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 1400.4495849609375,
+      "y": 944.2066802978516,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 45
+    },
+    {
+      "id": 361,
+      "name": "36a. Contract File is Closed",
+      "role": "Business Admin (BA)",
+      "processType": "process",
+      "x": 1402.22705078125,
+      "y": 894.2404327392578,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 45
+    },
+    {
+      "id": 370,
+      "name": "37. ET – Complete Cost Survey Reporting ",
+      "role": "LRM",
+      "processType": "reference",
+      "x": 1604.423828125,
+      "y": 943.2642364501953,
+      "desc": "(new construction)\n(See SOP-Cost Survey)",
+      "resources": [],
+      "width": 140,
+      "height": 45
+    },
+    {
+      "id": 380,
+      "name": "39. ET - Assign Risk Rating & Schedule FSR Maintenance Inspections in LRM",
+      "role": "LRM",
+      "processType": "process",
+      "x": 1801.4412841796875,
+      "y": 943.2643585205078,
+      "desc": "",
+      "resources": [],
+      "width": 160,
+      "height": 45
+    },
+    {
+      "id": 390,
+      "name": "See Engineering \nRoad Inspection, \nMaintenance, \nDeactivation \nProcess",
+      "role": "Engineering",
+      "processType": "outside-process",
+      "x": 1985.3448486328125,
+      "y": 938.4731597900391,
+      "desc": "",
+      "resources": [],
+      "width": 55,
+      "height": 55
+    },
+    {
+      "id": 392,
+      "name": "7.\nCheck w/\nMultiphase \nContract Mgr for \nEngineering inputs \nS&D, TSA",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 968.8033545173558,
+      "y": 81.09477705883538,
+      "desc": "New node description",
+      "resources": [],
+      "width": 110,
+      "height": 80
+    },
+    {
+      "id": 393,
+      "name": "Road Std?\nRoad Term?\nRoad Name?",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1114.2756674599052,
+      "y": 28.39257049560547,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 60
+    },
+    {
+      "id": 394,
+      "name": "YES",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1241.6297566507858,
+      "y": 177.20632809746172,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 395,
+      "name": "10.Complete Terrain Stability Management Model (TSMM)",
+      "role": "Engineering",
+      "processType": "reference",
+      "x": 1370.4039239921908,
+      "y": 232.66271051097704,
+      "desc": "Decision Tool Provide to Multiphase",
+      "resources": [],
+      "width": null,
+      "height": 50
+    },
+    {
+      "id": 396,
+      "name": "SEE \nROUND TABLE \nPlanning & Dev \nCommunication \nwith Engineering",
+      "role": "Development",
+      "processType": "outside-process",
+      "x": 1625.8520918123213,
+      "y": -233.25711822509766,
+      "desc": "New node description",
+      "resources": [],
+      "width": 55,
+      "height": 55
+    },
+    {
+      "id": 397,
+      "name": "14. ET LRM \nUPDATE\nAs needed \nRoad Planned \nRoad Started \nConstruction Dates",
+      "role": "LRM",
+      "processType": "process",
+      "x": 2217.2886962890625,
+      "y": 75.06721676705209,
+      "desc": "New node description",
+      "resources": [],
+      "width": 100,
+      "height": 90
+    },
+    {
+      "id": 398,
+      "name": "Refer to FLTC Process for Ex A",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 2557.19775390625,
+      "y": 174.84454922754105,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 399,
+      "name": "District GIS Exhibit A & FLTC Process",
+      "role": "GIS",
+      "processType": "outside-process",
+      "x": 2496.612548828125,
+      "y": 274.6942526227106,
+      "desc": "",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 400,
+      "name": "See Engineering FLTC Process VISIO",
+      "role": "Engineering",
+      "processType": "outside-process",
+      "x": 2610.95263671875,
+      "y": 275.4611021641443,
+      "desc": "New node description",
+      "resources": [],
+      "width": 50,
+      "height": 50
+    },
+    {
+      "id": 401,
+      "name": "Non Conformance",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1968.1461181640625,
+      "y": 443.0075507736987,
+      "desc": "New node description",
+      "resources": [],
+      "width": 100,
+      "height": 50
+    },
+    {
+      "id": 402,
+      "name": "Conformance/\nCompliance \nProcess",
+      "role": "Engineering",
+      "processType": "outside-process",
+      "x": 1967.3424072265625,
+      "y": 355.99295790928795,
+      "desc": "New node description",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 403,
+      "name": "Licensee EMS \nIncidents \nProcess",
+      "role": "Engineering",
+      "processType": "outside-process",
+      "x": 1849.534045870748,
+      "y": 355.6418450811736,
+      "desc": "",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 404,
+      "name": "Compliance",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1835.804098794823,
+      "y": 536.063720703125,
+      "desc": "New node description",
+      "resources": [],
+      "width": 100,
+      "height": 40
+    },
+    {
+      "id": 405,
+      "name": "Con't",
+      "role": "Engineering",
+      "processType": "decision",
+      "x": 1581.535331216663,
+      "y": 537.1152954101562,
+      "desc": "New node description",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 406,
+      "name": "27a. Contractor Notification; Shutdown & Start-up",
+      "role": "Communication Point",
+      "processType": "process",
+      "x": 1694.2298912022543,
+      "y": 611.8322143554688,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 407,
+      "name": "27b. Start Up – Requirement for Pre-work as per EMS SOP (> 90 days)",
+      "role": "Engineering",
+      "processType": "process",
+      "x": 1693.3870975672373,
+      "y": 686.7285766601562,
+      "desc": "",
+      "resources": [],
+      "width": 150,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "source": 10,
+      "target": 11,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 10,
+      "target": 20,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 20,
+      "target": 30,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 30,
+      "target": 40,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 40,
+      "target": 42,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 41,
+      "target": 43,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 42,
+      "target": 50,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 60,
+      "target": 61,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 60,
+      "target": 62,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 61,
+      "target": 70,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 70,
+      "target": 72,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 62,
+      "target": 80,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 110,
+      "target": 111,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 1523.9638878735193,
+          "y": 28.61575108477207
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 120,
+      "target": 121,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 130,
+      "target": 133,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 130,
+      "target": 140,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 150,
+      "target": 160,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 160,
+      "target": 170,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 170,
+      "target": 180,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 180,
+      "target": 181,
+      "arrowMode": "both",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 190,
+      "target": 200,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 3032.522756832863,
+          "y": 351.7508395336626
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 190,
+      "target": 201,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 201,
+      "target": 210,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 210,
+      "target": 211,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 210,
+      "target": 212,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 212,
+      "target": 213,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 211,
+      "target": 220,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 231,
+      "target": 240,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 250,
+      "target": 260,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 260,
+      "target": 261,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 275,
+      "target": 276,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 276,
+      "target": 278,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 290,
+      "target": 291,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 300,
+      "target": 310,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 310,
+      "target": 320,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 320,
+      "target": 330,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 330,
+      "target": 340,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 340,
+      "target": 350,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 350,
+      "target": 360,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 360,
+      "target": 370,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 370,
+      "target": 380,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 380,
+      "target": 390,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 40,
+      "target": 1,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 50,
+      "target": 392,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 70,
+      "target": 110,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 61,
+      "target": 394,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 394,
+      "target": 90,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 72,
+      "target": 395,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 395,
+      "target": 110,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 1497.537163727917,
+          "y": 259.27599037439074
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": "bottom"
+    },
+    {
+      "source": 90,
+      "target": 110,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 1244.4226187934212,
+          "y": 294.3595803878047
+        },
+        {
+          "x": 1494.881390216554,
+          "y": 264.47955849188656
+        }
+      ],
+      "sourceAnchor": "bottom",
+      "targetAnchor": "bottom"
+    },
+    {
+      "source": 80,
+      "target": 110,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 1114.982796909292,
+          "y": 283.1647463075272
+        },
+        {
+          "x": 1490.0085320670385,
+          "y": 269.87094959922354
+        }
+      ],
+      "sourceAnchor": "bottom",
+      "targetAnchor": "bottom"
+    },
+    {
+      "source": 110,
+      "target": 100,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 1531.3497317862798,
+          "y": -30.47073700319987
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 110,
+      "target": 112,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 1541.5052493644048,
+          "y": -100.63594454816239
+        }
+      ],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 100,
+      "target": 131,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 110,
+      "target": 120,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 121,
+      "target": 130,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 130,
+      "target": 397,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 397,
+      "target": 150,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 160,
+      "target": 398,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 398,
+      "target": 399,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": "bottom",
+      "targetAnchor": null
+    },
+    {
+      "source": 398,
+      "target": 400,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": "bottom",
+      "targetAnchor": null
+    },
+    {
+      "source": 181,
+      "target": 190,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 201,
+      "target": 200,
+      "arrowMode": "both",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 200,
+      "target": 210,
+      "arrowMode": "forward",
+      "waypoints": [
+        {
+          "x": 3036.765063977887,
+          "y": 544.7634251401652
+        }
+      ],
+      "sourceAnchor": "bottom",
+      "targetAnchor": null
+    },
+    {
+      "source": 220,
+      "target": 2,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 261,
+      "target": 401,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 401,
+      "target": 402,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 402,
+      "target": 403,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 261,
+      "target": 404,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 404,
+      "target": 270,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 270,
+      "target": 406,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 406,
+      "target": 407,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 270,
+      "target": 405,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 405,
+      "target": 275,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 291,
+      "target": 300,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 275,
+      "target": 291,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 2,
+      "target": 240,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 240,
+      "target": 250,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    }
+  ],
+  "navLinks": [],
+  "annotations": [
+    {
+      "id": 1,
+      "type": "text",
+      "x": 928.170274234179,
+      "y": -74.4257597420453,
+      "text": "Layout / Development Phase",
+      "fontSize": 30,
+      "stroke": "#425e85",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "x": 1482.4355282483618,
+      "y": 419.27024968121276,
+      "text": "Construction Phase",
+      "fontSize": 30,
+      "stroke": "#425e85",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "x": 2970.628356137504,
+      "y": 255.50565711714285,
+      "text": "Contract Prep Phase",
+      "fontSize": 30,
+      "stroke": "#425e85",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "x": 457.2489330049433,
+      "y": -373.8898412082032,
+      "text": "SP - Site Plan",
+      "fontSize": 18,
+      "stroke": "#6b6b6b",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "x": 433.14212148150557,
+      "y": -352.1202133192061,
+      "text": "W&R - Waste & Residue",
+      "fontSize": 18,
+      "stroke": "#6b6b6b",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "x": 442.06216542681614,
+      "y": -328.4423467013679,
+      "text": "RUP - Road Use Permit",
+      "fontSize": 18,
+      "stroke": "#6b6b6b",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "x": 454.0606802380137,
+      "y": -303.90660553111957,
+      "text": "RP - Road Permit",
+      "fontSize": 18,
+      "stroke": "#6b6b6b",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 8,
+      "type": "text",
+      "x": 445.4118154919212,
+      "y": -280.1601388944614,
+      "text": "FTA - Forest Tenure Administration",
+      "fontSize": 18,
+      "stroke": "#6b6b6b",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 9,
+      "type": "text",
+      "x": 436.6530366019489,
+      "y": -253.83618240489864,
+      "text": "FLTC - Forest Licence to Cut",
+      "fontSize": 18,
+      "stroke": "#6b6b6b",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 10,
+      "stroke": "#6b6b6b",
+      "strokeWidth": 2,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1,
+      "type": "rect",
+      "x": 415.549773381619,
+      "y": -402.65766624608557,
+      "width": 317.5899047851539,
+      "height": 168.95046679178745
+    },
+    {
+      "id": 11,
+      "type": "text",
+      "x": 518.0288404869111,
+      "y": -412.21520452386267,
+      "text": "Acronyms",
+      "fontSize": 24,
+      "stroke": "#6b6b6b",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    }
+  ]
+}
