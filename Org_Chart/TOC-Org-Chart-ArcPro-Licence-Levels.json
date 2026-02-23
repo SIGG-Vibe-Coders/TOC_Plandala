@@ -3,8 +3,8 @@
   "dataVersion": 2,
   "headerTitle": "TOC Org Chart",
   "headerSubtitle": "ArcPro Licence Levels",
-  "roleCategoryLabel": "Responsibility",
-  "processTypeCategoryLabel": "Process Types",
+  "roleCategoryLabel": "Arc Pro Licence Level",
+  "processTypeCategoryLabel": "Field Team",
   "settings": {
     "nodeWidth": 130,
     "nodeHeight": 40,
