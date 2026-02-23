@@ -1,8 +1,8 @@
 {
   "appName": "Plandala",
   "dataVersion": 2,
-  "headerTitle": "TOC",
-  "headerSubtitle": "Org Chart",
+  "headerTitle": "TOC Org Chart",
+  "headerSubtitle": "ArcPro Licence Levels",
   "roleCategoryLabel": "Responsibility",
   "processTypeCategoryLabel": "Process Types",
   "settings": {
@@ -13,21 +13,15 @@
     "linkColor": "#6b7280",
     "arrowSize": 12,
     "isLightMode": true,
-    "defaultZoomLevel": 0.6964404506369007,
-    "defaultPanX": 229.3613407426442,
-    "defaultPanY": 13.01748425246302
+    "defaultZoomLevel": 0.8,
+    "defaultPanX": 50,
+    "defaultPanY": 50
   },
   "roleColors": {
-    "Management": "#f58080",
-    "BA/Admin": "#ffed29",
-    "Planning": "#3ed8fe",
-    "GIS": "#7404dc",
-    "Practices Forester": "#008a09",
-    "Operations Tech": "#fe7cdb",
-    "Engineering Tech": "#999999",
-    "Forest Tech": "#24ff50",
-    "IRL": "#a8ffe5",
-    "Vacant": "#ffffff"
+    "Tabular Only": "#3b82f6",
+    "Basic Licence": "#22c55e",
+    "Editor Licence": "#f97316",
+    "Professional Licence": "#a855f7"
   },
   "processTypes": {
     "default-1": {
@@ -55,11 +49,11 @@
     {
       "id": 1,
       "name": "Timber Sales Manager\nChristian Guay",
-      "role": "Management",
+      "role": "Tabular Only",
       "processType": "default-1",
       "x": 898.1304321289062,
       "y": 85.84965896606445,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -67,11 +61,11 @@
     {
       "id": 2,
       "name": "Woodlands Manager\nVacant",
-      "role": "Vacant",
+      "role": "Tabular Only",
       "processType": "default-1",
       "x": 1102.8123291515053,
       "y": 162.11782297553006,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -79,11 +73,11 @@
     {
       "id": 3,
       "name": "Woodlands Supervisor\nJennifer Wright",
-      "role": "Management",
+      "role": "Basic Licence",
       "processType": "default-3",
-      "x": 907.8085141223235,
-      "y": 243.07890014740025,
-      "desc": "",
+      "x": 905.9257626574797,
+      "y": 235.54786377044712,
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -91,11 +85,11 @@
     {
       "id": 4,
       "name": "Woodlands Supervisor\nJoanna deMontreuil",
-      "role": "Management",
+      "role": "Basic Licence",
       "processType": "south-zone",
       "x": 1304.6042828574248,
       "y": 256.3022052143934,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -103,11 +97,11 @@
     {
       "id": 5,
       "name": "Woodlands Supervisor\nBrianna Lukkar",
-      "role": "Management",
+      "role": "Basic Licence",
       "processType": "default-2",
       "x": 1720.0323276147535,
       "y": 251.10874268333822,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -115,11 +109,11 @@
     {
       "id": 6,
       "name": "Engineering Officer\nBrad Wolgram",
-      "role": "Management",
+      "role": "Editor Licence",
       "processType": "default-1",
       "x": 2033.176257375207,
       "y": 247.7801320161285,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -127,11 +121,11 @@
     {
       "id": 7,
       "name": "Engineering Tech\nMatt McClusky",
-      "role": "Engineering Tech",
+      "role": "Basic Licence",
       "processType": "default-3",
       "x": 2037.1804516477607,
       "y": 336.73146809335316,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -139,11 +133,11 @@
     {
       "id": 8,
       "name": "Engineering Tech\nGraham Williams",
-      "role": "Engineering Tech",
+      "role": "Basic Licence",
       "processType": "south-zone",
       "x": 2035.6826715842335,
       "y": 413.77439997924546,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -151,11 +145,11 @@
     {
       "id": 9,
       "name": "Engineering Tech\nVacant",
-      "role": "Vacant",
+      "role": "Basic Licence",
       "processType": "default-2",
       "x": 2040.7969923746962,
       "y": 488.2701416015625,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -163,11 +157,11 @@
     {
       "id": 10,
       "name": "Practices Forester\nLluvia Lopez",
-      "role": "Practices Forester",
+      "role": "Editor Licence",
       "processType": "default-2",
       "x": 1810.299398543636,
       "y": 331.6434994053586,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -175,11 +169,11 @@
     {
       "id": 11,
       "name": "Practices Forester\nMadeline Kruschke",
-      "role": "Practices Forester",
+      "role": "Editor Licence",
       "processType": "default-2",
       "x": 1639.2417703535273,
       "y": 332.2266845703125,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -187,11 +181,11 @@
     {
       "id": 12,
       "name": "Practices Forester\nMatthew Alves",
-      "role": "Practices Forester",
+      "role": "Editor Licence",
       "processType": "south-zone",
       "x": 1221.8748095131446,
       "y": 332.8722453614197,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -199,11 +193,11 @@
     {
       "id": 13,
       "name": "Practices Forester\nVacant",
-      "role": "Vacant",
+      "role": "Basic Licence",
       "processType": "south-zone",
       "x": 1395.0031746423917,
       "y": 336.7314758300781,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -211,11 +205,11 @@
     {
       "id": 14,
       "name": "Practices Forester\nColin Langston",
-      "role": "Practices Forester",
+      "role": "Editor Licence",
       "processType": "default-3",
       "x": 821.7976139758007,
       "y": 331.8913269042969,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -223,11 +217,11 @@
     {
       "id": 15,
       "name": "Practices Forester\nDylan Harvey",
-      "role": "Practices Forester",
+      "role": "Editor Licence",
       "processType": "default-3",
       "x": 984.2979651274713,
       "y": 331.89129638671875,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -235,11 +229,11 @@
     {
       "id": 16,
       "name": "Practices Forester\nVacant",
-      "role": "Vacant",
+      "role": "Basic Licence",
       "processType": "default-3",
       "x": 817.978405705397,
       "y": 424.57086181640625,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -247,11 +241,11 @@
     {
       "id": 17,
       "name": "Practices Forester\nKyle Wright",
-      "role": "Practices Forester",
+      "role": "Editor Licence",
       "processType": "default-3",
       "x": 989.5019977587424,
       "y": 424.2355041503906,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -259,11 +253,11 @@
     {
       "id": 18,
       "name": "Practices Forester\nBrook allard",
-      "role": "Practices Forester",
+      "role": "Editor Licence",
       "processType": "south-zone",
       "x": 1225.459541925036,
       "y": 421.427490234375,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -271,11 +265,11 @@
     {
       "id": 19,
       "name": "Practices Forester\nStephanie Dacre",
-      "role": "Practices Forester",
+      "role": "Editor Licence",
       "processType": "south-zone",
       "x": 1399.4377472851374,
       "y": 424.8515319824219,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -283,11 +277,11 @@
     {
       "id": 20,
       "name": "Operations Tech\nJeff Schochter",
-      "role": "Operations Tech",
+      "role": "Editor Licence",
       "processType": "default-2",
       "x": 1816.9412036155636,
       "y": 427.36151123046875,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -295,11 +289,11 @@
     {
       "id": 21,
       "name": "Operations Tech\nRonan Lee Kam",
-      "role": "Operations Tech",
+      "role": "Basic Licence",
       "processType": "default-2",
       "x": 1639.6818652366576,
       "y": 423.20697021484375,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -307,11 +301,11 @@
     {
       "id": 22,
       "name": "Operations Tech\nKassandra Harding",
-      "role": "Operations Tech",
+      "role": "Basic Licence",
       "processType": "south-zone",
       "x": 1398.8339038108772,
       "y": 509.7974853515625,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -319,11 +313,11 @@
     {
       "id": 23,
       "name": "Operations Tech\nEmily Campbell",
-      "role": "Operations Tech",
+      "role": "Editor Licence",
       "processType": "south-zone",
       "x": 1233.9238543724011,
       "y": 511.83673095703125,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -331,11 +325,11 @@
     {
       "id": 24,
       "name": "Operations Tech\nVacant",
-      "role": "Vacant",
+      "role": "Basic Licence",
       "processType": "south-zone",
       "x": 1235.8979296897837,
       "y": 593.9258422851562,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -343,11 +337,11 @@
     {
       "id": 25,
       "name": "Operations Tech\nJesse Wildeman",
-      "role": "Operations Tech",
+      "role": "Basic Licence",
       "processType": "south-zone",
       "x": 1396.1784472679087,
       "y": 594.1168212890625,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -355,11 +349,11 @@
     {
       "id": 26,
       "name": "Operations Tech\nTeresa Chrapko",
-      "role": "Operations Tech",
+      "role": "Editor Licence",
       "processType": "default-3",
       "x": 991.6909332275391,
       "y": 513.2215576171875,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -367,11 +361,11 @@
     {
       "id": 27,
       "name": "Operations Tech\nJillian Schochter",
-      "role": "Operations Tech",
+      "role": "Basic Licence",
       "processType": "default-3",
       "x": 819.856730959316,
       "y": 510.451904296875,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -379,11 +373,11 @@
     {
       "id": 28,
       "name": "Forest Tech\nKate Lawrence ",
-      "role": "Forest Tech",
+      "role": "Editor Licence",
       "processType": "default-2",
       "x": 1823.8652606223986,
       "y": 514.6063842773438,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -391,11 +385,11 @@
     {
       "id": 29,
       "name": "Forest Tech\nVacant",
-      "role": "Vacant",
+      "role": "Basic Licence",
       "processType": "default-2",
       "x": 1639.681697389977,
       "y": 511.83673095703125,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -403,11 +397,11 @@
     {
       "id": 30,
       "name": "Forest Tech\nJulia Craig",
-      "role": "Forest Tech",
+      "role": "Basic Licence",
       "processType": "default-3",
       "x": 821.2412677024788,
       "y": 600.4664916992188,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -415,11 +409,11 @@
     {
       "id": 31,
       "name": "Resource Professional\nVacant",
-      "role": "Vacant",
+      "role": "Basic Licence",
       "processType": "default-3",
       "x": 994.3462329124397,
       "y": 601.851318359375,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -427,11 +421,11 @@
     {
       "id": 32,
       "name": "Forest Operations Manager\nDavid Strahl",
-      "role": "Management",
+      "role": "Tabular Only",
       "processType": "default-1",
       "x": 390.6434363246608,
       "y": 162.84030544002712,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": 140,
       "height": null
@@ -439,11 +433,11 @@
     {
       "id": 33,
       "name": "Business Manager\nMichelle Boettcher",
-      "role": "Management",
+      "role": "Tabular Only",
       "processType": "default-1",
       "x": -114.75688284719536,
       "y": 165.64193024841126,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -451,11 +445,11 @@
     {
       "id": 34,
       "name": "Certification Standards \nOfficer\nBrad Sindlinger",
-      "role": "Management",
+      "role": "Tabular Only",
       "processType": "default-1",
       "x": 721.0488131766667,
       "y": 240.87929111530207,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -463,11 +457,11 @@
     {
       "id": 35,
       "name": "Land Resource Specialist\nMichael Kyler",
-      "role": "Planning",
+      "role": "Editor Licence",
       "processType": "default-1",
       "x": 292.2623152013273,
       "y": 242.61988121812192,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -475,11 +469,11 @@
     {
       "id": 36,
       "name": "Indigenous Relations Team Lead\nLuke Kowalski",
-      "role": "Management",
+      "role": "Basic Licence",
       "processType": "default-1",
       "x": 525.2439869250373,
       "y": 239.87890920931613,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": 160,
       "height": null
@@ -487,11 +481,11 @@
     {
       "id": 37,
       "name": "Indigenous Relation Liaison\nJesse Grigg",
-      "role": "IRL",
+      "role": "Basic Licence",
       "processType": "default-3",
       "x": 527.5443622418234,
       "y": 333.98523642273824,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": 160,
       "height": null
@@ -499,11 +493,11 @@
     {
       "id": 38,
       "name": "Indigenous Relation Liaison\nVacant",
-      "role": "Vacant",
+      "role": "Basic Licence",
       "processType": "default-2",
       "x": 532.1450685706994,
       "y": 506.7514741224527,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": 160,
       "height": null
@@ -511,11 +505,11 @@
     {
       "id": 39,
       "name": "Indigenous Relation Liaison\nVacant",
-      "role": "Vacant",
+      "role": "Basic Licence",
       "processType": "south-zone",
       "x": 530.0229301452637,
       "y": 424.8775423043072,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": 160,
       "height": null
@@ -523,11 +517,11 @@
     {
       "id": 40,
       "name": "Planning Officer\nGrace Chomitz",
-      "role": "Management",
+      "role": "Basic Licence",
       "processType": "default-1",
       "x": 104.47796800940665,
       "y": 244.47789708850325,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -535,11 +529,11 @@
     {
       "id": 41,
       "name": "GIS Team Lead\nDaniel Otto",
-      "role": "GIS",
+      "role": "Professional Licence",
       "processType": "default-1",
       "x": 297.36123336688854,
       "y": 337.5498009701172,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -547,11 +541,11 @@
     {
       "id": 42,
       "name": "GIS Analyst\nSarah Blair",
-      "role": "GIS",
+      "role": "Professional Licence",
       "processType": "default-1",
       "x": 300.34102630615234,
       "y": 423.81549072265625,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -559,11 +553,11 @@
     {
       "id": 43,
       "name": "GIS Analyst\nKieran Watts",
-      "role": "GIS",
+      "role": "Professional Licence",
       "processType": "default-1",
       "x": 301.2547073364258,
       "y": 509.6988525390625,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -571,11 +565,11 @@
     {
       "id": 44,
       "name": "Planning Forester\nLeanne Jennings",
-      "role": "Planning",
+      "role": "Editor Licence",
       "processType": "south-zone",
       "x": 105.73286056518555,
       "y": 337.6747374011451,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -583,11 +577,11 @@
     {
       "id": 45,
       "name": "Planning Forester\nMitchell Long",
-      "role": "Planning",
+      "role": "Editor Licence",
       "processType": "default-2",
       "x": 109.3874626159668,
       "y": 424.7291564941406,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -595,11 +589,11 @@
     {
       "id": 46,
       "name": "Planning Forester\nVacant",
-      "role": "Vacant",
+      "role": "Editor Licence",
       "processType": "default-3",
       "x": 116.69670104980469,
       "y": 512.4398193359375,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -607,11 +601,11 @@
     {
       "id": 47,
       "name": "Business Analyst\nGerald Ward",
-      "role": "BA/Admin",
+      "role": "Tabular Only",
       "processType": "default-1",
       "x": -115.16349220275879,
       "y": 245.5699797176806,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -619,11 +613,11 @@
     {
       "id": 48,
       "name": "Business Admin\nJenni Stevens",
-      "role": "BA/Admin",
+      "role": "Tabular Only",
       "processType": "default-1",
       "x": -116.0296401977539,
       "y": 337.4198148725346,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -631,11 +625,11 @@
     {
       "id": 49,
       "name": "Business Admin\nAleasha Yess",
-      "role": "BA/Admin",
+      "role": "Tabular Only",
       "processType": "default-1",
       "x": -114.7734146118164,
       "y": 426.23810977844204,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -643,11 +637,11 @@
     {
       "id": 50,
       "name": "Business Admin\nVacant",
-      "role": "Vacant",
+      "role": "Tabular Only",
       "processType": "default-1",
       "x": -113.72389221191406,
       "y": 510.07035786412234,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null
@@ -655,11 +649,11 @@
     {
       "id": 51,
       "name": "Business Admin\nVacant ",
-      "role": "Vacant",
+      "role": "Tabular Only",
       "processType": "default-1",
       "x": -113.72389602661133,
       "y": 588.2883143283539,
-      "desc": "",
+      "desc": "New node description",
       "resources": [],
       "width": null,
       "height": null

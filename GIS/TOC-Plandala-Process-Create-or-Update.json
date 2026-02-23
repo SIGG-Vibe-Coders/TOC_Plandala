@@ -13,9 +13,9 @@
     "linkColor": "#6b7280",
     "arrowSize": 12,
     "isLightMode": true,
-    "defaultZoomLevel": 1.055606328618317,
-    "defaultPanX": -503.46485509900094,
-    "defaultPanY": -64.02317038256092
+    "defaultZoomLevel": 1.0556063286183177,
+    "defaultPanX": -510.1047199434963,
+    "defaultPanY": -44.67299500785714
   },
   "roleColors": {
     "Other": "#ffffff",
@@ -127,12 +127,12 @@
     },
     {
       "id": 8,
-      "name": "move files from downloads folder and either replace existing files or put in a new folder",
+      "name": "move files from downloads folder",
       "role": "File Explorer",
       "processType": "default-1",
       "x": 1592.329700139256,
       "y": 152.10397741166122,
-      "desc": "",
+      "desc": "move files from downloads folder and either replace existing files or put in a new folder",
       "resources": [],
       "width": 180,
       "height": null
@@ -264,7 +264,7 @@
       "processType": "default-1",
       "x": 1065.6850717003751,
       "y": 393.3011093231353,
-      "desc": "New node description",
+      "desc": "",
       "resources": [],
       "width": null,
       "height": null
@@ -305,12 +305,12 @@
     },
     {
       "id": 22,
-      "name": "Store the files somewhere you won't forget and use as you want",
+      "name": "Done",
       "role": "Other",
       "processType": "default-1",
       "x": 1789.4532470703125,
       "y": -5.31840181350708,
-      "desc": "New node description",
+      "desc": "Store the files somewhere you won't forget and use as you want",
       "resources": [],
       "width": null,
       "height": null
@@ -502,6 +502,11 @@
       "targetAnchor": null
     }
   ],
-  "navLinks": [],
+  "navLinks": [
+    {
+      "label": "TOC Business Process",
+      "url": "https://sigg-vibe-coders.github.io/TOC_Plandala/"
+    }
+  ],
   "annotations": []
 }

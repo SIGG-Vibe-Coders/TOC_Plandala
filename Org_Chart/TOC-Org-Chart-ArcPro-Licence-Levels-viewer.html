@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" style="--link-width: 2; --link-width-highlight: 3; --link-width-hover: 4;"><head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plandala - Interactive Visualization</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script type="module" crossorigin="">true              &&(function polyfill() {
+  <script type="module" crossorigin>true              &&(function polyfill() {
   const relList = document.createElement("link").relList;
   if (relList && relList.supports && relList.supports("modulepreload")) {
     return;
@@ -50,11 +50,11 @@
 const defaultNodes = [
     {
         "id": 1,
-        "name": "Start a new Plandala from Scratch",
-        "role": "Plandala Site",
+        "name": "Timber Sales Manager\nChristian Guay",
+        "role": "Tabular Only",
         "processType": "default-1",
-        "x": 865.232264575308,
-        "y": 57.95977839528936,
+        "x": 898.1304321289062,
+        "y": 85.84965896606445,
         "desc": "New node description",
         "resources": [],
         "width": null,
@@ -62,11 +62,11 @@ const defaultNodes = [
     },
     {
         "id": 2,
-        "name": "Update and existing Plandala",
-        "role": "Plandala Site",
+        "name": "Woodlands Manager\nVacant",
+        "role": "Tabular Only",
         "processType": "default-1",
-        "x": 869.8144419034746,
-        "y": 238.4671424386607,
+        "x": 1102.8123291515053,
+        "y": 162.11782297553006,
         "desc": "New node description",
         "resources": [],
         "width": null,
@@ -74,255 +74,588 @@ const defaultNodes = [
     },
     {
         "id": 3,
-        "name": "Open Plandala.io and open the editor",
-        "role": "Plandala Site",
-        "processType": "default-1",
-        "x": 648.5238606006817,
-        "y": 136.59514257279403,
-        "desc": "If it's you first time logging in Contact Daniel to get credentials",
-        "resources": [
-            {
-                "text": "Plandala.io",
-                "url": "Plandala.io"
-            }
-        ],
+        "name": "Woodlands Supervisor\nJennifer Wright",
+        "role": "Basic Licence",
+        "processType": "default-3",
+        "x": 905.9257626574797,
+        "y": 235.54786377044712,
+        "desc": "New node description",
+        "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 4,
-        "name": "Load in the JSON from the existing Plandala",
-        "role": "Plandala Site",
-        "processType": "default-1",
-        "x": 1044.6348454029278,
-        "y": 238.71991178360946,
-        "desc": "If it's the Business processes or Org charts, the current location is:\nF:\\toc_root\\GIS_Workspace\\Projects\\Plandala",
+        "name": "Woodlands Supervisor\nJoanna deMontreuil",
+        "role": "Basic Licence",
+        "processType": "south-zone",
+        "x": 1304.6042828574248,
+        "y": 256.3022052143934,
+        "desc": "New node description",
         "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 5,
-        "name": "Clear saved data and refresh Browser",
-        "role": "Plandala Site",
-        "processType": "default-1",
-        "x": 1035.318713811131,
-        "y": 59.004331797037224,
-        "desc": "",
+        "name": "Woodlands Supervisor\nBrianna Lukkar",
+        "role": "Basic Licence",
+        "processType": "default-2",
+        "x": 1720.0323276147535,
+        "y": 251.10874268333822,
+        "desc": "New node description",
         "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 6,
-        "name": "Start edit mode and make/edit your Plandala",
-        "role": "Plandala Site",
+        "name": "Engineering Officer\nBrad Wolgram",
+        "role": "Editor Licence",
         "processType": "default-1",
-        "x": 1208.1766850025372,
-        "y": 149.95735380021105,
-        "desc": "Guides to come",
+        "x": 2033.176257375207,
+        "y": 247.7801320161285,
+        "desc": "New node description",
         "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 7,
-        "name": "Once you're done Publish Viewer and export JSON",
-        "role": "Plandala Site",
-        "processType": "default-1",
-        "x": 1388.871806767674,
-        "y": 150.86764737931261,
-        "desc": "Files will go to download folder",
+        "name": "Engineering Tech\nMatt McClusky",
+        "role": "Basic Licence",
+        "processType": "default-3",
+        "x": 2037.1804516477607,
+        "y": 336.73146809335316,
+        "desc": "New node description",
         "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 8,
-        "name": "move files from downloads folder",
-        "role": "File Explorer",
-        "processType": "default-1",
-        "x": 1592.329700139256,
-        "y": 152.10397741166122,
-        "desc": "move files from downloads folder and either replace existing files or put in a new folder",
+        "name": "Engineering Tech\nGraham Williams",
+        "role": "Basic Licence",
+        "processType": "south-zone",
+        "x": 2035.6826715842335,
+        "y": 413.77439997924546,
+        "desc": "New node description",
         "resources": [],
-        "width": 180,
+        "width": null,
         "height": null
     },
     {
         "id": 9,
-        "name": "Are you \nupdating the TOC \nBusiness process \nGithub?",
-        "role": "Other",
-        "processType": "default-3",
-        "x": 1790.6115757496073,
-        "y": 132.05284902421,
-        "desc": "New node description",
-        "resources": [],
-        "width": 120,
-        "height": 80
-    },
-    {
-        "id": 10,
-        "name": "NO",
-        "role": "Other",
-        "processType": "default-3",
-        "x": 1789.3558349609375,
-        "y": 66.12034842624432,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 11,
-        "name": "YES",
-        "role": "Other",
-        "processType": "default-3",
-        "x": 1789.8080228615252,
-        "y": 287.9320022661076,
-        "desc": "",
-        "resources": [],
-        "width": 30,
-        "height": 30
-    },
-    {
-        "id": 12,
-        "name": "Are you \nupdating an existing \nfile",
-        "role": "Other",
-        "processType": "default-3",
-        "x": 1788.8331419590888,
-        "y": 373.70597645230094,
+        "name": "Engineering Tech\nVacant",
+        "role": "Basic Licence",
+        "processType": "default-2",
+        "x": 2040.7969923746962,
+        "y": 488.2701416015625,
         "desc": "New node description",
         "resources": [],
         "width": null,
-        "height": 80
+        "height": null
+    },
+    {
+        "id": 10,
+        "name": "Practices Forester\nLluvia Lopez",
+        "role": "Editor Licence",
+        "processType": "default-2",
+        "x": 1810.299398543636,
+        "y": 331.6434994053586,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 11,
+        "name": "Practices Forester\nMadeline Kruschke",
+        "role": "Editor Licence",
+        "processType": "default-2",
+        "x": 1639.2417703535273,
+        "y": 332.2266845703125,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 12,
+        "name": "Practices Forester\nMatthew Alves",
+        "role": "Editor Licence",
+        "processType": "south-zone",
+        "x": 1221.8748095131446,
+        "y": 332.8722453614197,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
     },
     {
         "id": 13,
-        "name": "YES",
-        "role": "Other",
-        "processType": "default-3",
-        "x": 1788.957208346104,
-        "y": 488.7922588573625,
-        "desc": "",
+        "name": "Practices Forester\nVacant",
+        "role": "Basic Licence",
+        "processType": "south-zone",
+        "x": 1395.0031746423917,
+        "y": 336.7314758300781,
+        "desc": "New node description",
         "resources": [],
-        "width": 30,
-        "height": 30
+        "width": null,
+        "height": null
     },
     {
         "id": 14,
-        "name": "NO",
-        "role": "Other",
+        "name": "Practices Forester\nColin Langston",
+        "role": "Editor Licence",
         "processType": "default-3",
-        "x": 1666.4649332140932,
-        "y": 398.46668224577564,
+        "x": 821.7976139758007,
+        "y": 331.8913269042969,
         "desc": "New node description",
         "resources": [],
-        "width": 30,
-        "height": 30
+        "width": null,
+        "height": null
     },
     {
         "id": 15,
-        "name": "Create a new folder",
-        "role": "File Explorer",
-        "processType": "default-1",
-        "x": 1553.4993343206752,
-        "y": 393.7428894042969,
-        "desc": "F:\\toc_root\\GIS_Workspace\\Projects\\Plandala",
+        "name": "Practices Forester\nDylan Harvey",
+        "role": "Editor Licence",
+        "processType": "default-3",
+        "x": 984.2979651274713,
+        "y": 331.89129638671875,
+        "desc": "New node description",
         "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 16,
-        "name": "Replace the file in the Repo folder",
-        "role": "File Explorer",
-        "processType": "default-1",
-        "x": 1560.2041173225123,
-        "y": 484.21441891401605,
-        "desc": "F:\\toc_root\\GIS_Workspace\\Projects\\Plandala\\Repo\n",
+        "name": "Practices Forester\nVacant",
+        "role": "Basic Licence",
+        "processType": "default-3",
+        "x": 817.978405705397,
+        "y": 424.57086181640625,
+        "desc": "New node description",
         "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 17,
-        "name": "Create a new folder in the repo or place into an existing one",
-        "role": "File Explorer",
-        "processType": "default-1",
-        "x": 1394.1443721629514,
-        "y": 393.7428894042969,
-        "desc": "F:\\toc_root\\GIS_Workspace\\Projects\\Plandala\\Repo",
+        "name": "Practices Forester\nKyle Wright",
+        "role": "Editor Licence",
+        "processType": "default-3",
+        "x": 989.5019977587424,
+        "y": 424.2355041503906,
+        "desc": "New node description",
         "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 18,
-        "name": "Take screenshot of the Plandala",
-        "role": "Other",
-        "processType": "default-1",
-        "x": 1221.7435573117696,
-        "y": 393.90850103004504,
-        "desc": "This is to use on the site. after screenshot reduce size of image to width 250 pixel, this will keep the file size small.",
+        "name": "Practices Forester\nBrook allard",
+        "role": "Editor Licence",
+        "processType": "south-zone",
+        "x": 1225.459541925036,
+        "y": 421.427490234375,
+        "desc": "New node description",
         "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 19,
-        "name": "Use AI to help you rebuild the index.html with the new Plandala",
-        "role": "VS Code/ Github",
-        "processType": "default-1",
-        "x": 1065.6850717003751,
-        "y": 393.3011093231353,
-        "desc": "",
+        "name": "Practices Forester\nStephanie Dacre",
+        "role": "Editor Licence",
+        "processType": "south-zone",
+        "x": 1399.4377472851374,
+        "y": 424.8515319824219,
+        "desc": "New node description",
         "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 20,
-        "name": "Push and Commit to Github",
-        "role": "VS Code/ Github",
-        "processType": "default-1",
-        "x": 1239.5518324766822,
-        "y": 571.6389770507812,
-        "desc": "",
-        "resources": [
-            {
-                "text": "TOC Plandala Github",
-                "url": "https://github.com/SIGG-Vibe-Coders/TOC_Plandala"
-            }
-        ],
+        "name": "Operations Tech\nJeff Schochter",
+        "role": "Editor Licence",
+        "processType": "default-2",
+        "x": 1816.9412036155636,
+        "y": 427.36151123046875,
+        "desc": "New node description",
+        "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 21,
-        "name": "Check the Site",
-        "role": "Other",
-        "processType": "default-1",
-        "x": 1240.6130618416853,
-        "y": 673.6643676757812,
-        "desc": "Make sure everything looks good and test links",
-        "resources": [
-            {
-                "text": "TOC Plandala live site",
-                "url": "https://sigg-vibe-coders.github.io/TOC_Plandala/"
-            }
-        ],
+        "name": "Operations Tech\nRonan Lee Kam",
+        "role": "Basic Licence",
+        "processType": "default-2",
+        "x": 1639.6818652366576,
+        "y": 423.20697021484375,
+        "desc": "New node description",
+        "resources": [],
         "width": null,
         "height": null
     },
     {
         "id": 22,
-        "name": "Done",
-        "role": "Other",
+        "name": "Operations Tech\nKassandra Harding",
+        "role": "Basic Licence",
+        "processType": "south-zone",
+        "x": 1398.8339038108772,
+        "y": 509.7974853515625,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 23,
+        "name": "Operations Tech\nEmily Campbell",
+        "role": "Editor Licence",
+        "processType": "south-zone",
+        "x": 1233.9238543724011,
+        "y": 511.83673095703125,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 24,
+        "name": "Operations Tech\nVacant",
+        "role": "Basic Licence",
+        "processType": "south-zone",
+        "x": 1235.8979296897837,
+        "y": 593.9258422851562,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 25,
+        "name": "Operations Tech\nJesse Wildeman",
+        "role": "Basic Licence",
+        "processType": "south-zone",
+        "x": 1396.1784472679087,
+        "y": 594.1168212890625,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 26,
+        "name": "Operations Tech\nTeresa Chrapko",
+        "role": "Editor Licence",
+        "processType": "default-3",
+        "x": 991.6909332275391,
+        "y": 513.2215576171875,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 27,
+        "name": "Operations Tech\nJillian Schochter",
+        "role": "Basic Licence",
+        "processType": "default-3",
+        "x": 819.856730959316,
+        "y": 510.451904296875,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 28,
+        "name": "Forest Tech\nKate Lawrence ",
+        "role": "Editor Licence",
+        "processType": "default-2",
+        "x": 1823.8652606223986,
+        "y": 514.6063842773438,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 29,
+        "name": "Forest Tech\nVacant",
+        "role": "Basic Licence",
+        "processType": "default-2",
+        "x": 1639.681697389977,
+        "y": 511.83673095703125,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 30,
+        "name": "Forest Tech\nJulia Craig",
+        "role": "Basic Licence",
+        "processType": "default-3",
+        "x": 821.2412677024788,
+        "y": 600.4664916992188,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 31,
+        "name": "Resource Professional\nVacant",
+        "role": "Basic Licence",
+        "processType": "default-3",
+        "x": 994.3462329124397,
+        "y": 601.851318359375,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 32,
+        "name": "Forest Operations Manager\nDavid Strahl",
+        "role": "Tabular Only",
         "processType": "default-1",
-        "x": 1789.4532470703125,
-        "y": -5.31840181350708,
-        "desc": "Store the files somewhere you won't forget and use as you want",
+        "x": 390.6434363246608,
+        "y": 162.84030544002712,
+        "desc": "New node description",
+        "resources": [],
+        "width": 140,
+        "height": null
+    },
+    {
+        "id": 33,
+        "name": "Business Manager\nMichelle Boettcher",
+        "role": "Tabular Only",
+        "processType": "default-1",
+        "x": -114.75688284719536,
+        "y": 165.64193024841126,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 34,
+        "name": "Certification Standards \nOfficer\nBrad Sindlinger",
+        "role": "Tabular Only",
+        "processType": "default-1",
+        "x": 721.0488131766667,
+        "y": 240.87929111530207,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 35,
+        "name": "Land Resource Specialist\nMichael Kyler",
+        "role": "Editor Licence",
+        "processType": "default-1",
+        "x": 292.2623152013273,
+        "y": 242.61988121812192,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 36,
+        "name": "Indigenous Relations Team Lead\nLuke Kowalski",
+        "role": "Basic Licence",
+        "processType": "default-1",
+        "x": 525.2439869250373,
+        "y": 239.87890920931613,
+        "desc": "New node description",
+        "resources": [],
+        "width": 160,
+        "height": null
+    },
+    {
+        "id": 37,
+        "name": "Indigenous Relation Liaison\nJesse Grigg",
+        "role": "Basic Licence",
+        "processType": "default-3",
+        "x": 527.5443622418234,
+        "y": 333.98523642273824,
+        "desc": "New node description",
+        "resources": [],
+        "width": 160,
+        "height": null
+    },
+    {
+        "id": 38,
+        "name": "Indigenous Relation Liaison\nVacant",
+        "role": "Basic Licence",
+        "processType": "default-2",
+        "x": 532.1450685706994,
+        "y": 506.7514741224527,
+        "desc": "New node description",
+        "resources": [],
+        "width": 160,
+        "height": null
+    },
+    {
+        "id": 39,
+        "name": "Indigenous Relation Liaison\nVacant",
+        "role": "Basic Licence",
+        "processType": "south-zone",
+        "x": 530.0229301452637,
+        "y": 424.8775423043072,
+        "desc": "New node description",
+        "resources": [],
+        "width": 160,
+        "height": null
+    },
+    {
+        "id": 40,
+        "name": "Planning Officer\nGrace Chomitz",
+        "role": "Basic Licence",
+        "processType": "default-1",
+        "x": 104.47796800940665,
+        "y": 244.47789708850325,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 41,
+        "name": "GIS Team Lead\nDaniel Otto",
+        "role": "Professional Licence",
+        "processType": "default-1",
+        "x": 297.36123336688854,
+        "y": 337.5498009701172,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 42,
+        "name": "GIS Analyst\nSarah Blair",
+        "role": "Professional Licence",
+        "processType": "default-1",
+        "x": 300.34102630615234,
+        "y": 423.81549072265625,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 43,
+        "name": "GIS Analyst\nKieran Watts",
+        "role": "Professional Licence",
+        "processType": "default-1",
+        "x": 301.2547073364258,
+        "y": 509.6988525390625,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 44,
+        "name": "Planning Forester\nLeanne Jennings",
+        "role": "Editor Licence",
+        "processType": "south-zone",
+        "x": 105.73286056518555,
+        "y": 337.6747374011451,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 45,
+        "name": "Planning Forester\nMitchell Long",
+        "role": "Editor Licence",
+        "processType": "default-2",
+        "x": 109.3874626159668,
+        "y": 424.7291564941406,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 46,
+        "name": "Planning Forester\nVacant",
+        "role": "Editor Licence",
+        "processType": "default-3",
+        "x": 116.69670104980469,
+        "y": 512.4398193359375,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 47,
+        "name": "Business Analyst\nGerald Ward",
+        "role": "Tabular Only",
+        "processType": "default-1",
+        "x": -115.16349220275879,
+        "y": 245.5699797176806,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 48,
+        "name": "Business Admin\nJenni Stevens",
+        "role": "Tabular Only",
+        "processType": "default-1",
+        "x": -116.0296401977539,
+        "y": 337.4198148725346,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 49,
+        "name": "Business Admin\nAleasha Yess",
+        "role": "Tabular Only",
+        "processType": "default-1",
+        "x": -114.7734146118164,
+        "y": 426.23810977844204,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 50,
+        "name": "Business Admin\nVacant",
+        "role": "Tabular Only",
+        "processType": "default-1",
+        "x": -113.72389221191406,
+        "y": 510.07035786412234,
+        "desc": "New node description",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 51,
+        "name": "Business Admin\nVacant ",
+        "role": "Tabular Only",
+        "processType": "default-1",
+        "x": -113.72389602661133,
+        "y": 588.2883143283539,
+        "desc": "New node description",
         "resources": [],
         "width": null,
         "height": null
@@ -330,219 +663,696 @@ const defaultNodes = [
 ];
 const defaultLinks = [
     {
-        "source": 3,
-        "target": 1,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 3,
-        "target": 2,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
         "source": 1,
-        "target": 5,
-        "arrowMode": "forward",
-        "waypoints": [],
+        "target": 2,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 1096.2875034439035,
+                "y": 119.43455455035541
+            }
+        ],
         "sourceAnchor": null,
-        "targetAnchor": null
+        "targetAnchor": "top"
+    },
+    {
+        "source": 2,
+        "target": 3,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 927.3160864961292,
+                "y": 186.60334432145058
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "top"
     },
     {
         "source": 2,
         "target": 4,
-        "arrowMode": "forward",
-        "waypoints": [],
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 1301.6329238253786,
+                "y": 194.98157715529192
+            }
+        ],
         "sourceAnchor": null,
-        "targetAnchor": null
+        "targetAnchor": "top"
     },
     {
-        "source": 4,
+        "source": 2,
+        "target": 5,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 1717.59882278605,
+                "y": 218.08869063046893
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "top"
+    },
+    {
+        "source": 6,
+        "target": 7,
+        "arrowMode": "none",
+        "waypoints": [],
+        "sourceAnchor": "right",
+        "targetAnchor": "right"
+    },
+    {
+        "source": 6,
+        "target": 8,
+        "arrowMode": "none",
+        "waypoints": [],
+        "sourceAnchor": "right",
+        "targetAnchor": "right"
+    },
+    {
+        "source": 6,
+        "target": 9,
+        "arrowMode": "none",
+        "waypoints": [],
+        "sourceAnchor": "right",
+        "targetAnchor": "right"
+    },
+    {
+        "source": 2,
         "target": 6,
-        "arrowMode": "forward",
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 2021.1025885421786,
+                "y": 226.4669496965604
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "top"
+    },
+    {
+        "source": 5,
+        "target": 10,
+        "arrowMode": "none",
         "waypoints": [],
         "sourceAnchor": null,
         "targetAnchor": null
     },
     {
         "source": 5,
-        "target": 6,
-        "arrowMode": "forward",
+        "target": 20,
+        "arrowMode": "none",
         "waypoints": [],
         "sourceAnchor": null,
         "targetAnchor": null
     },
     {
-        "source": 6,
-        "target": 7,
-        "arrowMode": "forward",
+        "source": 5,
+        "target": 28,
+        "arrowMode": "none",
         "waypoints": [],
         "sourceAnchor": null,
-        "targetAnchor": null
+        "targetAnchor": "left"
     },
     {
-        "source": 7,
-        "target": 8,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 8,
-        "target": 9,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 9,
-        "target": 10,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 10,
-        "target": 22,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 9,
+        "source": 5,
         "target": 11,
-        "arrowMode": "forward",
+        "arrowMode": "none",
         "waypoints": [],
         "sourceAnchor": null,
         "targetAnchor": null
     },
     {
-        "source": 11,
-        "target": 12,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 12,
-        "target": 13,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 13,
-        "target": 16,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 12,
-        "target": 14,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 14,
-        "target": 15,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 15,
-        "target": 17,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 17,
-        "target": 18,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 18,
-        "target": 19,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 19,
-        "target": 20,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": "bottom",
-        "targetAnchor": null
-    },
-    {
-        "source": 16,
-        "target": 20,
-        "arrowMode": "forward",
-        "waypoints": [],
-        "sourceAnchor": null,
-        "targetAnchor": null
-    },
-    {
-        "source": 20,
+        "source": 5,
         "target": 21,
-        "arrowMode": "forward",
+        "arrowMode": "none",
         "waypoints": [],
         "sourceAnchor": null,
         "targetAnchor": null
-    }
-];
-const defaultNavLinks = [
+    },
     {
-        "label": "TOC Business Process",
-        "url": "https://sigg-vibe-coders.github.io/TOC_Plandala/"
+        "source": 5,
+        "target": 29,
+        "arrowMode": "none",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": "right"
+    },
+    {
+        "source": 4,
+        "target": 13,
+        "arrowMode": "none",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 4,
+        "target": 12,
+        "arrowMode": "none",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 4,
+        "target": 19,
+        "arrowMode": "none",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": "left"
+    },
+    {
+        "source": 4,
+        "target": 18,
+        "arrowMode": "none",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 4,
+        "target": 22,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 1312.502142389338,
+                "y": 428.54940295870597
+            },
+            {
+                "x": 1321.5285497999064,
+                "y": 527.2864097089401
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "left"
+    },
+    {
+        "source": 4,
+        "target": 23,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 1309.4881966700634,
+                "y": 437.5911723427736
+            },
+            {
+                "x": 1309.1941585936788,
+                "y": 524.5453879747799
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "right"
+    },
+    {
+        "source": 4,
+        "target": 25,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 1311.858110888986,
+                "y": 440.4762665965576
+            },
+            {
+                "x": 1321.5440192094688,
+                "y": 608.7825561341576
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "left"
+    },
+    {
+        "source": 4,
+        "target": 24,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 1310.2997572030774,
+                "y": 437.67987811561375
+            },
+            {
+                "x": 1309.4882086130222,
+                "y": 611.7964890468025
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "right"
+    },
+    {
+        "source": 3,
+        "target": 15,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 908.4047197321034,
+                "y": 347.17808227639296
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 3,
+        "target": 14,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 901.5828207845387,
+                "y": 349.8018599365414
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 3,
+        "target": 17,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 906.1528625069383,
+                "y": 389.6299671071168
+            },
+            {
+                "x": 909.3506483320374,
+                "y": 438.96722794573094
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 3,
+        "target": 16,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 904.3254991777685,
+                "y": 407.4461762944958
+            },
+            {
+                "x": 903.4118633368242,
+                "y": 438.0535754114166
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 3,
+        "target": 26,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 911.4348334619751,
+                "y": 521.5867818975782
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "left"
+    },
+    {
+        "source": 3,
+        "target": 27,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 896.6703821641825,
+                "y": 524.9211470646202
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "right"
+    },
+    {
+        "source": 3,
+        "target": 31,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 913.6549968623035,
+                "y": 596.5822387178373
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "left"
+    },
+    {
+        "source": 3,
+        "target": 30,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 897.6661096638221,
+                "y": 592.4707813832258
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "right"
+    },
+    {
+        "source": 1,
+        "target": 32,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 391.3449927106995,
+                "y": 125.17761476663239
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "top"
+    },
+    {
+        "source": 1,
+        "target": 33,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": -109.33708570613635,
+                "y": 129.74587515608007
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "top"
+    },
+    {
+        "source": 32,
+        "target": 34,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 713.3140656478415,
+                "y": 196.01094154887954
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "top"
+    },
+    {
+        "source": 32,
+        "target": 36,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 520.2038046056167,
+                "y": 186.5653424259246
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "top"
+    },
+    {
+        "source": 32,
+        "target": 35,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 292.4596502053065,
+                "y": 184.46630499739965
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 32,
+        "target": 40,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 112.99307475822854,
+                "y": 192.86240167247448
+            }
+        ],
+        "sourceAnchor": null,
+        "targetAnchor": "top"
+    },
+    {
+        "source": 36,
+        "target": 37,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 427.59728485472573,
+                "y": 265.65491407724653
+            },
+            {
+                "x": 428.39266884600397,
+                "y": 349.96534943871853
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
+    },
+    {
+        "source": 36,
+        "target": 39,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 429.98345478369316,
+                "y": 264.85951291022116
+            },
+            {
+                "x": 433.1649761480939,
+                "y": 440.6388078442714
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
+    },
+    {
+        "source": 36,
+        "target": 38,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 428.3927242049615,
+                "y": 266.4502445937448
+            },
+            {
+                "x": 438.73266386030224,
+                "y": 519.3816066619145
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
+    },
+    {
+        "source": 41,
+        "target": 42,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 213.2603724862214,
+                "y": 363.8349611667425
+            },
+            {
+                "x": 214.64516862879947,
+                "y": 442.07837318456467
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
+    },
+    {
+        "source": 41,
+        "target": 43,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 213.26037248622137,
+                "y": 364.5273783115179
+            },
+            {
+                "x": 220.87694963465884,
+                "y": 518.9369547275332
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
+    },
+    {
+        "source": 40,
+        "target": 41,
+        "arrowMode": "none",
+        "waypoints": [],
+        "sourceAnchor": null,
+        "targetAnchor": null
+    },
+    {
+        "source": 40,
+        "target": 44,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 24.082684632459905,
+                "y": 268.3839418106153
+            },
+            {
+                "x": 17.850903626600484,
+                "y": 352.16677300263177
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
+    },
+    {
+        "source": 40,
+        "target": 45,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 22.697829362074117,
+                "y": 269.07642285156976
+            },
+            {
+                "x": 24.77505981556534,
+                "y": 434.56473557282186
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
+    },
+    {
+        "source": 40,
+        "target": 46,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": 23.39024269215227,
+                "y": 269.7688113861158
+            },
+            {
+                "x": 30.31445037953013,
+                "y": 523.8869096450874
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
+    },
+    {
+        "source": 33,
+        "target": 47,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": -201.2683594505742,
+                "y": 186.39388310085522
+            },
+            {
+                "x": -206.80775001453904,
+                "y": 264.6373034633276
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
+    },
+    {
+        "source": 33,
+        "target": 48,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": -201.26835945057414,
+                "y": 187.77873646389233
+            },
+            {
+                "x": -208.88500526356248,
+                "y": 349.80494987140844
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
+    },
+    {
+        "source": 33,
+        "target": 49,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": -199.88348701405073,
+                "y": 187.0863100207924
+            },
+            {
+                "x": -204.7304947655156,
+                "y": 440.51195060383003
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
+    },
+    {
+        "source": 33,
+        "target": 50,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": -200.57598426746867,
+                "y": 185.7014609492893
+            },
+            {
+                "x": -204.03807380604292,
+                "y": 522.2175265468228
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
+    },
+    {
+        "source": 33,
+        "target": 51,
+        "arrowMode": "none",
+        "waypoints": [
+            {
+                "x": -201.26835945057414,
+                "y": 187.08629905353746
+            },
+            {
+                "x": -200.57596900867966,
+                "y": 604.6154948390589
+            }
+        ],
+        "sourceAnchor": "left",
+        "targetAnchor": "left"
     }
 ];
+const defaultNavLinks = [];
 const defaultAnnotations = [];
 
 let roleColors = {
-    "Other": "#ffffff",
-    "Plandala Site": "#b800eb",
-    "File Explorer": "#f97316",
-    "VS Code/ Github": "#55f757"
+    "Tabular Only": "#3b82f6",
+    "Basic Licence": "#22c55e",
+    "Editor Licence": "#f97316",
+    "Professional Licence": "#a855f7"
 };
 
 let processTypes = {
     "default-1": {
-        "label": "Process",
+        "label": "All Zones",
         "shape": "rect",
         "dashed": false
     },
-    "default-3": {
-        "label": "Decsion",
-        "shape": "diamond",
+    "default-2": {
+        "label": "Columbia",
+        "shape": "hexagon",
         "dashed": false
+    },
+    "default-3": {
+        "label": "North Zone",
+        "shape": "rect",
+        "dashed": true
+    },
+    "south-zone": {
+        "label": "South Zone",
+        "shape": "hexagon",
+        "dashed": true
     }
 };
 
-let roleCategoryLabel = 'Workspace';
+let roleCategoryLabel = 'Responsibility';
 let processTypeCategoryLabel = 'Process Types';
 let linkColor = '#6b7280';
 let nodeWidth = 130;
@@ -550,9 +1360,9 @@ let nodeHeight = 40;
 let linkOpacity = 0.4;
 let linkWidth = 2;
 let arrowSize = 12;
-let defaultZoomLevel = 1.0556063286183177;
-let defaultPanX = -510.1047199434963;
-let defaultPanY = -44.67299500785714;
+let defaultZoomLevel = 0.6964404506368993;
+let defaultPanX = 206.0004592834431;
+let defaultPanY = -38.363180604322906;
 
 // ====== State object for non-export-critical state ======
 
@@ -2692,7 +3502,7 @@ Object.assign(window, {
     updateRoleCategoryLabel, updateProcessTypeCategoryLabel,
     highlightNode
 });</script>
-  <style rel="stylesheet" crossorigin="">* {
+  <style rel="stylesheet" crossorigin>* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -3607,14 +4417,15 @@ body.dark-mode #version-label {
     color: #e2e8f0;
 }</style>
 </head>
-<body class="light-mode" style="cursor: grab;">
+<body class="light-mode" style="cursor: default;">
     <div id="header">
         <a href="https://plandala.io" target="_blank" rel="noopener noreferrer">
-        <img src="https://mr-robotto-66.github.io/Plandala_assets/transparent_logos/white_logo_tag_transparent.png" alt="Plandala" class="header-logo" id="header-logo">
+        <img src="https://mr-robotto-66.github.io/Plandala_assets/transparent_logos/white_logo_tag_transparent.png"
+             alt="Plandala" class="header-logo" id="header-logo">
         </a>
         <div style="display: flex; align-items: baseline;">
-            <h1 id="main-title" contenteditable="false">TOC Plandala Process</h1>
-            <span class="subtitle" id="main-subtitle" contenteditable="false">Create or Update</span>
+            <h1 id="main-title" contenteditable="false">TOC Org Chart</h1>
+            <span class="subtitle" id="main-subtitle" contenteditable="false">ArcPro Licence Levels</span>
         </div>
         <div class="controls">
             <label class="theme-toggle">
@@ -3635,9 +4446,9 @@ body.dark-mode #version-label {
     <!-- Dynamic Legend (rebuilt by rebuildLegend()) -->
     <div id="search-box">
         <input type="text" id="search-input" placeholder="Search nodes..." autocomplete="off">
-        <span id="search-clear" title="Clear search" style="display: none;">×</span>
+        <span id="search-clear" title="Clear search">&times;</span>
     </div>
-    <div id="legend"><div id="legend-toggle">▾</div><h3>Workspace</h3><div class="legend-item" data-role="Other"><div class="legend-color" style="background: rgb(255, 255, 255);"></div>Other</div><div class="legend-item" data-role="Plandala Site"><div class="legend-color" style="background: rgb(184, 0, 235);"></div>Plandala Site</div><div class="legend-item" data-role="File Explorer"><div class="legend-color" style="background: rgb(249, 115, 22);"></div>File Explorer</div><div class="legend-item" data-role="VS Code/ Github"><div class="legend-color" style="background: rgb(85, 247, 87);"></div>VS Code/ Github</div><h3 style="margin-top: 10px;">Process Types</h3><div class="legend-item" data-process-type="default-1"><svg viewBox="0 0 12 12" style="width: 20px; height: 20px; flex-shrink: 0;"><rect x="1.5" y="1.5" width="9" height="9" rx="2" fill="none" stroke="#94a3b8" stroke-width="0.8"></rect></svg>Process</div><div class="legend-item" data-process-type="default-3"><svg viewBox="0 0 12 12" style="width: 20px; height: 20px; flex-shrink: 0;"><polygon points="6,1.5 10.5,6 6,10.5 1.5,6" fill="none" stroke="#94a3b8" stroke-width="0.8"></polygon></svg>Decsion</div><h3 style="margin-top: 10px;">Resources</h3><div class="legend-item" data-resource-filter="true"><div class="legend-color" style="background: rgb(30, 58, 95);"></div>Additional Resources</div><div class="legend-clear">Clear Filter</div></div>
+    <div id="legend"></div>
 
     <!-- Side Panel for Detailed Information -->
     <div id="sidepanel" class="">
@@ -3659,21 +4470,20 @@ body.dark-mode #version-label {
         Click activities to see connections and details | Click legend roles to filter | Use search bar to find nodes
     </div>
 
-    <div id="tooltip" class="" style="left: 1569px; top: 636px;">
-        <h4>Practices Forester
-Vacant</h4>
-        <p>New node description</p>
-        <span class="role" style="background: rgb(255, 237, 41);">BA/Admin</span>
+    <div id="tooltip" class="">
+        <h4></h4>
+        <p></p>
+        <span class="role"></span>
     </div>
 
     <!-- Nav Links Panel -->
-    <div id="nav-links-panel" class=""><div style="display: flex; align-items: center; gap: 4px;"><button class="nav-link-btn" style="flex: 1 1 0%;">TOC Business Process</button></div></div>
+    <div id="nav-links-panel" class="hidden"></div>
 
     <!-- Annotation Context Menu -->
-    <div id="annotation-context-menu" style="display: none;"></div>
+    <div id="annotation-context-menu"></div>
 
-    <div id="canvas" style="cursor: grab;" class=""><svg viewBox="0 0 1900 600" preserveAspectRatio="xMidYMid meet" style=""><g transform="translate(-510.1047199434963,-44.67299500785714) scale(1.0556063286183177)"><rect class="canvas-background" x="-50000" y="-50000" width="100000" height="100000" fill="none" pointer-events="all"></rect><line class="temp-link" x1="1228.8981459532447" y1="590" x2="980.265165490742" y2="589.1141942645037" style="display: none;"></line><g class="annotation-layer"></g><path class="link" d="M 713.5238606006817,156.59514257279403 C 744.9780062716836,156.59514257279403 768.7781189043062,77.95977839528936 800.232264575308,77.95977839528936" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 713.5238606006817,156.59514257279403 C 750.0400931217989,156.59514257279403 768.2982093823574,258.4671424386607 804.8144419034746,258.4671424386607" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 930.232264575308,77.95977839528936 C 960.232264575308,77.95977839528936 940.3187138111309,79.00433179703722 970.3187138111309,79.00433179703722" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 934.8144419034746,258.4671424386607 C 964.8144419034746,258.4671424386607 949.6348454029278,258.71991178360946 979.6348454029278,258.71991178360946" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1109.6348454029278,258.71991178360946 C 1139.6348454029278,258.71991178360946 1113.1766850025372,169.95735380021105 1143.1766850025372,169.95735380021105" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1100.318713811131,79.00433179703722 C 1130.318713811131,79.00433179703722 1113.1766850025372,169.95735380021105 1143.1766850025372,169.95735380021105" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1273.1766850025372,169.95735380021105 C 1303.1766850025372,169.95735380021105 1293.871806767674,170.86764737931261 1323.871806767674,170.86764737931261" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1453.871806767674,170.86764737931261 C 1483.871806767674,170.86764737931261 1472.329700139256,172.10397741166122 1502.329700139256,172.10397741166122" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1682.329700139256,172.10397741166122 C 1712.329700139256,172.10397741166122 1700.6115757496073,172.05284902421 1730.6115757496073,172.05284902421" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1790.6115757496073,132.05284902421 C 1790.6115757496073,102.05284902420999 1789.3558349609375,126.12034842624432 1789.3558349609375,96.12034842624432" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1789.3558349609375,66.12034842624432 C 1789.3558349609375,36.12034842624432 1789.4532470703125,64.68159818649292 1789.4532470703125,34.68159818649292" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1790.6115757496073,212.05284902421 C 1790.6115757496073,242.05284902421 1789.8080228615252,257.9320022661076 1789.8080228615252,287.9320022661076" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1789.8080228615252,317.9320022661076 C 1789.8080228615252,347.9320022661076 1788.8331419590888,343.70597645230094 1788.8331419590888,373.70597645230094" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1788.8331419590888,453.70597645230094 C 1788.8331419590888,483.70597645230094 1788.957208346104,458.7922588573625 1788.957208346104,488.7922588573625" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1773.957208346104,503.7922588573625 C 1743.957208346104,503.7922588573625 1655.2041173225123,504.21441891401605 1625.2041173225123,504.21441891401605" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1723.8331419590888,413.70597645230094 C 1693.8331419590888,413.70597645230094 1711.4649332140932,413.46668224577564 1681.4649332140932,413.46668224577564" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1651.4649332140932,413.46668224577564 C 1621.4649332140932,413.46668224577564 1648.4993343206752,413.7428894042969 1618.4993343206752,413.7428894042969" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1488.4993343206752,413.7428894042969 C 1458.4993343206752,413.7428894042969 1489.1443721629514,413.7428894042969 1459.1443721629514,413.7428894042969" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1329.1443721629514,413.7428894042969 C 1299.1443721629514,413.7428894042969 1316.7435573117696,413.90850103004504 1286.7435573117696,413.90850103004504" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1156.7435573117696,413.90850103004504 C 1126.7435573117696,413.90850103004504 1160.6850717003751,413.3011093231353 1130.6850717003751,413.3011093231353" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1065.6850717003751,433.3011093231353 C 1065.6850717003751,476.8478136336581 1131.0051281661595,591.6389770507812 1174.5518324766822,591.6389770507812" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1495.2041173225123,504.21441891401605 C 1460.234294067806,504.21441891401605 1339.5216557313884,591.6389770507812 1304.5518324766822,591.6389770507812" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><path class="link" d="M 1239.5518324766822,611.6389770507812 C 1239.5518324766822,641.6389770507812 1240.6130618416853,643.6643676757812 1240.6130618416853,673.6643676757812" stroke="#6b7280" opacity="0.4" marker-end="url(#arrow-forward)"></path><g class="node" transform="translate(800.232264575308, 57.95977839528936)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#b800eb33" stroke="#b800eb"></rect><text x="65"><tspan x="65" y="11.600000000000001">Start a new</tspan><tspan x="65" y="23.6">Plandala from</tspan><tspan x="65" y="35.6">Scratch</tspan></text></g><g class="node" transform="translate(804.8144419034746, 238.4671424386607)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#b800eb33" stroke="#b800eb"></rect><text x="65"><tspan x="65" y="11.600000000000001">Update and</tspan><tspan x="65" y="23.6">existing</tspan><tspan x="65" y="35.6">Plandala</tspan></text></g><g class="node" transform="translate(583.5238606006817, 136.59514257279403)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#b800eb33" stroke="#b800eb"></rect><text x="65"><tspan x="65" y="11.600000000000001">Open Plandala.io</tspan><tspan x="65" y="23.6">and open the</tspan><tspan x="65" y="35.6">editor</tspan></text></g><g class="node" transform="translate(979.6348454029278, 238.71991178360946)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#b800eb33" stroke="#b800eb"></rect><text x="65"><tspan x="65" y="11.600000000000001">Load in the JSON</tspan><tspan x="65" y="23.6">from the existing</tspan><tspan x="65" y="35.6">Plandala</tspan></text></g><g class="node" transform="translate(970.3187138111309, 59.004331797037224)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#b800eb33" stroke="#b800eb"></rect><text x="65"><tspan x="65" y="11.600000000000001">Clear saved data</tspan><tspan x="65" y="23.6">and refresh</tspan><tspan x="65" y="35.6">Browser</tspan></text></g><g class="node" transform="translate(1143.1766850025372, 149.95735380021105)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#b800eb33" stroke="#b800eb"></rect><text x="65"><tspan x="65" y="11.600000000000001">Start edit mode</tspan><tspan x="65" y="23.6">and make/edit your</tspan><tspan x="65" y="35.6">Plandala</tspan></text></g><g class="node" transform="translate(1323.871806767674, 150.86764737931261)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#b800eb33" stroke="#b800eb"></rect><text x="65"><tspan x="65" y="11.600000000000001">Once you're done</tspan><tspan x="65" y="23.6">Publish Viewer and</tspan><tspan x="65" y="35.6">export JSON</tspan></text></g><g class="node" transform="translate(1502.329700139256, 152.10397741166122)"><rect width="180" height="40" rx="8" ry="8" class="node-shape" fill="#f9731633" stroke="#f97316"></rect><text x="90"><tspan x="90" y="11.600000000000001">move files</tspan><tspan x="90" y="23.6">from downloads</tspan><tspan x="90" y="35.6">folder</tspan></text></g><g class="node" transform="translate(1730.6115757496073, 132.05284902421)"><polygon points="60,0 120,40 60,80 0,40" class="node-shape" fill="#ffffff33" stroke="#ffffff"></polygon><text x="60"><tspan x="60" y="25.6">Are you </tspan><tspan x="60" y="37.6">updating the TOC </tspan><tspan x="60" y="49.6">Business process </tspan><tspan x="60" y="61.6">Github?</tspan></text></g><g class="node" transform="translate(1774.3558349609375, 66.12034842624432)"><polygon points="15,0 30,15 15,30 0,15" class="node-shape" fill="#ffffff33" stroke="#ffffff"></polygon><text x="15"><tspan x="15" y="18.6">NO</tspan></text></g><g class="node" transform="translate(1774.8080228615252, 287.9320022661076)"><polygon points="15,0 30,15 15,30 0,15" class="node-shape" fill="#ffffff33" stroke="#ffffff"></polygon><text x="15"><tspan x="15" y="18.6">YES</tspan></text></g><g class="node" transform="translate(1723.8331419590888, 373.70597645230094)"><polygon points="65,0 130,40 65,80 0,40" class="node-shape" fill="#ffffff33" stroke="#ffffff"></polygon><text x="65"><tspan x="65" y="31.6">Are you </tspan><tspan x="65" y="43.6">updating an existing </tspan><tspan x="65" y="55.6">file</tspan></text></g><g class="node" transform="translate(1773.957208346104, 488.7922588573625)"><polygon points="15,0 30,15 15,30 0,15" class="node-shape" fill="#ffffff33" stroke="#ffffff"></polygon><text x="15"><tspan x="15" y="18.6">YES</tspan></text></g><g class="node" transform="translate(1651.4649332140932, 398.46668224577564)"><polygon points="15,0 30,15 15,30 0,15" class="node-shape" fill="#ffffff33" stroke="#ffffff"></polygon><text x="15"><tspan x="15" y="18.6">NO</tspan></text></g><g class="node" transform="translate(1488.4993343206752, 393.7428894042969)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#f9731633" stroke="#f97316"></rect><text x="65"><tspan x="65" y="17.6">Create a</tspan><tspan x="65" y="29.6">new folder</tspan></text></g><g class="node" transform="translate(1495.2041173225123, 484.21441891401605)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#f9731633" stroke="#f97316"></rect><text x="65"><tspan x="65" y="11.600000000000001">Replace the</tspan><tspan x="65" y="23.6">file in the</tspan><tspan x="65" y="35.6">Repo folder</tspan></text></g><g class="node" transform="translate(1329.1443721629514, 393.7428894042969)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#f9731633" stroke="#f97316"></rect><text x="65"><tspan x="65" y="11.600000000000001">Create a new folder in</tspan><tspan x="65" y="23.6">the repo or place into</tspan><tspan x="65" y="35.6">an existing one</tspan></text></g><g class="node" transform="translate(1156.7435573117696, 393.90850103004504)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#ffffff33" stroke="#ffffff"></rect><text x="65"><tspan x="65" y="11.600000000000001">Take</tspan><tspan x="65" y="23.6">screenshot of</tspan><tspan x="65" y="35.6">the Plandala</tspan></text></g><g class="node" transform="translate(1000.6850717003751, 393.3011093231353)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#55f75733" stroke="#55f757"></rect><text x="65"><tspan x="65" y="11.600000000000001">Use AI to help you</tspan><tspan x="65" y="23.6">rebuild the index.html</tspan><tspan x="65" y="35.6">with the new Plandala</tspan></text></g><g class="node" transform="translate(1174.5518324766822, 571.6389770507812)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#55f75733" stroke="#55f757"></rect><text x="65"><tspan x="65" y="11.600000000000001">Push and</tspan><tspan x="65" y="23.6">Commit to</tspan><tspan x="65" y="35.6">Github</tspan></text></g><g class="node" transform="translate(1175.6130618416853, 673.6643676757812)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#ffffff33" stroke="#ffffff"></rect><text x="65"><tspan x="65" y="17.6">Check</tspan><tspan x="65" y="29.6">the Site</tspan></text></g><g class="node" transform="translate(1724.4532470703125, -5.31840181350708)"><rect width="130" height="40" rx="8" ry="8" class="node-shape" fill="#ffffff33" stroke="#ffffff"></rect><text x="65"><tspan x="65" y="23.6">Done</tspan></text></g><g class="rubberband-layer"></g></g><defs><marker id="arrow-forward" viewBox="0 0 12 12" refX="12" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0,0 L 12,6 L 0,12 Z" fill="#6b7280"></path></marker><marker id="arrow-reverse" viewBox="0 0 12 12" refX="0" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M 12,0 L 0,6 L 12,12 Z" fill="#6b7280"></path></marker><marker id="arrow-forward-highlighted" viewBox="0 0 12 12" refX="12" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0,0 L 12,6 L 0,12 Z" fill="#1e293b"></path></marker><marker id="arrow-reverse-highlighted" viewBox="0 0 12 12" refX="0" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M 12,0 L 0,6 L 12,12 Z" fill="#1e293b"></path></marker><marker id="arrow-forward-dimmed" viewBox="0 0 12 12" refX="12" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M 0,0 L 12,6 L 0,12 Z" fill="#6b7280" opacity="0.15"></path></marker><marker id="arrow-reverse-dimmed" viewBox="0 0 12 12" refX="0" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M 12,0 L 0,6 L 12,12 Z" fill="#6b7280" opacity="0.15"></path></marker></defs></svg></div>
+    <div id="canvas" style="cursor: grab;" class=""></div>
 
-    <div id="version-label">v1.7.12</div>
+    <div id="version-label"></div>
 
 </body></html>
