@@ -1,0 +1,1387 @@
+{
+  "appName": "Plandala",
+  "dataVersion": 2,
+  "headerTitle": "TOC Business Process",
+  "headerSubtitle": "Stakeholder and FN Referrals",
+  "roleCategoryLabel": "Responsibility",
+  "processTypeCategoryLabel": "Process Types",
+  "settings": {
+    "nodeWidth": 130,
+    "nodeHeight": 40,
+    "linkOpacity": 0.4,
+    "linkWidth": 2,
+    "linkColor": "#6b7280",
+    "arrowSize": 12,
+    "isLightMode": true,
+    "defaultZoomLevel": 0.5278031643091589,
+    "defaultPanX": -63.100676950329216,
+    "defaultPanY": 90.43330863603148
+  },
+  "roleColors": {
+    "Planner": "#3b82f6",
+    "GIS": "#8700e0",
+    "IRL": "#8eecb2",
+    "Communication": "#ffbb00",
+    "Update needed": "#e60022"
+  },
+  "processTypes": {
+    "default-2": {
+      "label": "Process",
+      "shape": "rect",
+      "dashed": false
+    },
+    "default-1": {
+      "label": "Running a tool",
+      "shape": "circle",
+      "dashed": false
+    },
+    "default-3": {
+      "label": "Data Prep",
+      "shape": "rect",
+      "dashed": true
+    },
+    "default-4": {
+      "label": "Decision",
+      "shape": "diamond",
+      "dashed": false
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Submit GIS request",
+      "role": "Communication",
+      "processType": "default-2",
+      "x": 910.9493547884134,
+      "y": 278.75772113447493,
+      "desc": "Include you list of blocks in excel format and make sure your roads are added to the referrals roads gdb here:\nF:\\toc_root\\General_User_Workspace\\_Planning Files\\Referral Roads Geodatabase",
+      "resources": [
+        {
+          "text": "GIS Request Sharepoint",
+          "url": "https://bcgov.sharepoint.com/sites/FOR-BCTSGIS/Lists/GIS%20Requests/AllItems.aspx?OR=Teams%2DHL&CT=1678396452608&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzAyMDUwMTQyMSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D&viewid=f7b33b16%2D1a85%2D4189%2Dad03%2Df024370e64a7"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 2,
+      "name": "Prepare blocks data",
+      "role": "Planner",
+      "processType": "default-3",
+      "x": 377.78737389220146,
+      "y": 280.1737828811858,
+      "desc": "You will need to submit block ids to GIS for referral. Make sure block ID's match exactly what's in LRM",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 3,
+      "name": "Add road spatial into referral roads gdb",
+      "role": "Planner",
+      "processType": "default-3",
+      "x": 542.0550748231666,
+      "y": 279.465754143666,
+      "desc": "add to your field team gdb here make sure to fill in all field properly: F:\\toc_root\\General_User_Workspace\\_Planning Files\\Referral Roads Geodatabase",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 4,
+      "name": "List Genie - Check block and road data",
+      "role": "GIS",
+      "processType": "default-1",
+      "x": 1054.4252746153636,
+      "y": 277.11214091307716,
+      "desc": "For roads take the blocks from the excel to create def query and apply to SV_BLOCK layer. if the number of blocks match then all good. If not then use list genie again to compare both lists and find discrepancy. If it's not obvious what the fix is send back to planner to figure out.\n\nFor roads query out roads from referral roads gdb for this year then compare to list in excel. Same deal as blocks, if you can't figure out differences send back to planners to figure out ",
+      "resources": [
+        {
+          "text": "List Genie",
+          "url": "https://mr-robotto-66.github.io/List-Genie/"
+        }
+      ],
+      "width": 42,
+      "height": 42
+    },
+    {
+      "id": 5,
+      "name": "Initial data checks out?",
+      "role": "GIS",
+      "processType": "default-4",
+      "x": 1186.7851592806815,
+      "y": 266.65029619588677,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 60
+    },
+    {
+      "id": 6,
+      "name": "YES",
+      "role": "GIS",
+      "processType": "default-4",
+      "x": 1286.1591842863816,
+      "y": 281.19837696989447,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 7,
+      "name": "NO",
+      "role": "GIS",
+      "processType": "default-4",
+      "x": 1186.0521575324456,
+      "y": 356.6725854944855,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 8,
+      "name": "send to planners to fix",
+      "role": "Communication",
+      "processType": "default-2",
+      "x": 1186.0982567980875,
+      "y": 415.8418597904514,
+      "desc": "",
+      "resources": [],
+      "width": 80,
+      "height": null
+    },
+    {
+      "id": 9,
+      "name": "fix and send back to GIS",
+      "role": "Planner",
+      "processType": "default-3",
+      "x": 1055.2119347766034,
+      "y": 416.08249852336166,
+      "desc": "",
+      "resources": [],
+      "width": 80,
+      "height": null
+    },
+    {
+      "id": 10,
+      "name": "Guide Outfitters excel updated",
+      "role": "Planner",
+      "processType": "default-2",
+      "x": 1289.3389679798129,
+      "y": -213.9724617599053,
+      "desc": "If file name/excel changed since previous year make sure to let GIS know so script can be updated",
+      "resources": [
+        {
+          "text": "G drive Guides folder",
+          "url": "\\\\sfp.idir.bcgov\\s164\\S63030\\BCTS\\Planning\\!!New Planning Folder_Post_Oct09\\5.0 Stakeholders\\Guides_Outfitters"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 11,
+      "name": "Woodlot Doc Updated",
+      "role": "Planner",
+      "processType": "default-2",
+      "x": 1137.6432843050789,
+      "y": -185.23055655133146,
+      "desc": "If file updated from previous year make sure to let GIS n=know so script can be updated.",
+      "resources": [
+        {
+          "text": "G drive woodlots folder",
+          "url": "\\\\sfp.idir.bcgov\\s164\\S63030\\BCTS\\Planning\\!!New Planning Folder_Post_Oct09\\5.0 Stakeholders\\Woodlots"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 12,
+      "name": "Trapper files updated ",
+      "role": "Planner",
+      "processType": "default-2",
+      "x": 1437.0423844698848,
+      "y": -181.90615993100323,
+      "desc": "IF files have been updated from previous year make sure to let GIS know so script can be updated",
+      "resources": [
+        {
+          "text": "G drive Trappers folder",
+          "url": "\\\\sfp.idir.bcgov\\s164\\S63030\\BCTS\\Planning\\!!New Planning Folder_Post_Oct09\\5.0 Stakeholders\\Trappers"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 13,
+      "name": "Changes?",
+      "role": "Planner",
+      "processType": "default-4",
+      "x": 1291.070571049266,
+      "y": -74.60162591934204,
+      "desc": "",
+      "resources": [],
+      "width": 60,
+      "height": 40
+    },
+    {
+      "id": 14,
+      "name": "YES",
+      "role": "Planner",
+      "processType": "default-4",
+      "x": 1203.5061184793017,
+      "y": -1.9041557312011719,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 15,
+      "name": "NO",
+      "role": "Planner",
+      "processType": "default-4",
+      "x": 1367.8729627937646,
+      "y": -2.8027663230895996,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 16,
+      "name": "Let GIS know so they can update script",
+      "role": "Communication",
+      "processType": "default-2",
+      "x": 1203.0799012453074,
+      "y": 58.28129577636719,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 17,
+      "name": "Check BA contacts CSV and update if needed",
+      "role": "GIS",
+      "processType": "default-2",
+      "x": 1368.142130273633,
+      "y": 58.940672059768474,
+      "desc": "Open CSV contacts CSV and make sure everything makes sense",
+      "resources": [
+        {
+          "text": "Contacts CSV",
+          "url": "\\\\bctsdata\\data\\south_root\\GIS_Workspace\\Scripts_and_Tools\\Consultation_Tools\\TOC\\repo\\util\\ba_contacts.csv"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 18,
+      "name": "Update Scipt if needed ",
+      "role": "GIS",
+      "processType": "default-3",
+      "x": 1630.3478692311212,
+      "y": 115.57969100436327,
+      "desc": "Just pass new file paths to your AI assistant and let it do it's thing. Make sure to GIT commit any changes",
+      "resources": [
+        {
+          "text": "script files",
+          "url": "\\\\bctsdata\\data\\south_root\\GIS_Workspace\\Scripts_and_Tools\\Consultation_Tools\\TOC\\repo"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 19,
+      "name": "Run Consultation package tool",
+      "role": "GIS",
+      "processType": "default-1",
+      "x": 1629.9473876953125,
+      "y": 277.6479292339235,
+      "desc": "Run Stakeholder only in ArcPro:\n\nCheck:\n- Generate Excel\n- generate spatial outputs\n- generate maps",
+      "resources": [
+        {
+          "text": "Tool folder",
+          "url": "\\\\bctsdata\\data\\south_root\\GIS_Workspace\\Scripts_and_Tools\\Consultation_Tools\\TOC\\repo"
+        }
+      ],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 20,
+      "name": "Create folder in GIS workspace for outputs",
+      "role": "GIS",
+      "processType": "default-2",
+      "x": 1394.1497802734375,
+      "y": 276.2413024902344,
+      "desc": "New node description",
+      "resources": [
+        {
+          "text": "PA14_Consultation folder",
+          "url": "\\\\bctsdata\\data\\toc_root\\GIS_Workspace\\Projects\\PA14_Consultation"
+        }
+      ],
+      "width": 110,
+      "height": null
+    },
+    {
+      "id": 21,
+      "name": "export spatial",
+      "role": "GIS",
+      "processType": "default-2",
+      "x": 1509.0474119862276,
+      "y": 276.2751159667969,
+      "desc": "Create a gdb for the current referral, if not already created, and save the block and road data. Each field team different FC's. We will combine them later.\n",
+      "resources": [],
+      "width": 60,
+      "height": null
+    },
+    {
+      "id": 22,
+      "name": "Update Aprx template",
+      "role": "Update needed",
+      "processType": "default-2",
+      "x": 1631.4542543694613,
+      "y": 412.16141547887094,
+      "desc": "Aprx template needs to be updated so layers are the same as previous template\n\nF:\\south_root\\GIS_Workspace\\Scripts_and_Tools\\Consultation_Tools\\TOC\\repo\\templates\\templates.aprx",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 23,
+      "name": "Check outputs after run",
+      "role": "GIS",
+      "processType": "default-2",
+      "x": 1758.9587972016818,
+      "y": 277.3302855399405,
+      "desc": "spot check to make sure everything looks good",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 24,
+      "name": "move files for Planner to G drive",
+      "role": "GIS",
+      "processType": "default-2",
+      "x": 1894.9967041015625,
+      "y": 277.0992501643565,
+      "desc": "Planner needs spatial, maps, and spreadsheet so move those over the their G drive folder\n",
+      "resources": [
+        {
+          "text": "root folder where referral folder will be",
+          "url": "\\\\sfp.idir.bcgov\\s164\\S63030\\BCTS\\Planning\\!!Operational Planning"
+        }
+      ],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 25,
+      "name": "Let Planner know it's ready",
+      "role": "Communication",
+      "processType": "default-2",
+      "x": 2029.9869384765625,
+      "y": 276.3508418695442,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 26,
+      "name": "Fill out spreadsheet with missing contact info",
+      "role": "Planner",
+      "processType": "default-3",
+      "x": 2179.154052734375,
+      "y": 276.6514836698406,
+      "desc": "",
+      "resources": [],
+      "width": 110,
+      "height": null
+    },
+    {
+      "id": 27,
+      "name": "Let GIS know the spreadsheet is ready for letters",
+      "role": "Communication",
+      "processType": "default-2",
+      "x": 2336.80517578125,
+      "y": 275.719875111144,
+      "desc": "Make sure to include the signing data and respond by date as well as the letter template to use to GIS",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 28,
+      "name": "Letter template updates",
+      "role": "Planner",
+      "processType": "default-3",
+      "x": 2336.7493896484375,
+      "y": 196.54965507322285,
+      "desc": "make sure the stakeholder template that you are going to use for letter is up to date and correct",
+      "resources": [
+        {
+          "text": "stakeholder letters",
+          "url": "\\\\sfp.idir.bcgov\\s164\\S63030\\BCTS\\Planning\\!!Operational Planning\\Referral Letter Templates Current\\Stakeholder Letters"
+        }
+      ],
+      "width": 90,
+      "height": null
+    },
+    {
+      "id": 29,
+      "name": "Run letters tool ",
+      "role": "GIS",
+      "processType": "default-1",
+      "x": 2475.9664306640625,
+      "y": 278.5977514766268,
+      "desc": "F:\\south_root\\GIS_Workspace\\Scripts_and_Tools\\Consultation_Tools\\TOC\\repo\\consultation_tools.pyt",
+      "resources": [],
+      "width": 35,
+      "height": 35
+    },
+    {
+      "id": 30,
+      "name": "All 3 field teams are done?",
+      "role": "GIS",
+      "processType": "default-4",
+      "x": 2031.3740234375,
+      "y": 370.1925787314118,
+      "desc": "",
+      "resources": [],
+      "width": 100,
+      "height": 70
+    },
+    {
+      "id": 31,
+      "name": "YES",
+      "role": "GIS",
+      "processType": "default-4",
+      "x": 2031.3740234375,
+      "y": 467.11349704691315,
+      "desc": "New node description",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 32,
+      "name": "Deactivation referral as well?",
+      "role": "Planner",
+      "processType": "default-4",
+      "x": 697.5916364940315,
+      "y": 264.481584495234,
+      "desc": "New node description",
+      "resources": [],
+      "width": 110,
+      "height": 70
+    },
+    {
+      "id": 33,
+      "name": "Get list from Road Eng.",
+      "role": "Planner",
+      "processType": "default-2",
+      "x": 912.3699634310482,
+      "y": 375.84111080257856,
+      "desc": "make sure it was run out of access report and has deact_seq_nbr field",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 34,
+      "name": "YES",
+      "role": "Planner",
+      "processType": "default-4",
+      "x": 758.7745599335516,
+      "y": 380.0836338098519,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 35,
+      "name": "NO",
+      "role": "Planner",
+      "processType": "default-4",
+      "x": 799.1335056611172,
+      "y": 283.78876267087253,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 36,
+      "name": "Check to letters",
+      "role": "GIS",
+      "processType": "default-2",
+      "x": 2592.2552490234375,
+      "y": 275.77973305684986,
+      "desc": "check about 5 letters just to make sure everything looks reasonable, no major errors",
+      "resources": [],
+      "width": 90,
+      "height": null
+    },
+    {
+      "id": 37,
+      "name": "Put in G drive folder with other referral products",
+      "role": "GIS",
+      "processType": "default-2",
+      "x": 2727.239013671875,
+      "y": 275.5858068086711,
+      "desc": "",
+      "resources": [
+        {
+          "text": "G drive root folder for referrals",
+          "url": "\\\\sfp.idir.bcgov\\s164\\S63030\\BCTS\\Planning\\!!Operational Planning"
+        }
+      ],
+      "width": 110,
+      "height": null
+    },
+    {
+      "id": 38,
+      "name": "Let Planners know letter are done",
+      "role": "Communication",
+      "processType": "default-2",
+      "x": 2873.055908203125,
+      "y": 275.302270123075,
+      "desc": "New node description",
+      "resources": [],
+      "width": 110,
+      "height": null
+    },
+    {
+      "id": 39,
+      "name": "Combine features",
+      "role": "GIS",
+      "processType": "default-3",
+      "x": 1760.772705078125,
+      "y": 535.845947265625,
+      "desc": "Combine all blocks, roads, and deact roads if there are any for all field teams into a combined feature class for each. This will be the input for the tool",
+      "resources": [],
+      "width": 80,
+      "height": null
+    },
+    {
+      "id": 40,
+      "name": "Check with IR Officer that master SS is up to date",
+      "role": "Communication",
+      "processType": "default-3",
+      "x": 2030.76611328125,
+      "y": 536.0614624023438,
+      "desc": "",
+      "resources": [
+        {
+          "text": "FN Master list",
+          "url": "G:\\BCTS\\Planning\\Master Referral Address List Final All.xlsx\\Third Parties by FDU\\Master Contact Lists\\"
+        }
+      ],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 42,
+      "name": "New person added?",
+      "role": "GIS",
+      "processType": "default-4",
+      "x": 1531.31689453125,
+      "y": 48.94520890315226,
+      "desc": "Was a new person added since last referral? if so we need to add their info and signature",
+      "resources": [],
+      "width": 100,
+      "height": 60
+    },
+    {
+      "id": 43,
+      "name": "Get Signature from planner",
+      "role": "Communication",
+      "processType": "default-2",
+      "x": 1651.53515625,
+      "y": -31.773199759919805,
+      "desc": "should be jpg format and around 200x50 pixels to fit right (2kb), so may need to adjust in image editor after",
+      "resources": [],
+      "width": 100,
+      "height": null
+    },
+    {
+      "id": 44,
+      "name": "Put signature in folder and update CSV",
+      "role": "GIS",
+      "processType": "default-2",
+      "x": 1765.613525390625,
+      "y": 47.83533171514722,
+      "desc": "you will have to add a new line, and maybe delete another person if they left, and fill in details",
+      "resources": [
+        {
+          "text": "Signature Folder",
+          "url": "\\\\sfp.idir.bcgov\\S164\\S63030\\BCTS\\Planning\\!!Operational Planning\\Referral Letter Templates Current\\Signatures"
+        },
+        {
+          "text": "contacts csv",
+          "url": "\\\\bctsdata\\data\\south_root\\GIS_Workspace\\Scripts_and_Tools\\Consultation_Tools\\TOC\\repo\\util\\ba_contacts.csv"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 45,
+      "name": "NO",
+      "role": "GIS",
+      "processType": "default-4",
+      "x": 1630.59521484375,
+      "y": 62.82616452897875,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 46,
+      "name": "YES",
+      "role": "GIS",
+      "processType": "default-4",
+      "x": 1531.3170166015625,
+      "y": -25.531448687337388,
+      "desc": "",
+      "resources": [],
+      "width": 30,
+      "height": 30
+    },
+    {
+      "id": 47,
+      "name": "Get Dates and letter template to use",
+      "role": "Communication",
+      "processType": "default-2",
+      "x": 1894.657851870279,
+      "y": 536.116943359375,
+      "desc": "Get signing and respond by date from IR Officer and template to use for letters",
+      "resources": [
+        {
+          "text": "FN letter templates",
+          "url": "\\\\sfp.idir.bcgov\\s164\\S63030\\BCTS\\Planning\\!!Operational Planning\\Referral Letter Templates Current\\FN Letters"
+        }
+      ],
+      "width": 110,
+      "height": null
+    },
+    {
+      "id": 48,
+      "name": "Run consultation package tool",
+      "role": "GIS",
+      "processType": "default-1",
+      "x": 1636.2680032613086,
+      "y": 535.1690673828125,
+      "desc": "Check FN and uncheck Stakeholders",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 49,
+      "name": "Run letters tool",
+      "role": "GIS",
+      "processType": "default-1",
+      "x": 1518.791259765625,
+      "y": 535.2445068359375,
+      "desc": "use the spreadsheet that was created from running the package tool to run this tool",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 50,
+      "name": "Run FN referral info tool",
+      "role": "GIS",
+      "processType": "default-1",
+      "x": 1401.9725511377749,
+      "y": 535.3272094726562,
+      "desc": "New node description",
+      "resources": [],
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": 51,
+      "name": "Check files to make sure everything ran ok",
+      "role": "GIS",
+      "processType": "default-2",
+      "x": 1400.464715886148,
+      "y": 649.2552490234375,
+      "desc": "spot check maybe 3 nations just to make sure everything ran correctly",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 52,
+      "name": "Move files over to G drive for IRLS",
+      "role": "GIS",
+      "processType": "default-2",
+      "x": 1582.9852743649844,
+      "y": 651.2237548828125,
+      "desc": "New node description",
+      "resources": [
+        {
+          "text": "G drive root location",
+          "url": "\\\\sfp.idir.bcgov\\s164\\S63030\\BCTS\\Planning\\!!Operational Planning"
+        }
+      ],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 53,
+      "name": "Let IRL's know Referral files are ready",
+      "role": "Communication",
+      "processType": "default-2",
+      "x": 1757.2071340729537,
+      "y": 650.0833740234375,
+      "desc": "email all IRL's ",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 54,
+      "name": "Occasional error when running letters",
+      "role": "Update needed",
+      "processType": "default-2",
+      "x": 2477.4381103515625,
+      "y": 383.73118059440645,
+      "desc": "seems to be a lock issue because they are running too fast. Will usually work if you just try again. We should look into this and maybe add a delay after each letter so that the lock goes away?",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 55,
+      "name": "move spatial and Update layerfiles?",
+      "role": "Update needed",
+      "processType": "default-2",
+      "x": 1757.2357177734375,
+      "y": 742.8846435546875,
+      "desc": "New node description",
+      "resources": [],
+      "width": null,
+      "height": null
+    }
+  ],
+  "links": [
+    {
+      "source": 2,
+      "target": 3,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 9,
+      "target": 4,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 6,
+      "target": 20,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 21,
+      "target": 19,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 22,
+      "target": 19,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 19,
+      "target": 23,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 28,
+      "target": 27,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 25,
+      "target": 30,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 3,
+      "target": 32,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 32,
+      "target": 35,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 35,
+      "target": 1,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 32,
+      "target": 34,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 34,
+      "target": 33,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 33,
+      "target": 1,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 27,
+      "target": 29,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 29,
+      "target": 36,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 17,
+      "target": 42,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 42,
+      "target": 46,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 46,
+      "target": 43,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": "top"
+    },
+    {
+      "source": 44,
+      "target": 18,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": "bottom",
+      "targetAnchor": null
+    },
+    {
+      "source": 42,
+      "target": 45,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 45,
+      "target": 18,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 31,
+      "target": 40,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 40,
+      "target": 47,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 47,
+      "target": 39,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 39,
+      "target": 48,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 51,
+      "target": 52,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 52,
+      "target": 53,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 54,
+      "target": 29,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    },
+    {
+      "source": 53,
+      "target": 55,
+      "arrowMode": "forward",
+      "waypoints": [],
+      "sourceAnchor": null,
+      "targetAnchor": null
+    }
+  ],
+  "navLinks": [],
+  "annotations": [
+    {
+      "id": 1,
+      "type": "text",
+      "x": 914.7253093926149,
+      "y": 172.61245915331443,
+      "text": "If at any point in the referral",
+      "fontSize": 12,
+      "stroke": "#ff0000",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "x": 914.7252701982994,
+      "y": 186.90784516564906,
+      "text": "a block or road changes it's ",
+      "fontSize": 12,
+      "stroke": "#ff0000",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "x": 915.4777514365172,
+      "y": 201.20318457278555,
+      "text": "safest to start back at this",
+      "fontSize": 12,
+      "stroke": "#ff0000",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "x": 915.4273537952552,
+      "y": 216.2465180717295,
+      "text": "point and redo everything",
+      "fontSize": 12,
+      "stroke": "#ff0000",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 5,
+      "stroke": "#ff9494",
+      "strokeWidth": 2,
+      "fill": "none",
+      "dashed": true,
+      "opacity": 1,
+      "type": "rect",
+      "x": 906.6323856230383,
+      "y": 155.40779202666968,
+      "width": 167.63981294511132,
+      "height": 71.84563530536445
+    },
+    {
+      "id": 6,
+      "stroke": "#ff9494",
+      "strokeWidth": 2,
+      "fill": "none",
+      "dashed": true,
+      "opacity": 1,
+      "type": "line",
+      "x": 1045.7620196342082,
+      "y": 227.25342733203414,
+      "x2": 1049.7534599610394,
+      "y2": 254.0529842389239
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "x": 1101.407063864971,
+      "y": 196.4107681529241,
+      "text": "If you have deactivation roads",
+      "fontSize": 12,
+      "stroke": "#28aa00",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 8,
+      "type": "text",
+      "x": 1101.4072159138555,
+      "y": 209.31694452821716,
+      "text": "treat them as a separte roads ",
+      "fontSize": 12,
+      "stroke": "#28aa00",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 9,
+      "type": "text",
+      "x": 1101.4068862996405,
+      "y": 224.20868649676834,
+      "text": "referral for all steps after this",
+      "fontSize": 12,
+      "stroke": "#28aa00",
+      "strokeWidth": 1,
+      "fill": "none",
+      "dashed": false,
+      "opacity": 1
+    },
+    {
+      "id": 10,
+      "stroke": "#28aa00",
+      "strokeWidth": 2,
+      "fill": "none",
+      "dashed": true,
+      "opacity": 1,
+      "type": "rect",
+      "x": 1095.450258531989,
+      "y": 180.58868659927305,
+      "width": 191.56654991830987,
+      "height": 51.56225762871259
+    },
+    {
+      "id": 11,
+      "stroke": "#28aa00",
+      "strokeWidth": 2,
+      "fill": "none",
+      "dashed": true,
+      "opacity": 1,
+      "type": "line",
+      "x": 1117.291473834131,
+      "y": 233.14371360081063,
+      "x2": 1083.536852598094,
+      "y2": 264.9127382711993
+    }
+  ]
+}
