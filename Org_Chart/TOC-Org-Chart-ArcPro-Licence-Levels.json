@@ -13,9 +13,9 @@
     "linkColor": "#6b7280",
     "arrowSize": 12,
     "isLightMode": true,
-    "defaultZoomLevel": 0.5223303379776747,
-    "defaultPanX": 361.97400645380526,
-    "defaultPanY": -81.08131765268558
+    "defaultZoomLevel": 0.45947934199881585,
+    "defaultPanX": 465.71682026063945,
+    "defaultPanY": -80.08575034925173
   },
   "roleColors": {
     "Tabular Only": "#3b82f6",
@@ -399,7 +399,7 @@
       "name": "Forest Tech\nJulia Craig",
       "role": "Basic Licence",
       "processType": "default-3",
-      "x": 821.2412677024788,
+      "x": 824.7369342063851,
       "y": 600.4664916992188,
       "desc": "New node description",
       "resources": [],
@@ -720,7 +720,7 @@
     },
     {
       "id": 58,
-      "name": "Keith Tucker",
+      "name": "Jordan Yano",
       "role": "Basic Licence",
       "processType": "default-3",
       "x": 406.4262358093232,
@@ -770,9 +770,9 @@
       "id": 62,
       "name": "Derrick Carlson",
       "role": "Editor Licence",
-      "processType": "default-3",
-      "x": 633.5519961979899,
-      "y": 1057.4921264648438,
+      "processType": "south-zone",
+      "x": 638.5712833073649,
+      "y": 1254.2479858398438,
       "desc": "",
       "resources": [],
       "width": null,
@@ -1038,6 +1038,66 @@
       "x": 1783.8966064453125,
       "y": 990.428955078125,
       "desc": "Senior Forest Tech",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 85,
+      "name": "Patrick Sproule",
+      "role": "Editor Licence",
+      "processType": "south-zone",
+      "x": 642.761962890625,
+      "y": 1316.0960083007812,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 86,
+      "name": "Ezra Buller",
+      "role": "Editor Licence",
+      "processType": "south-zone",
+      "x": 644.0913696289062,
+      "y": 1373.2784423828125,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 87,
+      "name": "Jasper MacKenzie",
+      "role": "Basic Licence",
+      "processType": "south-zone",
+      "x": 634.2984619140625,
+      "y": 1124.65185546875,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 88,
+      "name": "Jody Nicholas",
+      "role": "Basic Licence",
+      "processType": "south-zone",
+      "x": 638.131591796875,
+      "y": 1189.426025390625,
+      "desc": "",
+      "resources": [],
+      "width": null,
+      "height": null
+    },
+    {
+      "id": 89,
+      "name": "Breanna MacPherson",
+      "role": "Basic Licence",
+      "processType": "south-zone",
+      "x": 631.5042114257812,
+      "y": 1060.863525390625,
+      "desc": "",
       "resources": [],
       "width": null,
       "height": null
@@ -1765,8 +1825,8 @@
       "type": "rect",
       "x": 529.6603820183874,
       "y": 861.7699010802982,
-      "width": 209.11784212732425,
-      "height": 257.26965721696877
+      "width": 213.75395052576175,
+      "height": 561.9266396388438
     },
     {
       "id": 6,

@@ -401,7 +401,7 @@ const defaultNodes = [
         "name": "Forest Tech\nJulia Craig",
         "role": "Basic Licence",
         "processType": "default-3",
-        "x": 821.2412677024788,
+        "x": 824.7369342063851,
         "y": 600.4664916992188,
         "desc": "New node description",
         "resources": [],
@@ -722,7 +722,7 @@ const defaultNodes = [
     },
     {
         "id": 58,
-        "name": "Keith Tucker",
+        "name": "Jordan Yano",
         "role": "Basic Licence",
         "processType": "default-3",
         "x": 406.4262358093232,
@@ -772,9 +772,9 @@ const defaultNodes = [
         "id": 62,
         "name": "Derrick Carlson",
         "role": "Editor Licence",
-        "processType": "default-3",
-        "x": 633.5519961979899,
-        "y": 1057.4921264648438,
+        "processType": "south-zone",
+        "x": 638.5712833073649,
+        "y": 1254.2479858398438,
         "desc": "",
         "resources": [],
         "width": null,
@@ -1040,6 +1040,66 @@ const defaultNodes = [
         "x": 1783.8966064453125,
         "y": 990.428955078125,
         "desc": "Senior Forest Tech",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 85,
+        "name": "Patrick Sproule",
+        "role": "Editor Licence",
+        "processType": "south-zone",
+        "x": 642.761962890625,
+        "y": 1316.0960083007812,
+        "desc": "",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 86,
+        "name": "Ezra Buller",
+        "role": "Editor Licence",
+        "processType": "south-zone",
+        "x": 644.0913696289062,
+        "y": 1373.2784423828125,
+        "desc": "",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 87,
+        "name": "Jasper MacKenzie",
+        "role": "Basic Licence",
+        "processType": "south-zone",
+        "x": 634.2984619140625,
+        "y": 1124.65185546875,
+        "desc": "",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 88,
+        "name": "Jody Nicholas",
+        "role": "Basic Licence",
+        "processType": "south-zone",
+        "x": 638.131591796875,
+        "y": 1189.426025390625,
+        "desc": "",
+        "resources": [],
+        "width": null,
+        "height": null
+    },
+    {
+        "id": 89,
+        "name": "Breanna MacPherson",
+        "role": "Basic Licence",
+        "processType": "south-zone",
+        "x": 631.5042114257812,
+        "y": 1060.863525390625,
+        "desc": "",
         "resources": [],
         "width": null,
         "height": null
@@ -1767,8 +1827,8 @@ const defaultAnnotations = [
         "type": "rect",
         "x": 529.6603820183874,
         "y": 861.7699010802982,
-        "width": 209.11784212732425,
-        "height": 257.26965721696877
+        "width": 213.75395052576175,
+        "height": 561.9266396388438
     },
     {
         "id": 6,
@@ -2005,9 +2065,9 @@ let nodeHeight = 40;
 let linkOpacity = 0.4;
 let linkWidth = 2;
 let arrowSize = 12;
-let defaultZoomLevel = 0.5223303379776747;
-let defaultPanX = 361.97400645380526;
-let defaultPanY = -81.08131765268558;
+let defaultZoomLevel = 0.45947934199881585;
+let defaultPanX = 465.71682026063945;
+let defaultPanY = -80.08575034925173;
 
 // ====== State object for non-export-critical state ======
 
@@ -2344,15 +2404,8 @@ svg.call(zoom);
 svg.on('dblclick.zoom', null);
 
 function getSVGCoords(event) {
-    const transform = d3.zoomTransform(svg.node());
-    const pt = svg.node().createSVGPoint();
-    pt.x = event.clientX;
-    pt.y = event.clientY;
-    const svgP = pt.matrixTransform(svg.node().getScreenCTM().inverse());
-    return {
-        x: (svgP.x - transform.x) / transform.k,
-        y: (svgP.y - transform.y) / transform.k
-    };
+    const [x, y] = d3.pointer(event, g.node());
+    return { x, y };
 }
 
 function isCanvasBackground(target) {
@@ -2919,6 +2972,69 @@ function setupSearch() {
     });
 }
 
+function isLocalOrNetworkPath(url) {
+    if (!url) return false;
+    // UNC paths: \\server\share or //server/share
+    if (/^\\\\/.test(url) || /^\/\/[^/]/.test(url)) return true;
+    // Drive letters: C:\ or C:/
+    if (/^[A-Za-z]:[\\\/]/.test(url)) return true;
+    // file:// protocol
+    if (/^file:\/\/\//i.test(url)) return true;
+    return false;
+}
+
+function getClipboardPath(url) {
+    // Strip file:/// prefix and return the raw path
+    if (/^file:\/\/\//i.test(url)) return url.replace(/^file:\/\/\//i, '');
+    return url;
+}
+
+let toastEl = null;
+let toastTimer = null;
+
+function showToast(message) {
+    if (!toastEl) {
+        toastEl = document.createElement('div');
+        toastEl.id = 'plandala-toast';
+        document.body.appendChild(toastEl);
+    }
+    toastEl.textContent = message;
+    // Force reflow to restart animation if already visible
+    toastEl.classList.remove('visible');
+    void toastEl.offsetWidth;
+    toastEl.classList.add('visible');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toastEl.classList.remove('visible'), 3000);
+}
+
+function copyPathToClipboard(path) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(path).then(() => {
+            showToast('Path copied to clipboard — paste in File Explorer');
+        }).catch(() => {
+            fallbackCopy(path);
+        });
+    } else {
+        fallbackCopy(path);
+    }
+}
+
+function fallbackCopy(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+        document.execCommand('copy');
+        showToast('Path copied to clipboard — paste in File Explorer');
+    } catch {
+        showToast('Could not copy path');
+    }
+    document.body.removeChild(ta);
+}
+
 function showSidePanel(nodeData) {
     const panel = document.getElementById('sidepanel');
     const content = document.getElementById('panel-content');
@@ -2996,14 +3112,47 @@ function showSidePanel(nodeData) {
         resources.forEach(r => {
             if (typeof r === 'object' && r.text) {
                 if (r.url) {
-                    const href = r.url.match(/^https?:\/\/|^file:\/\//) ? r.url : 'https://' + r.url;
-                    const link = document.createElement('a');
-                    link.href = href;
-                    link.className = 'resource-link';
-                    link.target = '_blank';
-                    link.rel = 'noopener';
-                    link.textContent = '\u2022 ' + r.text;
-                    resourcesSection.appendChild(link);
+                    if (isLocalOrNetworkPath(r.url)) {
+                        // Network/file path — copy to clipboard on click
+                        const span = document.createElement('span');
+                        span.className = 'resource-link resource-link-path';
+                        span.title = 'Click to copy path to clipboard';
+                        span.style.cursor = 'pointer';
+
+                        const textNode = document.createTextNode('\u2022 ' + r.text + ' ');
+                        span.appendChild(textNode);
+
+                        const icon = document.createElement('span');
+                        icon.className = 'path-copy-icon';
+                        icon.textContent = '\uD83D\uDCCB';
+                        span.appendChild(icon);
+
+                        const clipPath = getClipboardPath(r.url);
+                        span.onclick = () => copyPathToClipboard(clipPath);
+                        resourcesSection.appendChild(span);
+                    } else {
+                        // Normal URL — open in new tab
+                        const href = r.url.match(/^https?:\/\/|^file:\/\//) ? r.url : 'https://' + r.url;
+                        let isSafe = false;
+                        try {
+                            const parsed = new URL(href);
+                            isSafe = parsed.protocol === 'https:' || parsed.protocol === 'http:';
+                        } catch (e) { /* invalid URL */ }
+                        if (isSafe) {
+                            const link = document.createElement('a');
+                            link.href = href;
+                            link.className = 'resource-link';
+                            link.target = '_blank';
+                            link.rel = 'noopener noreferrer';
+                            link.textContent = '\u2022 ' + r.text;
+                            resourcesSection.appendChild(link);
+                        } else {
+                            const span = document.createElement('span');
+                            span.className = 'resource-link';
+                            span.textContent = '\u2022 ' + r.text;
+                            resourcesSection.appendChild(span);
+                        }
+                    }
                 } else {
                     const span = document.createElement('span');
                     span.className = 'resource-link';
@@ -3070,14 +3219,8 @@ svg.on('dblclick', (event) => {
     if (!isCanvasBackground(event.target)) return;
     event.preventDefault();
 
-    // Get coordinates in SVG space
-    const transform = d3.zoomTransform(svg.node());
-    const pt = svg.node().createSVGPoint();
-    pt.x = event.clientX;
-    pt.y = event.clientY;
-    const svgP = pt.matrixTransform(svg.node().getScreenCTM().inverse());
-    const x = (svgP.x - transform.x) / transform.k;
-    const y = (svgP.y - transform.y) / transform.k;
+    // Get coordinates in world (g element) space
+    const [x, y] = d3.pointer(event, g.node());
 
     // Create new node centered on click position
     const defaultPt = state.processTypes[Object.keys(state.processTypes)[0]] || { shape: 'rect' };
@@ -3832,7 +3975,12 @@ function rebuildNavLinks() {
         btn.style.flex = '1';
         btn.onclick = () => {
             if (!state.isEditMode) {
-                window.open(nl.url, '_blank');
+                try {
+                    const parsed = new URL(nl.url);
+                    if (parsed.protocol === 'https:' || parsed.protocol === 'http:') {
+                        window.open(nl.url, '_blank', 'noopener,noreferrer');
+                    }
+                } catch (e) { /* invalid URL, do nothing */ }
             }
         };
         row.appendChild(btn);
@@ -3950,14 +4098,25 @@ function drawAnnotations() {
                 if (dashArray) el.attr('stroke-dasharray', dashArray);
                 break;
             }
-            case 'text':
-                group.append('text')
+            case 'text': {
+                const lines = (d.text || '').split('\n');
+                const lineHeight = d.fontSize || 14;
+                const textEl = group.append('text')
                     .attr('x', d.x).attr('y', d.y)
                     .attr('fill', d.stroke)
-                    .attr('font-size', d.fontSize || 14)
-                    .attr('opacity', d.opacity)
-                    .text(d.text || '');
+                    .attr('font-size', lineHeight)
+                    .attr('font-weight', d.bold ? 'bold' : 'normal')
+                    .attr('font-style', d.italic ? 'italic' : 'normal')
+                    .attr('text-decoration', d.underline ? 'underline' : 'none')
+                    .attr('opacity', d.opacity);
+                lines.forEach((line, i) => {
+                    textEl.append('tspan')
+                        .attr('x', d.x)
+                        .attr('dy', i === 0 ? 0 : lineHeight * 1.2)
+                        .text(line);
+                });
                 break;
+            }
         }
 
         // Selection outline (only show resize handles for single annotation selection, not during multi-select)
@@ -4129,7 +4288,7 @@ document.addEventListener('keydown', (e) => {
     
 });
 
-const APP_VERSION = '1.7.12';
+const APP_VERSION = '1.9.0';
 document.getElementById('version-label').textContent = 'v' + APP_VERSION;
 
 // Expose functions needed by HTML onclick/onchange/oninput handlers
@@ -4747,6 +4906,16 @@ body.light-mode #sidepanel .resource-link:hover {
     color: #1d4ed8;
 }
 
+#sidepanel .resource-link-path .path-copy-icon {
+    font-size: 0.7rem;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+
+#sidepanel .resource-link-path:hover .path-copy-icon {
+    opacity: 0.8;
+}
+
 #controls {
     position: fixed;
     bottom: 16px;
@@ -5060,6 +5229,34 @@ body.light-mode #nav-links-panel .nav-link-btn:hover {
 }
 body.dark-mode #version-label {
     color: #e2e8f0;
+}
+
+/* Toast notification */
+#plandala-toast {
+    position: fixed;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: rgba(15, 23, 42, 0.95);
+    color: #e2e8f0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+body.light-mode #plandala-toast {
+    background: rgba(30, 41, 59, 0.95);
+    color: #f1f5f9;
+}
+#plandala-toast.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }</style>
 </head>
 <body class="light-mode" style="cursor: default;">
