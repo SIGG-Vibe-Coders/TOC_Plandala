@@ -13,9 +13,9 @@
     "linkColor": "#6b7280",
     "arrowSize": 12,
     "isLightMode": true,
-    "defaultZoomLevel": 0.45947934199881685,
-    "defaultPanX": 399.6697117266341,
-    "defaultPanY": 19.75822168238892
+    "defaultZoomLevel": 0.6062866266041596,
+    "defaultPanX": 178.52140778466162,
+    "defaultPanY": 39.922395958129414
   },
   "roleColors": {
     "Tabular Only": "#3b82f6",
@@ -409,7 +409,7 @@
     {
       "id": 31,
       "name": "Resource Professional\nVacant",
-      "role": "Basic Licence",
+      "role": "Editor Licence",
       "processType": "default-3",
       "x": 994.3462329124397,
       "y": 601.851318359375,
